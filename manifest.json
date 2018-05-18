@@ -1,0 +1,25 @@
+{
+    "name": "Search",
+    "version": "0.5",
+    "description": "highlights inserted key words",
+    "permissions": [
+        "webRequest", "https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ], 
+            "js": ["content.js"] 
+        }
+    ],
+    "browser_action":{
+        "default_popup": "smthg.html",
+        "default_title": "Find a keyword",
+        "default_icon": "img.png"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "manifest_version": 2
+  }
