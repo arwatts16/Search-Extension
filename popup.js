@@ -1,10 +1,30 @@
 
-$("#userinput1").change(function(e){
-    $(this).css("background-color", "#D6D6FF");
-});
+// Waits for popup to be loaded before it begins executing code
+document.addEventListener("DOMContentLoaded", function(event) { 
 
-$("#userinput2").change(function(s){
-    $(this).css("background-color", "#D6D6FF");
+    //get the element1
+    var input1 = document.getElementById('userinput1');
+
+    // assign event handler1
+    input1.onchange = function(e) {
+        e.target.setAttribute('style', 'background-color:#D6D6FF');
+
+        chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+            chrome.tabs.sendMessage(tabs[0].id, {type:"text"}, function(response){
+                console.log(response);
+            });
+        });
+    }
+
+
+    //get the element2
+    var input2 = document.getElementById('userinput2');
+
+    // assign event handler2
+    input2.onchange = function(e) {
+        e.target.setAttribute('style', 'background-color:#D6D6FF');
+    }
+
 });
 
 

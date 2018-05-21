@@ -3,8 +3,13 @@
     "version": "0.5",
     "description": "highlights inserted key words",
     "permissions": [
-        "webRequest", "https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        "webRequest", "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+        "tabs"
     ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "options_page" : "options.html",
     "content_scripts": [
         {
             "matches": [
@@ -14,12 +19,9 @@
         }
     ],
     "browser_action":{
-        "default_popup": "smthg.html",
+        "default_popup": "popup.html",
         "default_title": "Find a keyword",
         "default_icon": "img.png"
-    },
-    "background": {
-        "scripts": ["background.js"]
     },
     "manifest_version": 2
   }

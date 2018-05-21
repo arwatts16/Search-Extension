@@ -4,6 +4,6 @@ chrome.runtime.onMessage.addListener(gotMessage); // if it gets a message, execu
 
 function gotMessage(message, sender, sendResponse){
 
-    alert("message.txt"); //alerts the user that a message was recieved
+    console.log(message);
     
 }
