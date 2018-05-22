@@ -7,10 +7,10 @@
         "tabs"
     ],
     "background": {
-        "scripts": ["background.js"]
+        "scripts": ["src/background.js"]
     },
     "options_ui": {
-        "page": "options.html",
+        "page": "views/options.html",
         "open_in_tab": false
       }, 
     "content_scripts": [
@@ -18,13 +18,13 @@
             "matches": [
                 "<all_urls>"
             ], 
-            "js": ["content.js"] 
+            "js": ["src/content.js"] 
         }
     ],
     "browser_action":{
-        "default_popup": "popup.html",
+        "default_popup": "views/popup.html",
         "default_title": "Find a keyword",
-        "default_icon": "img.png"
+        "default_icon": "images/img.png"
     },
     "manifest_version": 2
   }
