@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     save.onclick = function(e) {
         console.log('save that stuff');
         // saves any changes above 
-    }
+    } 
 
 });
 
