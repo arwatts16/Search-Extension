@@ -17,10 +17,10 @@ It could be:
 * able to identify parts of speech
 
 ## Contributors
-A. Watts
-L. Sikes
+* A. Watts
+* L. Sikes
 
 ## Reviewers
-B. Riedinger
-S. Tyler
-C. Gibson
+* B. Riedinger
+* S. Tyler
+* C. Gibson
