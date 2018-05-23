@@ -1,29 +1,23 @@
-
+  
 // Waits for popup to be loaded before it begins executing code
 document.addEventListener('DOMContentLoaded', function(event) { 
     
-    // set up vars
-    var active = {checked : document.getElementById('Active').checked};
-    var input1 = {keywords : document.getElementById('userinput1').text};
-    var input2 = {keywords : document.getElementById('userinput2').text};
+    var checked = localStorage.getItem('active');
+    if(checked === 'true') {
+        document.getElementById('Active').checked = true;
+    } 
+    else { document.getElementById('Active').checked = false; }
 
-    //reload all of the saved settings
-    active = localStorage.activated;
-    input1 = localStorage.userinput1; //array?
-    input2 = localStorage.userinput2;
-
-    // if the value is changed, then update the variables
-    active.onclick = function(e) {active.checked = document.getElementById('Active').checked;}
-    input1.onchange = function(e) {input1.keywords = document.getElementById('userinput1').keywords;}
-    input2.onchange = function(e) {input2.keywords = document.getElementById('userinput2').keywords;}
+    document.getElementById('userinput1').value = localStorage.getItem('input1');
+    document.getElementById('userinput2').value = localStorage.getItem('input2');
 
     // if saved, then update the settings in memory
     document.getElementById('Save').onclick = function(e) {
 
         // save options into local storage
-        localStorage.activated = active;
-        localStorage.userinput1 = input1;
-        localStorage.userinput1 = input2;
+        localStorage.setItem('active', document.getElementById('Active').checked);
+        localStorage.setItem('input1', document.getElementById('userinput1').value);
+        localStorage.setItem('input2', document.getElementById('userinput2').value);
 
         // alert the content script that a change has been made
         chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
