@@ -1,7 +1,7 @@
 {
-  "name": "Search",
+  "name": "Search Now",
   "version": "0.5",
-  "description": "highlights inserted key words",
+  "description": "highlights inserted key words right now",
   "permissions": [
     "webRequest",
     "https://code.jquery.com/jquery-3.3.1.slim.min.js",
