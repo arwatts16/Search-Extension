@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
                 input1 : localStorage.getItem('input1'),
                 input2 : localStorage.getItem('input2')
             }, function(response) {
-                //window.close();
+                window.close();
             });
 		});
 
