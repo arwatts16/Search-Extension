@@ -1,4 +1,3 @@
-alert("background running");
 
 // create and initialize vars in localStorage
 localStorage.setItem('active', false);

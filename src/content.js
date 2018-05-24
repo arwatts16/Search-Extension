@@ -9,6 +9,10 @@ chrome.runtime.onMessage.addListener( function(msg, sender, sendResponse) {
         var j = 0;
         active = msg.active;
 
+        // resets keyword array (avoid issues with old # of keywords > new #)
+        input1.keywords = [];
+        input2.keywords = [];
+
         // store input1 keywords into an array
         for(var i = 0; j < msg.input1.length; i++){
             for(; msg.input1[j] !== ' ' && j < msg.input1.length; j++){
