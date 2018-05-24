@@ -1,4 +1,4 @@
-  
+ 
 // Waits for popup to be loaded before it begins executing code
 document.addEventListener('DOMContentLoaded', function(event) { 
     
@@ -21,7 +21,12 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
         // alert the content script that a change has been made
         chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
-			chrome.tabs.sendMessage(tabs[0].id, {message : 'update'}, function(response) {
+			chrome.tabs.sendMessage(tabs[0].id, {
+                message: 'update',
+                active : localStorage.getItem('active'),
+                input1 : localStorage.getItem('input1'),
+                input2 : localStorage.getItem('input2')
+            }, function(response) {
                 //window.close();
             });
 		});
