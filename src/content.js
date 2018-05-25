@@ -12,6 +12,8 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
     input2.keywords = msg.input2.split(/(\W)/ && ' ');
     if (active === 'true') {
       highlight(input1.keywords, input2.keywords);
+    } else {
+      location.reload();
     }
   }
 });
