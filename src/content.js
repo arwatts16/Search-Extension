@@ -35,7 +35,7 @@ function findWords(i1, i2) {
       var indArr = [];
       var parent;
       for (var i = 0; i < sepWords.length; i++) {
-        if (i1.includes(sepWords[i]) && !i2.includes('')) {
+        if (i1.includes(sepWords[i]) && !i1.includes('')) {
           highlight('yellow');
           numMatches1++;
         } else if (i2.includes(sepWords[i]) && !i2.includes('')) {
