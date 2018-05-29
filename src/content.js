@@ -38,15 +38,15 @@ function findWords(i1, i2) {
         if (i1.includes(sepWords[i])) {
           highlight('yellow');
           numMatches1++;
-        } else if (i2.includes(sepWords[i]) && i2.length > 0) {
+        } else if (i2.includes(sepWords[i]) && !i2.includes('')) {
           highlight('#79f2ff');
           numMatches2++;
         }
       }
       function highlight(color) {
-        var ind = textNode.data.indexOf(sepWords[i]);
-        textNode.data = textNode.data.replace(sepWords[i], '');
-        var newNode = textNode.splitText(ind);
+        var ind = textNode.data.search(' ' + sepWords[i] + ' ');
+        textNode.data = textNode.data.replace(' ' + sepWords[i] + ' ', '  ');
+        var newNode = textNode.splitText(ind + 1);
         var span = document.createElement('span');
         span.appendChild(document.createTextNode(sepWords[i]));
         span.style.backgroundColor = color;
