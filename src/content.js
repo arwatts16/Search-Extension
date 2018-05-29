@@ -37,10 +37,8 @@ function findWords(i1, i2) {
       for (var i = 0; i < sepWords.length; i++) {
         if (i1.includes(sepWords[i])) {
           highlight('yellow');
-          numMatches1++;
         } else if (i2.includes(sepWords[i]) && !i2.includes('')) {
           highlight('#79f2ff');
-          numMatches2++;
         }
       }
       function highlight(color) {
@@ -50,6 +48,7 @@ function findWords(i1, i2) {
         var span = document.createElement('span');
         span.appendChild(document.createTextNode(sepWords[i]));
         span.style.backgroundColor = color;
+        span.className = 'highlighted';
         parent.insertBefore(span, newNode);
         textNode = nodeIterator.nextNode();
         textNode = nodeIterator.nextNode();
@@ -63,7 +62,7 @@ function reload() {
   var parent;
 
   for(var i = 0; i < matches.length; i++){
-    parent = matches[i].parentNode
+    parent = matches[i].parentNode;
     matches[i].parentNode.innerHTML = parent.innerHTML.replace(matches[0].outerHTML, matches[0].innerText); 
   }
 
