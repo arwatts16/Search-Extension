@@ -9,7 +9,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
     active = msg.active;
     input1.keywords = msg.input1.split(/(\W)/);
     input2.keywords = msg.input2.split(/(\W)/);
-    if (active === 'true') {
+    if (active === "true") {
       findWords(input1.keywords, input2.keywords);
     } else {
       reload();
@@ -19,7 +19,8 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
 
 //Node iterator goes through and finds matches from input 1 and 2
 function findWords(i1, i2) {
-  if (input1.keywords != '' || input2.keywords != '') {
+  reload();
+  if (input1.keywords != "" || input2.keywords != "") {
     var nodeIterator = null;
     nodeIterator = document.createNodeIterator(
       document.body,
@@ -35,21 +36,20 @@ function findWords(i1, i2) {
       var indArr = [];
       var parent;
       for (var i = 0; i < sepWords.length; i++) {
-        if (i1.includes(sepWords[i])) {
-          highlight('yellow');
-        } else if (i2.includes(sepWords[i]) && !i2.includes('')) {
-          highlight('#79f2ff');
+        if (i1.includes(sepWords[i]) && !i1.includes("")) {
+          highlight("yellow");
+        } else if (i2.includes(sepWords[i]) && !i2.includes("")) {
+          highlight("#79f2ff");
         }
       }
       function highlight(color) {
-        var re = RegExp('\\W+' + sepWords[i] + '+\\W');
-        var ind = textNode.data.search(re);
-        textNode.data = textNode.data.slice(0, ind + 1) + textNode.data.slice(ind + 1 + sepWords[i].length);
+        var ind = textNode.data.search(" " + sepWords[i] + " ");
+        textNode.data = textNode.data.replace(" " + sepWords[i] + " ", "  ");
         var newNode = textNode.splitText(ind + 1);
-        var span = document.createElement('span');
+        var span = document.createElement("span");
         span.appendChild(document.createTextNode(sepWords[i]));
         span.style.backgroundColor = color;
-        span.className = 'highlighted';
+        span.className = "highlighted";
         parent.insertBefore(span, newNode);
         textNode = nodeIterator.nextNode();
         textNode = nodeIterator.nextNode();
@@ -59,15 +59,20 @@ function findWords(i1, i2) {
 }
 
 function reload() {
-  var matches = document.getElementsByClassName('highlighted');
+  var matches = document.getElementsByClassName("highlighted");
   var parent;
 
-  for(var i = 0; i < matches.length; i++){
-    parent = matches[i].parentNode;
-    matches[i].parentNode.innerHTML = parent.innerHTML.replace(matches[0].outerHTML, matches[0].innerText); 
+  if (document.getElementsByClassName('highlighted').length !== 0){  
+    for (var i = 0; i < matches.length; i++) {
+      parent = matches[i].parentNode;
+      matches[i].parentNode.innerHTML = parent.innerHTML.replace(
+        matches[0].outerHTML,
+        matches[0].innerText
+      );
+    }
   }
 
-  if(document.getElementsByClassName('highlighted') !== null){
+  if (document.getElementsByClassName("highlighted").length !== 0) {
     reload();
   }
 }
