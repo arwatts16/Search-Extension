@@ -8,10 +8,10 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
   if (msg.message == 'update') {
     var j = 0;
     active = msg.active;
-    input1.keywords = msg.input1.split(/(\W)/ && ' ');
-    input2.keywords = msg.input2.split(/(\W)/ && ' ');
+    input1.keywords = msg.input1.split(/(\W)/);
+    input2.keywords = msg.input2.split(/(\W)/);
     if (active === 'true') {
-      highlight(input1.keywords, input2.keywords);
+      findWords(input1.keywords, input2.keywords);
     } else {
       location.reload();
     }
@@ -19,7 +19,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
 });
 
 //Node iterator goes through and finds matches from input 1 and 2
-function highlight(i1, i2) {
+function findWords(i1, i2) {
   if (input1.keywords != '' || input2.keywords != '') {
     var nodeIterator = null;
     nodeIterator = document.createNodeIterator(document.body, NodeFilter.SHOW_TEXT);
@@ -31,38 +31,28 @@ function highlight(i1, i2) {
     while ((textNode = nodeIterator.nextNode()) !== null) {
       var parent = textNode.parentNode;
       var data = textNode.data;
-      var sepWords = data.split(/(\W)/ && ' ');
+      var sepWords = data.split(/(\W)/);
       var indArr = [];
       var parent;
-      for (var i = 0; i < i1.length && i1 != ''; i++) {
-        if (sepWords.includes(i1[i])) {
-          textNode.data = sepWords.join(' ');
-          var ind = textNode.data.indexOf(i1[i]);
-          textNode.data = textNode.data.replace(i1[i], '');
-          var newNode = textNode.splitText(ind);
-          var span = document.createElement('span');
-          span.appendChild(document.createTextNode(i1[i]));
-          span.style.backgroundColor = 'yellow';
-          parent.insertBefore(span, newNode);
+      for (var i = 0; i < sepWords.length; i++) {
+        if (i1.includes(sepWords[i])) {
+          highlight('yellow');
           numMatches1++;
-          textNode = nodeIterator.nextNode();
-          textNode = nodeIterator.nextNode();
+        } else if (i2.includes(sepWords[i]) && i2.length > 0) {
+          highlight('#79f2ff');
+          numMatches2++;
         }
       }
-      for (var i = 0; i < i2.length && i2 != ''; i++) {
-        if (sepWords.includes(i2[i])) {
-          textNode.data = sepWords.join(' ');
-          var ind = textNode.data.indexOf(i2[i]);
-          textNode.data = textNode.data.replace(i2[i], '');
-          var newNode = textNode.splitText(ind);
-          var span = document.createElement('span');
-          span.appendChild(document.createTextNode(i2[i]));
-          span.style.backgroundColor = '#79f2ff';
-          parent.insertBefore(span, newNode);
-          numMatches1++;
-          textNode = nodeIterator.nextNode();
-          textNode = nodeIterator.nextNode();
-        }
+      function highlight(color) {
+        var ind = textNode.data.indexOf(sepWords[i]);
+        textNode.data = textNode.data.replace(sepWords[i], '');
+        var newNode = textNode.splitText(ind);
+        var span = document.createElement('span');
+        span.appendChild(document.createTextNode(sepWords[i]));
+        span.style.backgroundColor = color;
+        parent.insertBefore(span, newNode);
+        textNode = nodeIterator.nextNode();
+        textNode = nodeIterator.nextNode();
       }
     }
   }
