@@ -2,15 +2,11 @@
   "name": "Search",
   "version": "0.5",
   "description": "highlights inserted key words",
-  "permissions": [
-    "webRequest",
-    "https://code.jquery.com/jquery-3.3.1.slim.min.js",
-    "tabs"
-  ],
-  "icons": { 
+  "permissions": ["webRequest", "tabs"],
+  "icons": {
     "16": "images/search2.png",
     "48": "images/search1.png",
-   "128": "images/search1.png" 
+    "128": "images/search1.png"
   },
   "background": {
     "scripts": ["src/background.js"]
@@ -22,7 +18,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["src/content.js"]
+      "js": ["src/find_highlightgi.js"]
     }
   ],
   "browser_action": {
