@@ -20,6 +20,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
 
 //Node iterator goes through and finds matches from input 1 and 2
 function findWords(i1, i2) {
+  reload();
   if (input1.keywords != '' || input2.keywords != '') {
     var nodeIterator = null;
     nodeIterator = document.createNodeIterator(document.body, NodeFilter.SHOW_TEXT);
@@ -57,5 +58,24 @@ function findWords(i1, i2) {
         textNode = nodeIterator.nextNode();
       }
     }
+  }
+}
+
+function reload() {
+  var matches = document.getElementsByClassName("highlighted");
+  var parent;
+
+  if (document.getElementsByClassName('highlighted').length !== 0){  
+    for (var i = 0; i < matches.length; i++) {
+      parent = matches[i].parentNode;
+      matches[i].parentNode.innerHTML = parent.innerHTML.replace(
+        matches[0].outerHTML,
+        matches[0].innerText
+      );
+    }
+  }
+
+  if (document.getElementsByClassName("highlighted").length !== 0) {
+    reload();
   }
 }
