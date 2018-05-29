@@ -5,15 +5,14 @@ var input2 = { keywords: [] };
 
 // when options or popup saves, this updates the global values
 chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
-  if (msg.message == 'update') {
-    var j = 0;
+  if (msg.message == "update") {
     active = msg.active;
     input1.keywords = msg.input1.split(/(\W)/);
     input2.keywords = msg.input2.split(/(\W)/);
     if (active === 'true') {
       findWords(input1.keywords, input2.keywords);
     } else {
-      location.reload();
+      reload();
     }
   }
 });
@@ -22,11 +21,12 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
 function findWords(i1, i2) {
   if (input1.keywords != '' || input2.keywords != '') {
     var nodeIterator = null;
-    nodeIterator = document.createNodeIterator(document.body, NodeFilter.SHOW_TEXT);
+    nodeIterator = document.createNodeIterator(
+      document.body,
+      NodeFilter.SHOW_TEXT
+    );
     var textNode = null;
     var numNodes = 0;
-    var numMatches1 = 0;
-    var numMatches2 = 0;
 
     while ((textNode = nodeIterator.nextNode()) !== null) {
       var parent = textNode.parentNode;
@@ -55,5 +55,19 @@ function findWords(i1, i2) {
         textNode = nodeIterator.nextNode();
       }
     }
+  }
+}
+
+function reload() {
+  var matches = document.getElementsByClassName('highlighted');
+  var parent;
+
+  for(var i = 0; i < matches.length; i++){
+    parent = matches[i].parentNode
+    matches[i].parentNode.innerHTML = parent.innerHTML.replace(matches[0].outerHTML, matches[0].innerText); 
+  }
+
+  if(document.getElementsByClassName('highlighted') !== null){
+    reload();
   }
 }
