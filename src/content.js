@@ -44,12 +44,14 @@ function findWords(i1, i2) {
         }
       }
       function highlight(color) {
-        var ind = textNode.data.search(' ' + sepWords[i] + ' ');
-        textNode.data = textNode.data.replace(' ' + sepWords[i] + ' ', '  ');
+        var re = RegExp('\\W+' + sepWords[i] + '+\\W');
+        var ind = textNode.data.search(re);
+        textNode.data = textNode.data.slice(0, ind + 1) + textNode.data.slice(ind + 1 + sepWords[i].length);
         var newNode = textNode.splitText(ind + 1);
         var span = document.createElement('span');
         span.appendChild(document.createTextNode(sepWords[i]));
         span.style.backgroundColor = color;
+        span.className = 'highlighted';
         parent.insertBefore(span, newNode);
         textNode = nodeIterator.nextNode();
         textNode = nodeIterator.nextNode();
