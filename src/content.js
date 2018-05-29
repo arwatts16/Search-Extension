@@ -5,7 +5,7 @@ var input2 = { keywords: [] };
 
 // when options or popup saves, this updates the global values
 chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
-  if (msg.message == "update") {
+  if (msg.message == 'update') {
     active = msg.active;
     input1.keywords = msg.input1.split(/(\W)/);
     input2.keywords = msg.input2.split(/(\W)/);
@@ -21,10 +21,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
 function findWords(i1, i2) {
   if (input1.keywords != '' || input2.keywords != '') {
     var nodeIterator = null;
-    nodeIterator = document.createNodeIterator(
-      document.body,
-      NodeFilter.SHOW_TEXT
-    );
+    nodeIterator = document.createNodeIterator(document.body, NodeFilter.SHOW_TEXT);
     var textNode = null;
     var numNodes = 0;
 
@@ -35,7 +32,7 @@ function findWords(i1, i2) {
       var indArr = [];
       var parent;
       for (var i = 0; i < sepWords.length; i++) {
-        if (i1.includes(sepWords[i])) {
+        if (i1.includes(sepWords[i]) && !i2.includes('')) {
           highlight('yellow');
         } else if (i2.includes(sepWords[i]) && !i2.includes('')) {
           highlight('#79f2ff');
@@ -62,12 +59,12 @@ function reload() {
   var matches = document.getElementsByClassName('highlighted');
   var parent;
 
-  for(var i = 0; i < matches.length; i++){
+  for (var i = 0; i < matches.length; i++) {
     parent = matches[i].parentNode;
-    matches[i].parentNode.innerHTML = parent.innerHTML.replace(matches[0].outerHTML, matches[0].innerText); 
+    matches[i].parentNode.innerHTML = parent.innerHTML.replace(matches[0].outerHTML, matches[0].innerText);
   }
 
-  if(document.getElementsByClassName('highlighted') !== null){
+  if (document.getElementsByClassName('highlighted') !== null) {
     reload();
   }
 }
