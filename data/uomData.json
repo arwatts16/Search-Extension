@@ -1,0 +1,6890 @@
+[
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Mercedes-Benz SL-Class",
+    "year": 2016,
+    "id": 423776319,
+    "person": [
+      917331301,
+      474488223
+    ]
+  },
+  {
+    "type": "place",
+    "name": "13 S Columbine Ave",
+    "id": 749596485,
+    "person": [
+      1579557086,
+      950873002
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Kirk Crosby",
+    "year": 1963,
+    "occupation": "Light truck or delivery service driver",
+    "id": 1932228536,
+    "person": 493108236,
+    "place": 3560974,
+    "thing": [
+      3718983
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "MINI Cooper Clubman",
+    "year": 2019,
+    "id": 650183731,
+    "person": [
+      933394665,
+      697234845
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Hyundai Genesis",
+    "year": 2019,
+    "id": 561283312,
+    "person": [
+      405569517,
+      35272074
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Jeffery Norris",
+    "year": 1945,
+    "occupation": "Medical assistant",
+    "id": 663954755,
+    "person": 496695037,
+    "place": 294846853,
+    "thing": [
+      1427918505
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Aston Martin DBS",
+    "year": 2012,
+    "id": 28494766,
+    "person": [
+      602713252,
+      2107153665
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1573 E Ridge Blvd",
+    "id": 1957866520,
+    "person": [
+      1964534029,
+      1888508173
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Bennie Rodriguez",
+    "year": 1972,
+    "occupation": "First-line supervisors of office and administrative support worker",
+    "id": 1506866979,
+    "person": 1845946058,
+    "place": 148893441,
+    "thing": [
+      1314084759
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Ron Morgan",
+    "year": 1952,
+    "occupation": "Janitors and cleaner",
+    "id": 1457776520,
+    "person": 1319392443,
+    "place": 2106582754,
+    "thing": [
+      1955291317
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Teddy",
+    "breed": "Rottweiler",
+    "year": 2015,
+    "id": 2049808923,
+    "person": [
+      434013655,
+      1318256817
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1953 S Narragansett Rd",
+    "id": 79751981,
+    "person": [
+      745432851,
+      2051861589
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Dodge Charger",
+    "year": 2015,
+    "id": 428602601,
+    "person": [
+      1376124963,
+      662388667
+    ]
+  },
+  {
+    "type": "place",
+    "name": "2723 W West Virginia St",
+    "id": 1323658706,
+    "person": [
+      1800895323,
+      314822045
+    ]
+  },
+  {
+    "type": "place",
+    "name": "4338 S 4th Pl",
+    "id": 1195828093,
+    "person": [
+      1393638626,
+      659030503
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Debra Summers",
+    "year": 1948,
+    "occupation": "Secondary school teacher",
+    "id": 1412716320,
+    "person": 172806169,
+    "place": 1648045517,
+    "thing": [
+      82838870
+    ]
+  },
+  {
+    "type": "place",
+    "name": "6571 S Minnesota Rd",
+    "id": 1857285204,
+    "person": [
+      1089266629,
+      924684268
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Zeus",
+    "breed": "Havanese",
+    "year": 2013,
+    "id": 940367402,
+    "person": [
+      597028536,
+      1398086293
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Sadie",
+    "breed": "Siberian Husky",
+    "year": 2015,
+    "id": 984254341,
+    "person": [
+      1857794489,
+      1247409336
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Lucky",
+    "breed": "American Cocker Spaniel",
+    "year": 2016,
+    "id": 1596952866,
+    "person": [
+      525596688,
+      1706944616
+    ]
+  },
+  {
+    "type": "place",
+    "name": "47 W Kahili St",
+    "id": 998539975,
+    "person": [
+      1029799909,
+      347269363
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Vicente Herrera",
+    "year": 1966,
+    "occupation": "Registered nurse",
+    "id": 483683625,
+    "person": 1754290032,
+    "place": 193610283,
+    "thing": [
+      768195658
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Javier Mitchell",
+    "year": 1992,
+    "occupation": "Retail salesperson",
+    "id": 1258613966,
+    "person": 1202480427,
+    "place": 98995015,
+    "thing": [
+      1185169939
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Duke",
+    "breed": "Bulldog",
+    "year": 2014,
+    "id": 1476404001,
+    "person": [
+      1770935453,
+      1483109544
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Gizmo",
+    "breed": "Pembroke Welsh Corgi",
+    "year": 2013,
+    "id": 598277334,
+    "person": [
+      405569517,
+      35272074
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Geoffrey Trujillo",
+    "year": 1987,
+    "occupation": "Bus and truck mechanics and diesel engine specialist",
+    "id": 2051861589,
+    "person": 745432851,
+    "place": 79751981,
+    "thing": [
+      1745125961
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Alexander Bishop",
+    "year": 1968,
+    "occupation": "Construction laborer",
+    "id": 437600097,
+    "person": 1994331129,
+    "place": 110637548,
+    "thing": [
+      1696294622
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Marilyn Evans",
+    "year": 1946,
+    "occupation": "Retail salesperson",
+    "id": 833320523,
+    "person": 1123974473,
+    "place": 993239031,
+    "thing": [
+      1696294618
+    ]
+  },
+  {
+    "type": "place",
+    "name": "2234 W 10th St",
+    "id": 622672538,
+    "person": [
+      186032700,
+      1457593354
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Dominic Mcdaniel",
+    "year": 1947,
+    "occupation": "Teacher assistant",
+    "id": 209153121,
+    "person": 404705991,
+    "place": 1584356293,
+    "thing": [
+      744842183
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Beverly Lewis",
+    "year": 1949,
+    "occupation": "Licensed practical and licensed vocational nurse",
+    "id": 22172642,
+    "person": 439863270,
+    "place": 1949879581,
+    "thing": [
+      1169647533
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Evelyn Gray",
+    "year": 1980,
+    "occupation": "Nursing aide, orderly, and attendant",
+    "id": 1753806698,
+    "person": 908489520,
+    "place": 264726361,
+    "thing": [
+      244435647
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1175 E Hill St",
+    "id": 1927418659,
+    "person": [
+      776519002,
+      1152801559
+    ]
+  },
+  {
+    "type": "place",
+    "name": "471 E Williams Rd",
+    "id": 284479189,
+    "person": [
+      1077924366,
+      1825444050
+    ]
+  },
+  {
+    "type": "place",
+    "name": "2193 W Lakeview St",
+    "id": 149119165,
+    "person": [
+      150466434,
+      720893591
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Jack Wall",
+    "year": 1948,
+    "occupation": "Bus and truck mechanics and diesel engine specialist",
+    "id": 720893591,
+    "person": 150466434,
+    "place": 149119165,
+    "thing": [
+      390723518
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Virgil Robinson",
+    "year": 1979,
+    "occupation": "Cashier",
+    "id": 581662361,
+    "person": 1179274655,
+    "place": 1260580039,
+    "thing": [
+      1181721676
+    ]
+  },
+  {
+    "type": "place",
+    "name": "4469 S Sunset Dr",
+    "id": 1464259730,
+    "person": [
+      1499845075,
+      653556267
+    ]
+  },
+  {
+    "type": "place",
+    "name": "3055 S Alaska Dr",
+    "id": 11552427,
+    "person": [
+      790825056,
+      838756419
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Sammy",
+    "breed": "Doberman Pinscher",
+    "year": 2018,
+    "id": 2116581484,
+    "person": [
+      297607524,
+      466079638
+    ]
+  },
+  {
+    "type": "place",
+    "name": "3315 S Willow St",
+    "id": 1195270622,
+    "person": [
+      1079330048,
+      546255197
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Billie Schultz",
+    "year": 1991,
+    "occupation": "Registered nurse",
+    "id": 459637496,
+    "person": 314743289,
+    "place": 1979169343,
+    "thing": [
+      1283586430
+    ]
+  },
+  {
+    "type": "place",
+    "name": "569 W 10th Rd",
+    "id": 2002328178,
+    "person": [
+      448540101,
+      1770460641
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Candace Mcdonald",
+    "year": 1979,
+    "occupation": "Bus and truck mechanics and diesel engine specialist",
+    "id": 1307432217,
+    "person": 303417599,
+    "place": 849881144,
+    "thing": [
+      1696294647
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Rocky",
+    "breed": "Boxer",
+    "year": 2014,
+    "id": 851756389,
+    "person": [
+      955325743,
+      1070298817
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Missy",
+    "breed": "Bulldog",
+    "year": 2009,
+    "id": 942440333,
+    "person": [
+      1186157905,
+      1631139334
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Karen Hamilton",
+    "year": 1946,
+    "occupation": "Freight, stock, and hand material mover laborer",
+    "id": 500995871,
+    "person": 584985163,
+    "place": 292079693,
+    "thing": [
+      609492358
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Charles Long",
+    "year": 1974,
+    "occupation": "Freight, stock, and hand material mover laborer",
+    "id": 546255197,
+    "person": 1079330048,
+    "place": 1195270622,
+    "thing": [
+      1338069770
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Chevrolet Suburban 2500",
+    "year": 2010,
+    "id": 1772905334,
+    "person": [
+      22172642,
+      439863270
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Lincoln MKT",
+    "year": 2015,
+    "id": 2067793385,
+    "person": [
+      1319392443,
+      1457776520
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Anthony Williams",
+    "year": 1970,
+    "occupation": "First-line supervisors of food preparation and serving worker",
+    "id": 1255086056,
+    "person": 391392093,
+    "place": 1689445893,
+    "thing": [
+      493398829
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Reginald Edwards",
+    "year": 1989,
+    "occupation": "Heavy and tractor-trailer truck driver",
+    "id": 62993023,
+    "person": 958168655,
+    "place": 1665851672,
+    "thing": [
+      385658412
+    ]
+  },
+  {
+    "type": "place",
+    "name": "4434 N Juniper St",
+    "id": 999307323,
+    "person": [
+      1846199342,
+      1480946232
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bear",
+    "breed": "Boxer",
+    "year": 2007,
+    "id": 2099528457,
+    "person": [
+      186032700,
+      1457593354
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Zachary Flores",
+    "year": 1956,
+    "occupation": "Team assembler",
+    "id": 402924708,
+    "person": 664592528,
+    "place": 214537866,
+    "thing": [
+      71661832
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Elmer Mcdonald",
+    "year": 1977,
+    "occupation": "Teacher assistant",
+    "id": 303417599,
+    "person": 1307432217,
+    "place": 849881144,
+    "thing": [
+      1696294647
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Daniel Wilson",
+    "year": 1987,
+    "occupation": "Bus and truck mechanics and diesel engine specialist",
+    "id": 1239334848,
+    "person": 2064123657,
+    "place": 1745758895,
+    "thing": [
+      599494751
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Murphy",
+    "breed": "Labrador Retriever",
+    "year": 2011,
+    "id": 1305859030,
+    "person": [
+      1546002675,
+      710971083
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Jon Schultz",
+    "year": 1989,
+    "occupation": "Office clerk",
+    "id": 314743289,
+    "person": 459637496,
+    "place": 1979169343,
+    "thing": [
+      1283586430
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Betsy Anderson",
+    "year": 1966,
+    "occupation": "Billing and posting clerk",
+    "id": 1238420799,
+    "person": 1144198918,
+    "place": 1531637434,
+    "thing": [
+      322273664
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "BMW 3 Series",
+    "year": 2015,
+    "id": 1084097594,
+    "person": [
+      466683411,
+      9422686
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Lola",
+    "breed": "Havanese",
+    "year": 2007,
+    "id": 1049139818,
+    "person": [
+      329163284,
+      1046570462
+    ]
+  },
+  {
+    "type": "place",
+    "name": "4146 E Evergreen St",
+    "id": 1918709880,
+    "person": [
+      466683411,
+      9422686
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Jeffrey Wagner",
+    "year": 1985,
+    "occupation": "Cafeteria, food concession and coffee shop counter attendant",
+    "id": 1394695752,
+    "person": 1225108477,
+    "place": 947149096,
+    "thing": [
+      1602661647
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Sammy",
+    "breed": "Poodle",
+    "year": 2019,
+    "id": 19548418,
+    "person": [
+      1909449920,
+      649955794
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Leland Williams",
+    "year": 1989,
+    "occupation": "Waiters and waitresse",
+    "id": 1969752693,
+    "person": 511772611,
+    "place": 484252448,
+    "thing": [
+      387215331
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Wallace Summers",
+    "year": 1946,
+    "occupation": "Janitors and cleaner",
+    "id": 172806169,
+    "person": 1412716320,
+    "place": 1648045517,
+    "thing": [
+      82838870
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Max",
+    "breed": "Golden Retriever",
+    "year": 2011,
+    "id": 1923276289,
+    "person": [
+      390949026,
+      1081342118
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bailey",
+    "breed": "Newfoundland",
+    "year": 2017,
+    "id": 3718983,
+    "person": [
+      493108236,
+      1932228536
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Chevrolet Corvette",
+    "year": 2018,
+    "id": 1036558509,
+    "person": [
+      899053606,
+      1132646670
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Land Rover LR4",
+    "year": 2011,
+    "id": 839211517,
+    "person": [
+      2003742689,
+      1374423867
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Guy Vega",
+    "year": 1979,
+    "occupation": "Medical secretarie",
+    "id": 1480946232,
+    "person": 1846199342,
+    "place": 999307323,
+    "thing": [
+      1058979434
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Regina Bass",
+    "year": 1977,
+    "occupation": "Police and sheriff officer",
+    "id": 1275684673,
+    "person": 1426349116,
+    "place": 664150180,
+    "thing": [
+      1775812305
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Oliver Torres",
+    "year": 1963,
+    "occupation": "Inspector, tester, sorter, sampler, and weigher",
+    "id": 501806103,
+    "person": 1801347144,
+    "place": 146006881,
+    "thing": [
+      1244493334
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bailey",
+    "breed": "German Shepherd",
+    "year": 2005,
+    "id": 1058979434,
+    "person": [
+      1846199342,
+      1480946232
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Rickey Coleman",
+    "year": 1970,
+    "occupation": "Construction laborer",
+    "id": 1128457737,
+    "person": 1222179273,
+    "place": 408357485,
+    "thing": [
+      1602661615
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Marla Norris",
+    "year": 1947,
+    "occupation": "Receptionists and information clerk",
+    "id": 496695037,
+    "person": 663954755,
+    "place": 294846853,
+    "thing": [
+      1427918505
+    ]
+  },
+  {
+    "type": "place",
+    "name": "207 W Minnesota Pl",
+    "id": 1531637434,
+    "person": [
+      1238420799,
+      1144198918
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Frank Austin",
+    "year": 1968,
+    "occupation": "Office clerk",
+    "id": 1132646670,
+    "person": 899053606,
+    "place": 771226390,
+    "thing": [
+      455199599
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Colin Wright",
+    "year": 1962,
+    "occupation": "Bookkeeping, accounting, and auditing clerk",
+    "id": 1360515836,
+    "person": 2060049522,
+    "place": 963482655,
+    "thing": [
+      1686508967
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Audrey Flynn",
+    "year": 1970,
+    "occupation": "Maids and housekeeping cleaner",
+    "id": 620034230,
+    "person": 930199512,
+    "place": 1179506847,
+    "thing": [
+      275064386
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1836 S Highland Blvd",
+    "id": 1015893048,
+    "person": [
+      1386403796,
+      95499299
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Audi TT",
+    "year": 2014,
+    "id": 713982344,
+    "person": [
+      329163284,
+      1046570462
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Casey",
+    "breed": "Poodle",
+    "year": 2010,
+    "id": 1163653389,
+    "person": [
+      1499845075,
+      653556267
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Hyundai Tucson",
+    "year": 2016,
+    "id": 443500657,
+    "person": [
+      1964534029,
+      1888508173
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Rudy",
+    "breed": "Pomeranian",
+    "year": 2013,
+    "id": 1720136358,
+    "person": [
+      1279989924,
+      429281124
+    ]
+  },
+  {
+    "type": "place",
+    "name": "845 S Florida St",
+    "id": 236200264,
+    "person": [
+      297607524,
+      466079638
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Audi TT",
+    "year": 2011,
+    "id": 713982341,
+    "person": [
+      1579557086,
+      950873002
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Amanda Owen",
+    "year": 1957,
+    "occupation": "Personal care aide",
+    "id": 1138229285,
+    "person": 117340691,
+    "place": 1535314690,
+    "thing": [
+      8405608
+    ]
+  },
+  {
+    "type": "place",
+    "name": "4700 E Narragansett Rd",
+    "id": 489414786,
+    "person": [
+      706303134,
+      1398370880
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Tina Shelton",
+    "year": 1985,
+    "occupation": "Packers and packager",
+    "id": 740373372,
+    "person": 753054978,
+    "place": 1744672775,
+    "thing": [
+      723665244
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1581 S Narragansett Blvd",
+    "id": 2036265648,
+    "person": [
+      235922088,
+      1417625672
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1370 W Mississippi Blvd",
+    "id": 289109895,
+    "person": [
+      326143157,
+      1808015627
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Buick Enclave",
+    "year": 2016,
+    "id": 619102049,
+    "person": [
+      1648966330,
+      906408636
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Ruby",
+    "breed": "Brittany",
+    "year": 2009,
+    "id": 257310548,
+    "person": [
+      466683411,
+      9422686
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Laura Hernandez",
+    "year": 1959,
+    "occupation": "Computer support specialist",
+    "id": 1284768018,
+    "person": 1708977103,
+    "place": 1047860701,
+    "thing": [
+      351484177
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Brandon Williams",
+    "year": 1967,
+    "occupation": "Nursing aide, orderly, and attendant",
+    "id": 347269363,
+    "person": 1029799909,
+    "place": 998539975,
+    "thing": [
+      115479667
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Malcolm Lewis",
+    "year": 1949,
+    "occupation": "General and operation manager",
+    "id": 439863270,
+    "person": 22172642,
+    "place": 1949879581,
+    "thing": [
+      1169647533
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "GMC Sierra 1500",
+    "year": 2012,
+    "id": 1448934734,
+    "person": [
+      1722145730,
+      1702333264
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Bentley Mulsanne",
+    "year": 2016,
+    "id": 298678977,
+    "person": [
+      706303134,
+      1398370880
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Thomas Stone",
+    "year": 1942,
+    "occupation": "Food preparation worker",
+    "id": 764789359,
+    "person": 60450344,
+    "place": 443667505,
+    "thing": [
+      44748116
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Brenda Lara",
+    "year": 1988,
+    "occupation": "Landscaping and groundskeeping worker",
+    "id": 320841014,
+    "person": 1932400624,
+    "place": 1248992650,
+    "thing": [
+      2110078769
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Ford Taurus",
+    "year": 2018,
+    "id": 2113444014,
+    "person": [
+      1029799909,
+      347269363
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1186 W Louisiana Sq",
+    "id": 1535314690,
+    "person": [
+      1138229285,
+      117340691
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1472 S Massachusetts Ave",
+    "id": 1179506847,
+    "person": [
+      620034230,
+      930199512
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Vicki Howell",
+    "year": 1952,
+    "occupation": "Licensed practical and licensed vocational nurse",
+    "id": 1428461772,
+    "person": 976926198,
+    "place": 1478057715,
+    "thing": [
+      1244493334
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Ryan Sanchez",
+    "year": 1944,
+    "occupation": "Office clerk",
+    "id": 1457593354,
+    "person": 186032700,
+    "place": 622672538,
+    "thing": [
+      2099528457
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Carl Lindsey",
+    "year": 1951,
+    "occupation": "First-line supervisors of office and administrative support worker",
+    "id": 1702333264,
+    "person": 1722145730,
+    "place": 602651683,
+    "thing": [
+      1252847612
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Ruby",
+    "breed": "Bulldog",
+    "year": 2005,
+    "id": 918201038,
+    "person": [
+      917680,
+      566346413
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Dodge Grand Caravan",
+    "year": 2014,
+    "id": 492561062,
+    "person": [
+      664592528,
+      402924708
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Lina Morgan",
+    "year": 1954,
+    "occupation": "Licensed practical and licensed vocational nurse",
+    "id": 1319392443,
+    "person": 1457776520,
+    "place": 2106582754,
+    "thing": [
+      1955291317
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Volvo S60",
+    "year": 2015,
+    "id": 1413942469,
+    "person": [
+      1220108870,
+      1731593800
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Chester Evans",
+    "year": 1942,
+    "occupation": "Childcare worker",
+    "id": 1123974473,
+    "person": 833320523,
+    "place": 993239031,
+    "thing": [
+      1696294618
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Rodger Castro",
+    "year": 1989,
+    "occupation": "Customer service representative",
+    "id": 1247409336,
+    "person": 1857794489,
+    "place": 1890672391,
+    "thing": [
+      984254341
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Volkswagen Routan",
+    "year": 2017,
+    "id": 1184677570,
+    "person": [
+      911056398,
+      2134621108
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Alyce Malone",
+    "year": 1979,
+    "occupation": "Heavy and tractor-trailer truck driver",
+    "id": 17186328,
+    "person": 874645756,
+    "place": 990447234,
+    "thing": [
+      937791163
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Audi S4",
+    "year": 2016,
+    "id": 655800523,
+    "person": [
+      1126370745,
+      1405902773
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Cooper",
+    "breed": "Australian Shepherd",
+    "year": 2015,
+    "id": 812123927,
+    "person": [
+      917331301,
+      474488223
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Guadalupe Rodriguez",
+    "year": 1976,
+    "occupation": "Cashier",
+    "id": 1845946058,
+    "person": 1506866979,
+    "place": 148893441,
+    "thing": [
+      1314084759
+    ]
+  },
+  {
+    "type": "place",
+    "name": "2322 W Bay Pl",
+    "id": 771226390,
+    "person": [
+      899053606,
+      1132646670
+    ]
+  },
+  {
+    "type": "place",
+    "name": "2769 W Sunset Ln",
+    "id": 1186626155,
+    "person": [
+      917680,
+      566346413
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Danny Wilkerson",
+    "year": 1965,
+    "occupation": "Team assembler",
+    "id": 797633225,
+    "person": 276321351,
+    "place": 402185367,
+    "thing": [
+      1253086330
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Chad Harper",
+    "year": 1968,
+    "occupation": "First-line supervisors of construction trades and extraction worker",
+    "id": 1081342118,
+    "person": 390949026,
+    "place": 873639746,
+    "thing": [
+      1923276289
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Molly",
+    "breed": "Maltese",
+    "year": 2008,
+    "id": 82838870,
+    "person": [
+      1412716320,
+      172806169
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Infiniti G",
+    "year": 2011,
+    "id": 841854531,
+    "person": [
+      1428461772,
+      976926198
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Honda Pilot",
+    "year": 2012,
+    "id": 1406488261,
+    "person": [
+      404705991,
+      209153121
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Ginger",
+    "breed": "Pembroke Welsh Corgi",
+    "year": 2014,
+    "id": 1056955483,
+    "person": [
+      1613790925,
+      1221483465
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bailey",
+    "breed": "Siberian Husky",
+    "year": 2010,
+    "id": 1300597028,
+    "person": [
+      424224917,
+      680757683
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Ford Focus",
+    "year": 2011,
+    "id": 629755025,
+    "person": [
+      740373372,
+      753054978
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Daryl Hart",
+    "year": 1980,
+    "occupation": "Business operations specialist",
+    "id": 824175981,
+    "person": 54698117,
+    "place": 1867039204,
+    "thing": [
+      1479347736
+    ]
+  },
+  {
+    "type": "place",
+    "name": "3983 E Kahili Ln",
+    "id": 2101028684,
+    "person": [
+      1034434523,
+      1516183733
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Benjamin Patterson",
+    "year": 1965,
+    "occupation": "Business operations specialist",
+    "id": 1808015627,
+    "person": 326143157,
+    "place": 289109895,
+    "thing": [
+      378380544
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Toby",
+    "breed": "Shetland Sheepdog",
+    "year": 2015,
+    "id": 390723518,
+    "person": [
+      150466434,
+      720893591
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Julian Dennis",
+    "year": 1964,
+    "occupation": "Accountants and auditor",
+    "id": 1180231908,
+    "person": 170151514,
+    "place": 1037304670,
+    "thing": [
+      891665995
+    ]
+  },
+  {
+    "type": "place",
+    "name": "82 S Cottonwood Ave",
+    "id": 294846853,
+    "person": [
+      496695037,
+      663954755
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Luna",
+    "breed": "Havanese",
+    "year": 2006,
+    "id": 493398829,
+    "person": [
+      391392093,
+      1255086056
+    ]
+  },
+  {
+    "type": "place",
+    "name": "2140 S Alaska St",
+    "id": 292754756,
+    "person": [
+      1660918044,
+      2087135669
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Leola Trujillo",
+    "year": 1990,
+    "occupation": "Licensed practical and licensed vocational nurse",
+    "id": 745432851,
+    "person": 2051861589,
+    "place": 79751981,
+    "thing": [
+      1745125961
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Helen Myers",
+    "year": 1992,
+    "occupation": "Janitors and cleaner",
+    "id": 405569517,
+    "person": 35272074,
+    "place": 2129004901,
+    "thing": [
+      598277334
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Shadow",
+    "breed": "Siberian Husky",
+    "year": 2005,
+    "id": 385658412,
+    "person": [
+      958168655,
+      62993023
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Zoe",
+    "breed": "Siberian Husky",
+    "year": 2011,
+    "id": 599494751,
+    "person": [
+      2064123657,
+      1239334848
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Daniel Ashley",
+    "year": 1960,
+    "occupation": "Human resource, training, and labor relations specialist",
+    "id": 202008851,
+    "person": 1982987340,
+    "place": 812693531,
+    "thing": [
+      850960697
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Andrew Hamilton",
+    "year": 1942,
+    "occupation": "Bartender",
+    "id": 584985163,
+    "person": 500995871,
+    "place": 292079693,
+    "thing": [
+      609492358
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "GMC Acadia",
+    "year": 2017,
+    "id": 502891012,
+    "person": [
+      86043370,
+      458376884
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bailey",
+    "breed": "Bullmastiff",
+    "year": 2017,
+    "id": 142089967,
+    "person": [
+      706303134,
+      1398370880
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Ram 1500",
+    "year": 2018,
+    "id": 1748364309,
+    "person": [
+      1665603637,
+      776743787
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Andre Hughes",
+    "year": 1980,
+    "occupation": "General and operation manager",
+    "id": 1825444050,
+    "person": 1077924366,
+    "place": 284479189,
+    "thing": [
+      190342217
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Roxy",
+    "breed": "Bulldog",
+    "year": 2014,
+    "id": 44748116,
+    "person": [
+      60450344,
+      764789359
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "GMC Canyon",
+    "year": 2016,
+    "id": 2041974994,
+    "person": [
+      390949026,
+      1081342118
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Carla Ayers",
+    "year": 1990,
+    "occupation": "Bus and truck mechanics and diesel engine specialist",
+    "id": 382817514,
+    "person": 1021255292,
+    "place": 386223303,
+    "thing": [
+      2045797578
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Lincoln MKT",
+    "year": 2018,
+    "id": 2067793382,
+    "person": [
+      1846199342,
+      1480946232
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Max",
+    "breed": "Beagle",
+    "year": 2006,
+    "id": 1338069770,
+    "person": [
+      1079330048,
+      546255197
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Cooper",
+    "breed": "Bernese Mountain Dog",
+    "year": 2014,
+    "id": 1181721676,
+    "person": [
+      1179274655,
+      581662361
+    ]
+  },
+  {
+    "type": "place",
+    "name": "2548 N Center Blvd",
+    "id": 849881144,
+    "person": [
+      1307432217,
+      303417599
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "GMC Sierra 2500",
+    "year": 2014,
+    "id": 1103222225,
+    "person": [
+      1624396412,
+      776866765
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Ervin Griffin",
+    "year": 1985,
+    "occupation": "Team assembler",
+    "id": 950873002,
+    "person": 1579557086,
+    "place": 749596485,
+    "thing": [
+      582192972
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Jackie Beasley",
+    "year": 1964,
+    "occupation": "Secretaries and administrative assistant",
+    "id": 2134621108,
+    "person": 911056398,
+    "place": 1426067525,
+    "thing": [
+      1359585659
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Shirley Crosby",
+    "year": 1962,
+    "occupation": "Medical assistant",
+    "id": 493108236,
+    "person": 1932228536,
+    "place": 3560974,
+    "thing": [
+      3718983
+    ]
+  },
+  {
+    "type": "place",
+    "name": "118 W Maryland St",
+    "id": 78925014,
+    "person": [
+      434013655,
+      1318256817
+    ]
+  },
+  {
+    "type": "place",
+    "name": "3737 N Jackson Ln",
+    "id": 1733963751,
+    "person": [
+      999875108,
+      2067214877
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1531 N Meadow Dr",
+    "id": 1689445893,
+    "person": [
+      391392093,
+      1255086056
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Sophie",
+    "breed": "Vizsla",
+    "year": 2019,
+    "id": 1745125961,
+    "person": [
+      745432851,
+      2051861589
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Toyota Prius Plug-in",
+    "year": 2010,
+    "id": 1614880196,
+    "person": [
+      1412716320,
+      172806169
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Dodge Durango",
+    "year": 2019,
+    "id": 1261824563,
+    "person": [
+      186032700,
+      1457593354
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Bob Ayers",
+    "year": 1992,
+    "occupation": "Retail salesperson",
+    "id": 1021255292,
+    "person": 382817514,
+    "place": 386223303,
+    "thing": [
+      2045797578
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Angel",
+    "breed": "Pomeranian",
+    "year": 2006,
+    "id": 115479667,
+    "person": [
+      1029799909,
+      347269363
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Daisy",
+    "breed": "Boxer",
+    "year": 2012,
+    "id": 1563895323,
+    "person": [
+      602713252,
+      2107153665
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Buick LaCrosse",
+    "year": 2010,
+    "id": 1225451929,
+    "person": [
+      1845946058,
+      1506866979
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Volvo C30",
+    "year": 2014,
+    "id": 1479980365,
+    "person": [
+      2064123657,
+      1239334848
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Rocky",
+    "breed": "Beagle",
+    "year": 2010,
+    "id": 1749778291,
+    "person": [
+      1574158592,
+      2038275063
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1205 N Cypress Ln",
+    "id": 1750798783,
+    "person": [
+      1648966330,
+      906408636
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "MINI Cooper",
+    "year": 2013,
+    "id": 73429027,
+    "person": [
+      1049000107,
+      1508708074
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Oscar",
+    "breed": "Labrador Retriever",
+    "year": 2013,
+    "id": 1125289775,
+    "person": [
+      2003742689,
+      1374423867
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Cadillac Escalade EXT",
+    "year": 2015,
+    "id": 1641899584,
+    "person": [
+      448540101,
+      1770460641
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Philip Ware",
+    "year": 1977,
+    "occupation": "Police and sheriff officer",
+    "id": 2067214877,
+    "person": 999875108,
+    "place": 1733963751,
+    "thing": [
+      1765698113
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Ramona Boone",
+    "year": 1966,
+    "occupation": "Food preparation worker",
+    "id": 448540101,
+    "person": 1770460641,
+    "place": 2002328178,
+    "thing": [
+      261182497
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Russell Sexton",
+    "year": 1955,
+    "occupation": "Counter and rental clerk",
+    "id": 1040331955,
+    "person": 1955240743,
+    "place": 706161525,
+    "thing": [
+      2064023191
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Porsche Boxster",
+    "year": 2019,
+    "id": 1989733183,
+    "person": [
+      2040087400,
+      224830488
+    ]
+  },
+  {
+    "type": "place",
+    "name": "2227 S A St",
+    "id": 1040971368,
+    "person": [
+      1665603637,
+      776743787
+    ]
+  },
+  {
+    "type": "place",
+    "name": "877 W Center Ave",
+    "id": 217772554,
+    "person": [
+      725528975,
+      1593579116
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Zoe",
+    "breed": "Labrador Retriever",
+    "year": 2013,
+    "id": 1775812303,
+    "person": [
+      1488251322,
+      778251887
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Adriana Long",
+    "year": 1992,
+    "occupation": "Maintenance and repair worker",
+    "id": 1297821539,
+    "person": 2081336724,
+    "place": 1284840394,
+    "thing": [
+      970090553
+    ]
+  },
+  {
+    "type": "place",
+    "name": "930 E Pennsylvania Cir",
+    "id": 812693531,
+    "person": [
+      1982987340,
+      202008851
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Anne Graham",
+    "year": 1946,
+    "occupation": "Computer support specialist",
+    "id": 1279989924,
+    "person": 429281124,
+    "place": 637728541,
+    "thing": [
+      1720136358
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Carl Brooks",
+    "year": 1957,
+    "occupation": "Electrician",
+    "id": 466079638,
+    "person": 297607524,
+    "place": 236200264,
+    "thing": [
+      2116581484
+    ]
+  },
+  {
+    "type": "place",
+    "name": "505 W 4th Ln",
+    "id": 402185367,
+    "person": [
+      276321351,
+      797633225
+    ]
+  },
+  {
+    "type": "place",
+    "name": "9138 S Hillside Hwy",
+    "id": 3560974,
+    "person": [
+      493108236,
+      1932228536
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Clifford Williamson",
+    "year": 1991,
+    "occupation": "Nursing aide, orderly, and attendant",
+    "id": 649955794,
+    "person": 1909449920,
+    "place": 977838964,
+    "thing": [
+      19548418
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Iris Little",
+    "year": 1953,
+    "occupation": "Stock clerks and order filler",
+    "id": 933394665,
+    "person": 697234845,
+    "place": 1236376552,
+    "thing": [
+      415408346
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Angel",
+    "breed": "Labrador Retriever",
+    "year": 2015,
+    "id": 723665244,
+    "person": [
+      740373372,
+      753054978
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1456 E Lee Rd",
+    "id": 1047860701,
+    "person": [
+      1284768018,
+      1708977103
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Hyundai Equus",
+    "year": 2019,
+    "id": 387384305,
+    "person": [
+      833320523,
+      1123974473
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1908 S Wood Ln",
+    "id": 1351869672,
+    "person": [
+      1613790925,
+      1221483465
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Maggie",
+    "breed": "Havanese",
+    "year": 2013,
+    "id": 20935203,
+    "person": [
+      124940009,
+      2061639974
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Lauren Campbell",
+    "year": 1990,
+    "occupation": "General and operation manager",
+    "id": 597028536,
+    "person": 1398086293,
+    "place": 775313754,
+    "thing": [
+      940367402
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "GMC Savana 1500",
+    "year": 2018,
+    "id": 1203984538,
+    "person": [
+      1955240743,
+      1040331955
+    ]
+  },
+  {
+    "type": "person",
+    "name": "James Mckenzie",
+    "year": 1942,
+    "occupation": "Freight, stock, and hand material mover laborer",
+    "id": 940964250,
+    "person": 1920185607,
+    "place": 788611973,
+    "thing": [
+      582192966
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bailey",
+    "breed": "Labrador Retriever",
+    "year": 2005,
+    "id": 1696294618,
+    "person": [
+      833320523,
+      1123974473
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Andrew Newman",
+    "year": 1954,
+    "occupation": "Food preparation worker",
+    "id": 924684268,
+    "person": 1089266629,
+    "place": 1857285204,
+    "thing": [
+      1753979342
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Ernest Hill",
+    "year": 1954,
+    "occupation": "Medical secretarie",
+    "id": 385040835,
+    "person": 107048568,
+    "place": 328966460,
+    "thing": [
+      682939732
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Molly",
+    "breed": "Border Collie",
+    "year": 2011,
+    "id": 1665495363,
+    "person": [
+      1271452819,
+      1944091206
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Subaru Outback",
+    "year": 2013,
+    "id": 784056935,
+    "person": [
+      1835157098,
+      641942911
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Elsie Avery",
+    "year": 1950,
+    "occupation": "Social and human service assistant",
+    "id": 1159663810,
+    "person": 525700305,
+    "place": 302350283,
+    "thing": [
+      697078513
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Laurie Jones",
+    "year": 1975,
+    "occupation": "Correctional officers and jailer",
+    "id": 931779467,
+    "person": 479434466,
+    "place": 1459769718,
+    "thing": [
+      830395628
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Dennis Parks",
+    "year": 1967,
+    "occupation": "Janitors and cleaner",
+    "id": 2028854589,
+    "person": 1358018191,
+    "place": 1050691799,
+    "thing": [
+      195657244
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Audi S5",
+    "year": 2011,
+    "id": 656724039,
+    "person": [
+      931779467,
+      479434466
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Rocky",
+    "breed": "Boston Terrier",
+    "year": 2007,
+    "id": 67213877,
+    "person": [
+      1665603637,
+      776743787
+    ]
+  },
+  {
+    "type": "place",
+    "name": "4450 E 10th St",
+    "id": 895150258,
+    "person": [
+      2040087400,
+      224830488
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Derek Howell",
+    "year": 1948,
+    "occupation": "Light truck or delivery service driver",
+    "id": 976926198,
+    "person": 1428461772,
+    "place": 1478057715,
+    "thing": [
+      1244493334
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Cody",
+    "breed": "Siberian Husky",
+    "year": 2010,
+    "id": 2124609679,
+    "person": [
+      1794434842,
+      104144369
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Max",
+    "breed": "Poodle",
+    "year": 2007,
+    "id": 2045797578,
+    "person": [
+      382817514,
+      1021255292
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Mary Wright",
+    "year": 1952,
+    "occupation": "Office clerk",
+    "id": 1186157905,
+    "person": 1631139334,
+    "place": 751854142,
+    "thing": [
+      942440333
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Coco",
+    "breed": "Golden Retriever",
+    "year": 2016,
+    "id": 582192966,
+    "person": [
+      1920185607,
+      940964250
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Hyundai Sonata",
+    "year": 2015,
+    "id": 1926826460,
+    "person": [
+      1186157905,
+      1631139334
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Julie Wilkerson",
+    "year": 1966,
+    "occupation": "Cashier",
+    "id": 276321351,
+    "person": 797633225,
+    "place": 402185367,
+    "thing": [
+      1253086330
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Shannon Flynn",
+    "year": 1959,
+    "occupation": "Secretaries and administrative assistant",
+    "id": 1508708074,
+    "person": 1049000107,
+    "place": 1380108682,
+    "thing": [
+      2056405039
+    ]
+  },
+  {
+    "type": "place",
+    "name": "601 E 12th St",
+    "id": 947149096,
+    "person": [
+      1225108477,
+      1394695752
+    ]
+  },
+  {
+    "type": "place",
+    "name": "5004 S Quail Pl",
+    "id": 1284840394,
+    "person": [
+      1297821539,
+      2081336724
+    ]
+  },
+  {
+    "type": "person",
+    "name": "James Mills",
+    "year": 1967,
+    "occupation": "Maintenance and repair worker",
+    "id": 720802012,
+    "person": 847852605,
+    "place": 1910979492,
+    "thing": [
+      1368006665
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Jaguar XJ",
+    "year": 2016,
+    "id": 286544575,
+    "person": [
+      1279989924,
+      429281124
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Virgil Browning",
+    "year": 1960,
+    "occupation": "Stock clerks and order filler",
+    "id": 1857335677,
+    "person": 446773028,
+    "place": 563482725,
+    "thing": [
+      1670039638
+    ]
+  },
+  {
+    "type": "place",
+    "name": "3114 N Maine Ln",
+    "id": 264726361,
+    "person": [
+      1753806698,
+      908489520
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Samson",
+    "breed": "Weimaraner",
+    "year": 2014,
+    "id": 697078513,
+    "person": [
+      1159663810,
+      525700305
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Suzuki SX4",
+    "year": 2012,
+    "id": 1700385783,
+    "person": [
+      235922088,
+      1417625672
+    ]
+  },
+  {
+    "type": "place",
+    "name": "174 E Elm Blvd",
+    "id": 324284927,
+    "person": [
+      1517584908,
+      837826356
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Joe Jones",
+    "year": 1976,
+    "occupation": "Office clerk",
+    "id": 479434466,
+    "person": 931779467,
+    "place": 1459769718,
+    "thing": [
+      830395628
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Volkswagen Routan",
+    "year": 2013,
+    "id": 1184677566,
+    "person": [
+      446773028,
+      1857335677
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bella",
+    "breed": "Maltese",
+    "year": 2015,
+    "id": 244435647,
+    "person": [
+      1753806698,
+      908489520
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1141 E Highland Blvd",
+    "id": 1795867661,
+    "person": [
+      1650465417,
+      1355729661
+    ]
+  },
+  {
+    "type": "place",
+    "name": "340 S Hawaii Rd",
+    "id": 1745758895,
+    "person": [
+      2064123657,
+      1239334848
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Cindy Whitney",
+    "year": 1991,
+    "occupation": "Retail salesperson",
+    "id": 1376124963,
+    "person": 662388667,
+    "place": 617489456,
+    "thing": [
+      903515323
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Sherri Baker",
+    "year": 1961,
+    "occupation": "Bookkeeping, accounting, and auditing clerk",
+    "id": 1665603637,
+    "person": 776743787,
+    "place": 1040971368,
+    "thing": [
+      67213877
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Buddy",
+    "breed": "Australian Shepherd",
+    "year": 2005,
+    "id": 1283586430,
+    "person": [
+      459637496,
+      314743289
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Zoe",
+    "breed": "Siberian Husky",
+    "year": 2009,
+    "id": 599494728,
+    "person": [
+      790825056,
+      838756419
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Mollie Williams",
+    "year": 1967,
+    "occupation": "Licensed practical and licensed vocational nurse",
+    "id": 1029799909,
+    "person": 347269363,
+    "place": 998539975,
+    "thing": [
+      115479667
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Tesla Model S",
+    "year": 2010,
+    "id": 1696704976,
+    "person": [
+      1650465417,
+      1355729661
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Sophie",
+    "breed": "Rhodesian Ridgeback",
+    "year": 2017,
+    "id": 2034058883,
+    "person": [
+      1517584908,
+      837826356
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Merle Johnson",
+    "year": 1950,
+    "occupation": "Customer service representative",
+    "id": 95499299,
+    "person": 1386403796,
+    "place": 1015893048,
+    "thing": [
+      1824987364
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bear",
+    "breed": "Great Dane",
+    "year": 2007,
+    "id": 378380544,
+    "person": [
+      326143157,
+      1808015627
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Ralph Mendoza",
+    "year": 1960,
+    "occupation": "Combined food preparation and serving worker",
+    "id": 474488223,
+    "person": 917331301,
+    "place": 1966499148,
+    "thing": [
+      812123927
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Max",
+    "breed": "Siberian Husky",
+    "year": 2007,
+    "id": 415408346,
+    "person": [
+      933394665,
+      697234845
+    ]
+  },
+  {
+    "type": "place",
+    "name": "5715 N Pecan Dr",
+    "id": 148893441,
+    "person": [
+      1845946058,
+      1506866979
+    ]
+  },
+  {
+    "type": "place",
+    "name": "6790 E Arizona Pl",
+    "id": 146006881,
+    "person": [
+      1801347144,
+      501806103
+    ]
+  },
+  {
+    "type": "place",
+    "name": "5521 W Colorado Dr",
+    "id": 1673182757,
+    "person": [
+      1428390315,
+      14922755
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Justin Herman",
+    "year": 1953,
+    "occupation": "Management analyst",
+    "id": 2061639974,
+    "person": 124940009,
+    "place": 602041597,
+    "thing": [
+      20935203
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Tamika Ware",
+    "year": 1975,
+    "occupation": "Registered nurse",
+    "id": 999875108,
+    "person": 2067214877,
+    "place": 1733963751,
+    "thing": [
+      1765698113
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Chloe",
+    "breed": "Pembroke Welsh Corgi",
+    "year": 2018,
+    "id": 1157176606,
+    "person": [
+      1938480144,
+      2046072645
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Douglas Ramsey",
+    "year": 1981,
+    "occupation": "First-line supervisors of retail sales worker",
+    "id": 1221483465,
+    "person": 1613790925,
+    "place": 1351869672,
+    "thing": [
+      1056955483
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Tanisha Alston",
+    "year": 1986,
+    "occupation": "Helpers--production worker",
+    "id": 1271452819,
+    "person": 1944091206,
+    "place": 2607834,
+    "thing": [
+      1665495363
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Gloria Long",
+    "year": 1973,
+    "occupation": "Computer system analyst",
+    "id": 1079330048,
+    "person": 546255197,
+    "place": 1195270622,
+    "thing": [
+      1338069770
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Simone Williamson",
+    "year": 1991,
+    "occupation": "Executive secretaries and executive administrative assistant",
+    "id": 1909449920,
+    "person": 649955794,
+    "place": 977838964,
+    "thing": [
+      19548418
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Ada Boyd",
+    "year": 1951,
+    "occupation": "First-line supervisors of office and administrative support worker",
+    "id": 1043954594,
+    "person": 2141678794,
+    "place": 172111528,
+    "thing": [
+      555888655
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Aston Martin V8 Vantage S",
+    "year": 2019,
+    "id": 198657745,
+    "person": [
+      1574158592,
+      2038275063
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Ram 2500",
+    "year": 2016,
+    "id": 5553976,
+    "person": [
+      597028536,
+      1398086293
+    ]
+  },
+  {
+    "type": "person",
+    "name": "David Williams",
+    "year": 1948,
+    "occupation": "First-line supervisors of retail sales worker",
+    "id": 1483109544,
+    "person": 1770935453,
+    "place": 518268892,
+    "thing": [
+      1476404001
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Craig Hernandez",
+    "year": 1959,
+    "occupation": "Janitors and cleaner",
+    "id": 1708977103,
+    "person": 1284768018,
+    "place": 1047860701,
+    "thing": [
+      351484177
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Norman Shelton",
+    "year": 1982,
+    "occupation": "Bus and truck mechanics and diesel engine specialist",
+    "id": 753054978,
+    "person": 740373372,
+    "place": 1744672775,
+    "thing": [
+      723665244
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1244 W Evergreen St",
+    "id": 328966460,
+    "person": [
+      107048568,
+      385040835
+    ]
+  },
+  {
+    "type": "place",
+    "name": "644 E Holly Dr",
+    "id": 1979169343,
+    "person": [
+      459637496,
+      314743289
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bailey",
+    "breed": "Yorkshire Terrier",
+    "year": 2005,
+    "id": 1244493334,
+    "person": [
+      1801347144,
+      501806103
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Winston",
+    "breed": "Golden Retriever",
+    "year": 2012,
+    "id": 609492358,
+    "person": [
+      500995871,
+      584985163
+    ]
+  },
+  {
+    "type": "place",
+    "name": "651 E Lee St",
+    "id": 514528130,
+    "person": [
+      1794434842,
+      104144369
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Trevor Herrera",
+    "year": 1995,
+    "occupation": "Medical secretarie",
+    "id": 566346413,
+    "person": 917680,
+    "place": 1186626155,
+    "thing": [
+      918201038
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Ginger",
+    "breed": "French Bulldog",
+    "year": 2006,
+    "id": 2056405039,
+    "person": [
+      1049000107,
+      1508708074
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Olivia Herman",
+    "year": 1953,
+    "occupation": "Computer system analyst",
+    "id": 124940009,
+    "person": 2061639974,
+    "place": 602041597,
+    "thing": [
+      20935203
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Clyde Gray",
+    "year": 1972,
+    "occupation": "General and operation manager",
+    "id": 2087135669,
+    "person": 1660918044,
+    "place": 292754756,
+    "thing": [
+      1417982825
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Laura Williams",
+    "year": 1993,
+    "occupation": "Retail salesperson",
+    "id": 511772611,
+    "person": 1969752693,
+    "place": 484252448,
+    "thing": [
+      387215331
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Mazda Mazda3",
+    "year": 2018,
+    "id": 1233554126,
+    "person": [
+      917680,
+      566346413
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Israel Romero",
+    "year": 1990,
+    "occupation": "Construction laborer",
+    "id": 1318256817,
+    "person": 434013655,
+    "place": 78925014,
+    "thing": [
+      2049808923
+    ]
+  },
+  {
+    "type": "place",
+    "name": "2653 N Mississippi Blvd",
+    "id": 2129004901,
+    "person": [
+      405569517,
+      35272074
+    ]
+  },
+  {
+    "type": "place",
+    "name": "179 W Wood Ln",
+    "id": 464667647,
+    "person": [
+      462412686,
+      1702415829
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Daisy Roberts",
+    "year": 1992,
+    "occupation": "Freight, stock, and hand material mover laborer",
+    "id": 1624396412,
+    "person": 776866765,
+    "place": 1576442658,
+    "thing": [
+      303760140
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Audi A3",
+    "year": 2015,
+    "id": 139552283,
+    "person": [
+      790825056,
+      838756419
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Winifred Hughes",
+    "year": 1979,
+    "occupation": "First-line supervisors of food preparation and serving worker",
+    "id": 1077924366,
+    "person": 1825444050,
+    "place": 284479189,
+    "thing": [
+      190342217
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Renee Ramsey",
+    "year": 1985,
+    "occupation": "Firefighter",
+    "id": 1613790925,
+    "person": 1221483465,
+    "place": 1351869672,
+    "thing": [
+      1056955483
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Alejandro Simmons",
+    "year": 1965,
+    "occupation": "Heavy and tractor-trailer truck driver",
+    "id": 2038275063,
+    "person": 1574158592,
+    "place": 1657618137,
+    "thing": [
+      1749778291
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Zeus",
+    "breed": "Poodle",
+    "year": 2015,
+    "id": 71661832,
+    "person": [
+      664592528,
+      402924708
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Benjamin Henderson",
+    "year": 1986,
+    "occupation": "Retail salesperson",
+    "id": 1417625672,
+    "person": 235922088,
+    "place": 2036265648,
+    "thing": [
+      1335088542
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Candice Williams",
+    "year": 1951,
+    "occupation": "Registered nurse",
+    "id": 1770935453,
+    "person": 1483109544,
+    "place": 518268892,
+    "thing": [
+      1476404001
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bella",
+    "breed": "German Shepherd",
+    "year": 2019,
+    "id": 1602661615,
+    "person": [
+      1222179273,
+      1128457737
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Ernestine Becker",
+    "year": 1956,
+    "occupation": "Combined food preparation and serving worker",
+    "id": 1794434842,
+    "person": 104144369,
+    "place": 514528130,
+    "thing": [
+      2124609679
+    ]
+  },
+  {
+    "type": "place",
+    "name": "4110 E Minnesota Ave",
+    "id": 1949879581,
+    "person": [
+      22172642,
+      439863270
+    ]
+  },
+  {
+    "type": "place",
+    "name": "5793 W Mountain View Rd",
+    "id": 1657618137,
+    "person": [
+      1574158592,
+      2038275063
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Miranda Sanchez",
+    "year": 1946,
+    "occupation": "Customer service representative",
+    "id": 186032700,
+    "person": 1457593354,
+    "place": 622672538,
+    "thing": [
+      2099528457
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Oliver",
+    "breed": "Siberian Husky",
+    "year": 2018,
+    "id": 671894285,
+    "person": [
+      1800895323,
+      314822045
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Doris Mendoza",
+    "year": 1959,
+    "occupation": "Middle school teacher",
+    "id": 917331301,
+    "person": 474488223,
+    "place": 1966499148,
+    "thing": [
+      812123927
+    ]
+  },
+  {
+    "type": "place",
+    "name": "4414 E Wyoming St",
+    "id": 728305399,
+    "person": [
+      86043370,
+      458376884
+    ]
+  },
+  {
+    "type": "place",
+    "name": "2977 N Church Pl",
+    "id": 1459769718,
+    "person": [
+      931779467,
+      479434466
+    ]
+  },
+  {
+    "type": "place",
+    "name": "12 N Pinon Ln",
+    "id": 1508157921,
+    "person": [
+      1546002675,
+      710971083
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Jimmy West",
+    "year": 1946,
+    "occupation": "Teller",
+    "id": 1070298817,
+    "person": 955325743,
+    "place": 1620997412,
+    "thing": [
+      851756389
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Larry Nichols",
+    "year": 1965,
+    "occupation": "Middle school teacher",
+    "id": 2107153665,
+    "person": 602713252,
+    "place": 1251970339,
+    "thing": [
+      1563895323
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Cooper",
+    "breed": "Yorkshire Terrier",
+    "year": 2017,
+    "id": 1686508967,
+    "person": [
+      2060049522,
+      1360515836
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Lincoln MKT",
+    "year": 2012,
+    "id": 2067793388,
+    "person": [
+      1649771746,
+      383614273
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Irma Simmons",
+    "year": 1963,
+    "occupation": "General and operation manager",
+    "id": 1574158592,
+    "person": 2038275063,
+    "place": 1657618137,
+    "thing": [
+      1749778291
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Maggie",
+    "breed": "Poodle",
+    "year": 2009,
+    "id": 1255061340,
+    "person": [
+      1428390315,
+      14922755
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Rosemary Bryan",
+    "year": 1974,
+    "occupation": "Application Software developer",
+    "id": 1034434523,
+    "person": 1516183733,
+    "place": 2101028684,
+    "thing": [
+      1622937600
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Stewart Barrett",
+    "year": 1959,
+    "occupation": "Restaurant Cook",
+    "id": 9422686,
+    "person": 466683411,
+    "place": 1918709880,
+    "thing": [
+      257310548
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Delores Mills",
+    "year": 1968,
+    "occupation": "Registered nurse",
+    "id": 847852605,
+    "person": 720802012,
+    "place": 1910979492,
+    "thing": [
+      1368006665
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bailey",
+    "breed": "French Bulldog",
+    "year": 2011,
+    "id": 2064023191,
+    "person": [
+      1955240743,
+      1040331955
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bella",
+    "breed": "German Shepherd",
+    "year": 2008,
+    "id": 1602661647,
+    "person": [
+      1225108477,
+      1394695752
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Honda Insight",
+    "year": 2018,
+    "id": 1312619809,
+    "person": [
+      323427336,
+      44692143
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Nissan Quest",
+    "year": 2013,
+    "id": 1412582038,
+    "person": [
+      620034230,
+      930199512
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bailey",
+    "breed": "Havanese",
+    "year": 2016,
+    "id": 732823846,
+    "person": [
+      1126370745,
+      1405902773
+    ]
+  },
+  {
+    "type": "place",
+    "name": "7267 W 9th Ln",
+    "id": 2106582754,
+    "person": [
+      1319392443,
+      1457776520
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Ruth Bishop",
+    "year": 1970,
+    "occupation": "Elementary school teacher",
+    "id": 1994331129,
+    "person": 437600097,
+    "place": 110637548,
+    "thing": [
+      1696294622
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Teddy",
+    "breed": "Labrador Retriever",
+    "year": 2013,
+    "id": 1093690185,
+    "person": [
+      1650465417,
+      1355729661
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Ferrari 458 Italia",
+    "year": 2016,
+    "id": 1873365633,
+    "person": [
+      1982987340,
+      202008851
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Hugh Rose",
+    "year": 1977,
+    "occupation": "Customer service representative",
+    "id": 1196028425,
+    "person": 1657630308,
+    "place": 566053111,
+    "thing": [
+      87477319
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Cody",
+    "breed": "Beagle",
+    "year": 2017,
+    "id": 970090553,
+    "person": [
+      1297821539,
+      2081336724
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bella",
+    "breed": "Bernese Mountain Dog",
+    "year": 2018,
+    "id": 830395628,
+    "person": [
+      931779467,
+      479434466
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Beth Herrera",
+    "year": 1993,
+    "occupation": "Office clerk",
+    "id": 917680,
+    "person": 566346413,
+    "place": 1186626155,
+    "thing": [
+      918201038
+    ]
+  },
+  {
+    "type": "place",
+    "name": "3192 S Florida Pl",
+    "id": 193610283,
+    "person": [
+      1754290032,
+      483683625
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Rosemarie Austin",
+    "year": 1969,
+    "occupation": "Cafeteria, food concession and coffee shop counter attendant",
+    "id": 899053606,
+    "person": 1132646670,
+    "place": 771226390,
+    "thing": [
+      455199599
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Lucy",
+    "breed": "Mastiff",
+    "year": 2006,
+    "id": 850960697,
+    "person": [
+      1982987340,
+      202008851
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Gabrielle Wright",
+    "year": 1966,
+    "occupation": "First-line supervisors of construction trades and extraction worker",
+    "id": 2060049522,
+    "person": 1360515836,
+    "place": 963482655,
+    "thing": [
+      1686508967
+    ]
+  },
+  {
+    "type": "place",
+    "name": "557 S West Virginia Pl",
+    "id": 664150180,
+    "person": [
+      1275684673,
+      1426349116
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Land Rover Range Rover Sport",
+    "year": 2012,
+    "id": 1323702439,
+    "person": [
+      434013655,
+      1318256817
+    ]
+  },
+  {
+    "type": "place",
+    "name": "731 W Jackson Blvd",
+    "id": 1260580039,
+    "person": [
+      1179274655,
+      581662361
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Chevrolet Tahoe",
+    "year": 2011,
+    "id": 1518817623,
+    "person": [
+      1386403796,
+      95499299
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Lisa Wall",
+    "year": 1950,
+    "occupation": "Janitors and cleaner",
+    "id": 150466434,
+    "person": 720893591,
+    "place": 149119165,
+    "thing": [
+      390723518
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Jake",
+    "breed": "Beagle",
+    "year": 2018,
+    "id": 2081509016,
+    "person": [
+      1649771746,
+      383614273
+    ]
+  },
+  {
+    "type": "place",
+    "name": "126 E Shore Ave",
+    "id": 1050691799,
+    "person": [
+      1358018191,
+      2028854589
+    ]
+  },
+  {
+    "type": "place",
+    "name": "189 S Lakeview Rd",
+    "id": 602651683,
+    "person": [
+      1722145730,
+      1702333264
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Amy Gray",
+    "year": 1975,
+    "occupation": "Retail salesperson",
+    "id": 1660918044,
+    "person": 2087135669,
+    "place": 292754756,
+    "thing": [
+      1417982825
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Marvin Hutchinson",
+    "year": 1944,
+    "occupation": "Secretaries and administrative assistant",
+    "id": 837826356,
+    "person": 1517584908,
+    "place": 324284927,
+    "thing": [
+      2034058883
+    ]
+  },
+  {
+    "type": "place",
+    "name": "745 E A St",
+    "id": 800255459,
+    "person": [
+      1649771746,
+      383614273
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Jeep Compass",
+    "year": 2011,
+    "id": 1627561718,
+    "person": [
+      999875108,
+      2067214877
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bella",
+    "breed": "Yorkshire Terrier",
+    "year": 2005,
+    "id": 262907202,
+    "person": [
+      1964534029,
+      1888508173
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Marion Stone",
+    "year": 1945,
+    "occupation": "Landscaping and groundskeeping worker",
+    "id": 60450344,
+    "person": 764789359,
+    "place": 443667505,
+    "thing": [
+      44748116
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Larry Aguilar",
+    "year": 1959,
+    "occupation": "Computer support specialist",
+    "id": 680757683,
+    "person": 424224917,
+    "place": 1043548365,
+    "thing": [
+      1300597028
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Gilbert Collins",
+    "year": 1973,
+    "occupation": "Personal care aide",
+    "id": 710971083,
+    "person": 1546002675,
+    "place": 1508157921,
+    "thing": [
+      1305859030
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Patricia Hart",
+    "year": 1981,
+    "occupation": "First-line supervisors of retail sales worker",
+    "id": 54698117,
+    "person": 824175981,
+    "place": 1867039204,
+    "thing": [
+      1479347736
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Claudette Henderson",
+    "year": 1990,
+    "occupation": "Bookkeeping, accounting, and auditing clerk",
+    "id": 235922088,
+    "person": 1417625672,
+    "place": 2036265648,
+    "thing": [
+      1335088542
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Nicole Hill",
+    "year": 1954,
+    "occupation": "Medical assistant",
+    "id": 107048568,
+    "person": 385040835,
+    "place": 328966460,
+    "thing": [
+      682939732
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Ford F-Series Super Duty",
+    "year": 2017,
+    "id": 451863012,
+    "person": [
+      1546002675,
+      710971083
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Patrica Torres",
+    "year": 1965,
+    "occupation": "Dining room, cafeteria attendants and bartender helper",
+    "id": 1801347144,
+    "person": 501806103,
+    "place": 146006881,
+    "thing": [
+      1244493334
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Jane Reid",
+    "year": 1975,
+    "occupation": "Secretaries and administrative assistant",
+    "id": 1648966330,
+    "person": 906408636,
+    "place": 1750798783,
+    "thing": [
+      1064872717
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "BMW 5 Series",
+    "year": 2019,
+    "id": 1342263036,
+    "person": [
+      320841014,
+      1932400624
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Stella",
+    "breed": "Australian Shepherd",
+    "year": 2013,
+    "id": 1252847612,
+    "person": [
+      1722145730,
+      1702333264
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Subaru Tribeca",
+    "year": 2019,
+    "id": 1358603510,
+    "person": [
+      54698117,
+      824175981
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Suzuki Equator",
+    "year": 2011,
+    "id": 757217816,
+    "person": [
+      462412686,
+      1702415829
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Kristy Mitchell",
+    "year": 1994,
+    "occupation": "Registered nurse",
+    "id": 1202480427,
+    "person": 1258613966,
+    "place": 98995015,
+    "thing": [
+      1185169939
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Dale Little",
+    "year": 1950,
+    "occupation": "Nursing aide, orderly, and attendant",
+    "id": 697234845,
+    "person": 933394665,
+    "place": 1236376552,
+    "thing": [
+      415408346
+    ]
+  },
+  {
+    "type": "place",
+    "name": "2065 N Oak Ave",
+    "id": 110637548,
+    "person": [
+      1994331129,
+      437600097
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Alvin Campbell",
+    "year": 1992,
+    "occupation": "Registered nurse",
+    "id": 1398086293,
+    "person": 597028536,
+    "place": 775313754,
+    "thing": [
+      940367402
+    ]
+  },
+  {
+    "type": "place",
+    "name": "877 S 8th Hwy",
+    "id": 963482655,
+    "person": [
+      2060049522,
+      1360515836
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Lillian Miller",
+    "year": 1975,
+    "occupation": "Waiters and waitresse",
+    "id": 1835157098,
+    "person": 641942911,
+    "place": 1406183220,
+    "thing": [
+      1355175918
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Sandra Flores",
+    "year": 1959,
+    "occupation": "Maintenance and repair worker",
+    "id": 664592528,
+    "person": 402924708,
+    "place": 214537866,
+    "thing": [
+      71661832
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Jimmy Lara",
+    "year": 1986,
+    "occupation": "Customer service representative",
+    "id": 1932400624,
+    "person": 320841014,
+    "place": 1248992650,
+    "thing": [
+      2110078769
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Linda Collins",
+    "year": 1972,
+    "occupation": "Accountants and auditor",
+    "id": 1546002675,
+    "person": 710971083,
+    "place": 1508157921,
+    "thing": [
+      1305859030
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Jeanette Nichols",
+    "year": 1964,
+    "occupation": "Food preparation worker",
+    "id": 602713252,
+    "person": 2107153665,
+    "place": 1251970339,
+    "thing": [
+      1563895323
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Theodore Chambers",
+    "year": 1948,
+    "occupation": "Elementary school teacher",
+    "id": 2046072645,
+    "person": 1938480144,
+    "place": 1693427582,
+    "thing": [
+      1157176606
+    ]
+  },
+  {
+    "type": "place",
+    "name": "2566 N Oklahoma Rd",
+    "id": 1239083977,
+    "person": [
+      323427336,
+      44692143
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Max",
+    "breed": "English Springer Spaniel",
+    "year": 2008,
+    "id": 1253086330,
+    "person": [
+      276321351,
+      797633225
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Mercedes-Benz GL-Class",
+    "year": 2014,
+    "id": 1972768949,
+    "person": [
+      170151514,
+      1180231908
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Oscar",
+    "breed": "West Highland White Terrier",
+    "year": 2012,
+    "id": 1206840741,
+    "person": [
+      323427336,
+      44692143
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1871 S New Mexico St",
+    "id": 484252448,
+    "person": [
+      511772611,
+      1969752693
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Ford F450",
+    "year": 2019,
+    "id": 1416833492,
+    "person": [
+      1034434523,
+      1516183733
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Gracie",
+    "breed": "Rottweiler",
+    "year": 2019,
+    "id": 579866454,
+    "person": [
+      701353863,
+      2031407363
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Nissan Armada",
+    "year": 2010,
+    "id": 984056055,
+    "person": [
+      1994331129,
+      437600097
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Mitsubishi Outlander Sport",
+    "year": 2014,
+    "id": 1407479854,
+    "person": [
+      1857794489,
+      1247409336
+    ]
+  },
+  {
+    "type": "place",
+    "name": "4330 N Pleasant Ave",
+    "id": 1756360434,
+    "person": [
+      1126370745,
+      1405902773
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Ginger Johnson",
+    "year": 1952,
+    "occupation": "Nursing aide, orderly, and attendant",
+    "id": 1386403796,
+    "person": 95499299,
+    "place": 1015893048,
+    "thing": [
+      1824987364
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Elaine Lindsey",
+    "year": 1951,
+    "occupation": "First-line supervisors of mechanic, installer, and repairer",
+    "id": 1722145730,
+    "person": 1702333264,
+    "place": 602651683,
+    "thing": [
+      1252847612
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Evelyn Harper",
+    "year": 1969,
+    "occupation": "Home health aide",
+    "id": 390949026,
+    "person": 1081342118,
+    "place": 873639746,
+    "thing": [
+      1923276289
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Deanna Parks",
+    "year": 1965,
+    "occupation": "Firefighter",
+    "id": 1358018191,
+    "person": 2028854589,
+    "place": 1050691799,
+    "thing": [
+      195657244
+    ]
+  },
+  {
+    "type": "place",
+    "name": "107 S South Carolina Ave",
+    "id": 1271642211,
+    "person": [
+      1220108870,
+      1731593800
+    ]
+  },
+  {
+    "type": "place",
+    "name": "475 E Kansas Cir",
+    "id": 873639746,
+    "person": [
+      390949026,
+      1081342118
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Jeff Gray",
+    "year": 1977,
+    "occupation": "Customer service representative",
+    "id": 908489520,
+    "person": 1753806698,
+    "place": 264726361,
+    "thing": [
+      244435647
+    ]
+  },
+  {
+    "type": "person",
+    "name": "John Miller",
+    "year": 1972,
+    "occupation": "Freight, stock, and hand material mover laborer",
+    "id": 641942911,
+    "person": 1835157098,
+    "place": 1406183220,
+    "thing": [
+      1355175918
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Lawrence Myers",
+    "year": 1992,
+    "occupation": "Packers and packager",
+    "id": 35272074,
+    "person": 405569517,
+    "place": 2129004901,
+    "thing": [
+      598277334
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Lamborghini Gallardo",
+    "year": 2012,
+    "id": 1097566975,
+    "person": [
+      701353863,
+      2031407363
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Belinda Poole",
+    "year": 1963,
+    "occupation": "Medical assistant",
+    "id": 701353863,
+    "person": 2031407363,
+    "place": 210897362,
+    "thing": [
+      579866454
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1997 W 6th Rd",
+    "id": 706161525,
+    "person": [
+      1955240743,
+      1040331955
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1877 S Utah Rd",
+    "id": 2607834,
+    "person": [
+      1271452819,
+      1944091206
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Ford F150",
+    "year": 2012,
+    "id": 1245677558,
+    "person": [
+      1801347144,
+      501806103
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Mercedes-Benz SLK-Class",
+    "year": 2010,
+    "id": 1754356352,
+    "person": [
+      1753806698,
+      908489520
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Ross Mercer",
+    "year": 1984,
+    "occupation": "Office clerk",
+    "id": 1355729661,
+    "person": 1650465417,
+    "place": 1795867661,
+    "thing": [
+      1093690185
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Jeep Compass",
+    "year": 2014,
+    "id": 1627561721,
+    "person": [
+      382817514,
+      1021255292
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1027 W Alabama St",
+    "id": 1251970339,
+    "person": [
+      602713252,
+      2107153665
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "GMC Savana 1500",
+    "year": 2014,
+    "id": 1203984534,
+    "person": [
+      1909449920,
+      649955794
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Celia Barrett",
+    "year": 1963,
+    "occupation": "Restaurant, lounge, and coffee shop hosts and hostesses,",
+    "id": 466683411,
+    "person": 9422686,
+    "place": 1918709880,
+    "thing": [
+      257310548
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Whitney Brooks",
+    "year": 1957,
+    "occupation": "Middle school teacher",
+    "id": 297607524,
+    "person": 466079638,
+    "place": 236200264,
+    "thing": [
+      2116581484
+    ]
+  },
+  {
+    "type": "person",
+    "name": "David Bass",
+    "year": 1988,
+    "occupation": "First-line supervisors of office and administrative support worker",
+    "id": 1888508173,
+    "person": 1964534029,
+    "place": 1957866520,
+    "thing": [
+      262907202
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Mercedes-Benz GLK-Class",
+    "year": 2018,
+    "id": 980225148,
+    "person": [
+      1275684673,
+      1426349116
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Maggie",
+    "breed": "German Shorthaired Pointer",
+    "year": 2009,
+    "id": 1427918505,
+    "person": [
+      496695037,
+      663954755
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Flora Collins",
+    "year": 1986,
+    "occupation": "Stock clerks and order filler",
+    "id": 790825056,
+    "person": 838756419,
+    "place": 11552427,
+    "thing": [
+      599494728
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1061 S Texas Rd",
+    "id": 1966499148,
+    "person": [
+      917331301,
+      474488223
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Dodge Challenger",
+    "year": 2018,
+    "id": 341003645,
+    "person": [
+      1488251322,
+      778251887
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Jimmy Malone",
+    "year": 1977,
+    "occupation": "Food preparation worker",
+    "id": 874645756,
+    "person": 17186328,
+    "place": 990447234,
+    "thing": [
+      937791163
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Neil Baker",
+    "year": 1960,
+    "occupation": "Customer service representative",
+    "id": 776743787,
+    "person": 1665603637,
+    "place": 1040971368,
+    "thing": [
+      67213877
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Jake",
+    "breed": "Doberman Pinscher",
+    "year": 2019,
+    "id": 555888655,
+    "person": [
+      1043954594,
+      2141678794
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Ford Expedition",
+    "year": 2017,
+    "id": 1255255914,
+    "person": [
+      1660918044,
+      2087135669
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Jose Whitney",
+    "year": 1988,
+    "occupation": "Bus and truck mechanics and diesel engine specialist",
+    "id": 662388667,
+    "person": 1376124963,
+    "place": 617489456,
+    "thing": [
+      903515323
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Pam Newman",
+    "year": 1954,
+    "occupation": "Electrician",
+    "id": 1089266629,
+    "person": 924684268,
+    "place": 1857285204,
+    "thing": [
+      1753979342
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Duke",
+    "breed": "Labrador Retriever",
+    "year": 2018,
+    "id": 351484177,
+    "person": [
+      1284768018,
+      1708977103
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Ryan Mitchell",
+    "year": 1973,
+    "occupation": "Medical secretarie",
+    "id": 1731593800,
+    "person": 1220108870,
+    "place": 1271642211,
+    "thing": [
+      71775118
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Douglas Gallegos",
+    "year": 1970,
+    "occupation": "Registered nurse",
+    "id": 1398370880,
+    "person": 706303134,
+    "place": 489414786,
+    "thing": [
+      142089967
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1512 W Mesquite St",
+    "id": 751854142,
+    "person": [
+      1186157905,
+      1631139334
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Sara Coleman",
+    "year": 1974,
+    "occupation": "General and operation manager",
+    "id": 1222179273,
+    "person": 1128457737,
+    "place": 408357485,
+    "thing": [
+      1602661615
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Suzuki SX4",
+    "year": 2015,
+    "id": 1700385780,
+    "person": [
+      297607524,
+      466079638
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Ford Ranger",
+    "year": 2012,
+    "id": 1628183993,
+    "person": [
+      1770935453,
+      1483109544
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Janette Lawson",
+    "year": 1970,
+    "occupation": "Correctional officers and jailer",
+    "id": 1488251322,
+    "person": 778251887,
+    "place": 1779169923,
+    "thing": [
+      1775812303
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bella",
+    "breed": "Boston Terrier",
+    "year": 2006,
+    "id": 682939732,
+    "person": [
+      107048568,
+      385040835
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "GMC Yukon",
+    "year": 2016,
+    "id": 582168466,
+    "person": [
+      124940009,
+      2061639974
+    ]
+  },
+  {
+    "type": "place",
+    "name": "3660 N Vermont Ave",
+    "id": 775313754,
+    "person": [
+      597028536,
+      1398086293
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Riley",
+    "breed": "Dachshund",
+    "year": 2015,
+    "id": 1064872717,
+    "person": [
+      1648966330,
+      906408636
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1035 W Kukui Blvd",
+    "id": 302350283,
+    "person": [
+      1159663810,
+      525700305
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Philip Flynn",
+    "year": 1972,
+    "occupation": "Personal care aide",
+    "id": 930199512,
+    "person": 620034230,
+    "place": 1179506847,
+    "thing": [
+      275064386
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Carol Harper",
+    "year": 1974,
+    "occupation": "Wholesale and manufacturing sales representative",
+    "id": 323427336,
+    "person": 44692143,
+    "place": 1239083977,
+    "thing": [
+      1206840741
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Ford Expedition",
+    "year": 2012,
+    "id": 1255255909,
+    "person": [
+      958168655,
+      62993023
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Ford Ranger",
+    "year": 2019,
+    "id": 1628184000,
+    "person": [
+      500995871,
+      584985163
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Brooke Romero",
+    "year": 1992,
+    "occupation": "Inspector, tester, sorter, sampler, and weigher",
+    "id": 434013655,
+    "person": 1318256817,
+    "place": 78925014,
+    "thing": [
+      2049808923
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Erica Mcdaniel",
+    "year": 1948,
+    "occupation": "First-line supervisors of retail sales worker",
+    "id": 404705991,
+    "person": 209153121,
+    "place": 1584356293,
+    "thing": [
+      744842183
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1460 E 5th St",
+    "id": 214537866,
+    "person": [
+      664592528,
+      402924708
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Wallace Stewart",
+    "year": 1960,
+    "occupation": "Maids and housekeeping cleaner",
+    "id": 1702415829,
+    "person": 462412686,
+    "place": 464667647,
+    "thing": [
+      378283338
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Alberta Williams",
+    "year": 1973,
+    "occupation": "Service Sales representative",
+    "id": 391392093,
+    "person": 1255086056,
+    "place": 1689445893,
+    "thing": [
+      493398829
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Rhonda Patterson",
+    "year": 1963,
+    "occupation": "Office clerk",
+    "id": 326143157,
+    "person": 1808015627,
+    "place": 289109895,
+    "thing": [
+      378380544
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Guillermo Morris",
+    "year": 1946,
+    "occupation": "First-line supervisors of office and administrative support worker",
+    "id": 458376884,
+    "person": 86043370,
+    "place": 728305399,
+    "thing": [
+      1673148409
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Nissan Maxima",
+    "year": 2017,
+    "id": 46650517,
+    "person": [
+      1428390315,
+      14922755
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Riley",
+    "breed": "Beagle",
+    "year": 2011,
+    "id": 1368006665,
+    "person": [
+      847852605,
+      720802012
+    ]
+  },
+  {
+    "type": "place",
+    "name": "7521 S 4th Ave",
+    "id": 172111528,
+    "person": [
+      1043954594,
+      2141678794
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Kimberly Hanson",
+    "year": 1988,
+    "occupation": "Home health aide",
+    "id": 2040087400,
+    "person": 224830488,
+    "place": 895150258,
+    "thing": [
+      624616680
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Naomi Hutchinson",
+    "year": 1947,
+    "occupation": "First-line supervisors of retail sales worker",
+    "id": 1517584908,
+    "person": 837826356,
+    "place": 324284927,
+    "thing": [
+      2034058883
+    ]
+  },
+  {
+    "type": "place",
+    "name": "2948 W Malulani Rd",
+    "id": 1890672391,
+    "person": [
+      1857794489,
+      1247409336
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Milo",
+    "breed": "Bull Terrier",
+    "year": 2009,
+    "id": 275064386,
+    "person": [
+      620034230,
+      930199512
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Laura Herrera",
+    "year": 1968,
+    "occupation": "Teller",
+    "id": 1754290032,
+    "person": 483683625,
+    "place": 193610283,
+    "thing": [
+      768195658
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Hector Long",
+    "year": 1992,
+    "occupation": "Elementary school teacher",
+    "id": 2081336724,
+    "person": 1297821539,
+    "place": 1284840394,
+    "thing": [
+      970090553
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Hyundai Veloster",
+    "year": 2013,
+    "id": 2045640414,
+    "person": [
+      1225108477,
+      1394695752
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Mercedes-Benz SLK-Class",
+    "year": 2019,
+    "id": 1754356361,
+    "person": [
+      1754290032,
+      483683625
+    ]
+  },
+  {
+    "type": "place",
+    "name": "2944 N Spruce Rd",
+    "id": 563482725,
+    "person": [
+      446773028,
+      1857335677
+    ]
+  },
+  {
+    "type": "place",
+    "name": "265 N Kentucky St",
+    "id": 1910979492,
+    "person": [
+      847852605,
+      720802012
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Jocelyn Sexton",
+    "year": 1953,
+    "occupation": "Team assembler",
+    "id": 1955240743,
+    "person": 1040331955,
+    "place": 706161525,
+    "thing": [
+      2064023191
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Catherine Vega",
+    "year": 1979,
+    "occupation": "Combined food preparation and serving worker",
+    "id": 1846199342,
+    "person": 1480946232,
+    "place": 999307323,
+    "thing": [
+      1058979434
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Daisy",
+    "breed": "Bloodhound",
+    "year": 2006,
+    "id": 1622937600,
+    "person": [
+      1034434523,
+      1516183733
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Nissan Leaf",
+    "year": 2015,
+    "id": 366405736,
+    "person": [
+      496695037,
+      663954755
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1797 S Minnesota Rd",
+    "id": 566053111,
+    "person": [
+      1657630308,
+      1196028425
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Beatrice Robinson",
+    "year": 1980,
+    "occupation": "Stock clerks and order filler",
+    "id": 1126370745,
+    "person": 1405902773,
+    "place": 1756360434,
+    "thing": [
+      732823846
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Kimberly Glenn",
+    "year": 1982,
+    "occupation": "Institution and cafeteria cook",
+    "id": 725528975,
+    "person": 1593579116,
+    "place": 217772554,
+    "thing": [
+      1921717286
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Clifton Alston",
+    "year": 1988,
+    "occupation": "Combined food preparation and serving worker",
+    "id": 1944091206,
+    "person": 1271452819,
+    "place": 2607834,
+    "thing": [
+      1665495363
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bailey",
+    "breed": "Yorkshire Terrier",
+    "year": 2005,
+    "id": 1244493334,
+    "person": [
+      1428461772,
+      976926198
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bailey",
+    "breed": "Boxer",
+    "year": 2016,
+    "id": 903515323,
+    "person": [
+      1376124963,
+      662388667
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Dodge Challenger",
+    "year": 2010,
+    "id": 341003637,
+    "person": [
+      1297821539,
+      2081336724
+    ]
+  },
+  {
+    "type": "place",
+    "name": "763 S Rhode Island Rd",
+    "id": 1576442658,
+    "person": [
+      1624396412,
+      776866765
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Gloria Gallegos",
+    "year": 1971,
+    "occupation": "Packers and packager",
+    "id": 706303134,
+    "person": 1398370880,
+    "place": 489414786,
+    "thing": [
+      142089967
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Mercedes-Benz R-Class",
+    "year": 2011,
+    "id": 1271520447,
+    "person": [
+      276321351,
+      797633225
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Daisy",
+    "breed": "Miniature American Shepherd",
+    "year": 2010,
+    "id": 8405608,
+    "person": [
+      1138229285,
+      117340691
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Daisy",
+    "breed": "Golden Retriever",
+    "year": 2019,
+    "id": 1417982825,
+    "person": [
+      1660918044,
+      2087135669
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Ford Flex",
+    "year": 2010,
+    "id": 1018124827,
+    "person": [
+      1613790925,
+      1221483465
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Ford F350",
+    "year": 2014,
+    "id": 529329806,
+    "person": [
+      1159663810,
+      525700305
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Jasmine",
+    "breed": "Doberman Pinscher",
+    "year": 2017,
+    "id": 455199599,
+    "person": [
+      899053606,
+      1132646670
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Chloe",
+    "breed": "Yorkshire Terrier",
+    "year": 2012,
+    "id": 1765698113,
+    "person": [
+      999875108,
+      2067214877
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Dodge Challenger",
+    "year": 2014,
+    "id": 341003641,
+    "person": [
+      1202480427,
+      1258613966
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Porsche Cayman",
+    "year": 2014,
+    "id": 2085132992,
+    "person": [
+      2060049522,
+      1360515836
+    ]
+  },
+  {
+    "type": "place",
+    "name": "371 N Mesquite Pl",
+    "id": 518268892,
+    "person": [
+      1770935453,
+      1483109544
+    ]
+  },
+  {
+    "type": "place",
+    "name": "4064 W Wisconsin St",
+    "id": 1744672775,
+    "person": [
+      740373372,
+      753054978
+    ]
+  },
+  {
+    "type": "place",
+    "name": "973 W North Dakota St",
+    "id": 1620997412,
+    "person": [
+      955325743,
+      1070298817
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Pat Boone",
+    "year": 1963,
+    "occupation": "Shipping, receiving, and traffic clerk",
+    "id": 1770460641,
+    "person": 448540101,
+    "place": 2002328178,
+    "thing": [
+      261182497
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Elaine Aguilar",
+    "year": 1960,
+    "occupation": "First-line supervisors of office and administrative support worker",
+    "id": 424224917,
+    "person": 680757683,
+    "place": 1043548365,
+    "thing": [
+      1300597028
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Melinda Edwards",
+    "year": 1992,
+    "occupation": "Office clerk",
+    "id": 958168655,
+    "person": 62993023,
+    "place": 1665851672,
+    "thing": [
+      385658412
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Luz Mitchell",
+    "year": 1972,
+    "occupation": "Bus and truck mechanics and diesel engine specialist",
+    "id": 1220108870,
+    "person": 1731593800,
+    "place": 1271642211,
+    "thing": [
+      71775118
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Willie Graham",
+    "year": 1948,
+    "occupation": "Combined food preparation and serving worker",
+    "id": 429281124,
+    "person": 1279989924,
+    "place": 637728541,
+    "thing": [
+      1720136358
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Patti Stewart",
+    "year": 1964,
+    "occupation": "Office clerk",
+    "id": 462412686,
+    "person": 1702415829,
+    "place": 464667647,
+    "thing": [
+      378283338
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Terry Torres",
+    "year": 1991,
+    "occupation": "First-line supervisors of mechanic, installer, and repairer",
+    "id": 2003742689,
+    "person": 1374423867,
+    "place": 1908534498,
+    "thing": [
+      1125289775
+    ]
+  },
+  {
+    "type": "place",
+    "name": "46 N Mountain View St",
+    "id": 386223303,
+    "person": [
+      382817514,
+      1021255292
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Gina Baker",
+    "year": 1982,
+    "occupation": "Institution and cafeteria cook",
+    "id": 525596688,
+    "person": 1706944616,
+    "place": 2005096107,
+    "thing": [
+      1596952866
+    ]
+  },
+  {
+    "type": "place",
+    "name": "2050 W Hill St",
+    "id": 617489456,
+    "person": [
+      1376124963,
+      662388667
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Kia Rio",
+    "year": 2010,
+    "id": 1504515752,
+    "person": [
+      326143157,
+      1808015627
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Chevrolet Traverse",
+    "year": 2014,
+    "id": 622796277,
+    "person": [
+      525596688,
+      1706944616
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Gilberto Long",
+    "year": 1971,
+    "occupation": "Retail salesperson",
+    "id": 1046570462,
+    "person": 329163284,
+    "place": 360288767,
+    "thing": [
+      1049139818
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Lois Browning",
+    "year": 1963,
+    "occupation": "Secretaries and administrative assistant",
+    "id": 446773028,
+    "person": 1857335677,
+    "place": 563482725,
+    "thing": [
+      1670039638
+    ]
+  },
+  {
+    "type": "place",
+    "name": "638 N Alaska Rte",
+    "id": 408357485,
+    "person": [
+      1222179273,
+      1128457737
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Baxter",
+    "breed": "Shih Tzu",
+    "year": 2012,
+    "id": 1670039638,
+    "person": [
+      446773028,
+      1857335677
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Kia Sedona",
+    "year": 2019,
+    "id": 2119819123,
+    "person": [
+      847852605,
+      720802012
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Maserati GranTurismo",
+    "year": 2019,
+    "id": 1845824651,
+    "person": [
+      1938480144,
+      2046072645
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bailey",
+    "breed": "Labrador Retriever",
+    "year": 2013,
+    "id": 1696294647,
+    "person": [
+      1307432217,
+      303417599
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Nissan Murano",
+    "year": 2019,
+    "id": 2078164202,
+    "person": [
+      1077924366,
+      1825444050
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Nissan Titan",
+    "year": 2016,
+    "id": 2072078185,
+    "person": [
+      1307432217,
+      303417599
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "GMC Savana 3500",
+    "year": 2010,
+    "id": 394637904,
+    "person": [
+      1393638626,
+      659030503
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1266 S 11th St",
+    "id": 360288767,
+    "person": [
+      329163284,
+      1046570462
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Jeffery Gill",
+    "year": 1975,
+    "occupation": "Food preparation worker",
+    "id": 1152801559,
+    "person": 776519002,
+    "place": 1927418659,
+    "thing": [
+      1065544468
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Charlie",
+    "breed": "Boston Terrier",
+    "year": 2015,
+    "id": 1921717286,
+    "person": [
+      725528975,
+      1593579116
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Patty Mckenzie",
+    "year": 1945,
+    "occupation": "Bookkeeping, accounting, and auditing clerk",
+    "id": 1920185607,
+    "person": 940964250,
+    "place": 788611973,
+    "thing": [
+      582192966
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1901 N Pioneer Blvd",
+    "id": 98995015,
+    "person": [
+      1202480427,
+      1258613966
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Buddy",
+    "breed": "American Cocker Spaniel",
+    "year": 2012,
+    "id": 322273664,
+    "person": [
+      1238420799,
+      1144198918
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Chrysler 300",
+    "year": 2010,
+    "id": 1650835202,
+    "person": [
+      725528975,
+      1593579116
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Barry Burgess",
+    "year": 1986,
+    "occupation": "Freight, stock, and hand material mover laborer",
+    "id": 314822045,
+    "person": 1800895323,
+    "place": 1323658706,
+    "thing": [
+      671894285
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Rodney Roberts",
+    "year": 1992,
+    "occupation": "School or special client Bus driver",
+    "id": 776866765,
+    "person": 1624396412,
+    "place": 1576442658,
+    "thing": [
+      303760140
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Jake",
+    "breed": "Cavalier King Charles Spaniel",
+    "year": 2007,
+    "id": 1335088542,
+    "person": [
+      235922088,
+      1417625672
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Leslie Avery",
+    "year": 1948,
+    "occupation": "Food preparation worker",
+    "id": 525700305,
+    "person": 1159663810,
+    "place": 302350283,
+    "thing": [
+      697078513
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Jeep Patriot",
+    "year": 2015,
+    "id": 313095399,
+    "person": [
+      150466434,
+      720893591
+    ]
+  },
+  {
+    "type": "place",
+    "name": "3724 S Sycamore Rd",
+    "id": 210897362,
+    "person": [
+      701353863,
+      2031407363
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Belle",
+    "breed": "Golden Retriever",
+    "year": 2006,
+    "id": 937791163,
+    "person": [
+      17186328,
+      874645756
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Sammy",
+    "breed": "Labrador Retriever",
+    "year": 2005,
+    "id": 2110078769,
+    "person": [
+      320841014,
+      1932400624
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Ford Flex",
+    "year": 2011,
+    "id": 1018124828,
+    "person": [
+      1138229285,
+      117340691
+    ]
+  },
+  {
+    "type": "place",
+    "name": "3036 E Pennsylvania Blvd",
+    "id": 1043548365,
+    "person": [
+      424224917,
+      680757683
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Bennie Bass",
+    "year": 1973,
+    "occupation": "Landscaping and groundskeeping worker",
+    "id": 1426349116,
+    "person": 1275684673,
+    "place": 664150180,
+    "thing": [
+      1775812305
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Zoe",
+    "breed": "Labrador Retriever",
+    "year": 2011,
+    "id": 1775812305,
+    "person": [
+      1275684673,
+      1426349116
+    ]
+  },
+  {
+    "type": "place",
+    "name": "3117 S West Virginia St",
+    "id": 1406183220,
+    "person": [
+      1835157098,
+      641942911
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Sophie",
+    "breed": "French Bulldog",
+    "year": 2006,
+    "id": 1314084759,
+    "person": [
+      1845946058,
+      1506866979
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Ford E-Series",
+    "year": 2014,
+    "id": 2067200603,
+    "person": [
+      1179274655,
+      581662361
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Ruby Dennis",
+    "year": 1967,
+    "occupation": "Social and human service assistant",
+    "id": 170151514,
+    "person": 1180231908,
+    "place": 1037304670,
+    "thing": [
+      891665995
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Volvo XC90",
+    "year": 2016,
+    "id": 1849906663,
+    "person": [
+      1657630308,
+      1196028425
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Jose Hughes",
+    "year": 1964,
+    "occupation": "First-line supervisors of production and operating worker",
+    "id": 653556267,
+    "person": 1499845075,
+    "place": 1464259730,
+    "thing": [
+      1163653389
+    ]
+  },
+  {
+    "type": "place",
+    "name": "104 N Utah St",
+    "id": 1693427582,
+    "person": [
+      1938480144,
+      2046072645
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Mavis Castro",
+    "year": 1989,
+    "occupation": "Combined food preparation and serving worker",
+    "id": 1857794489,
+    "person": 1247409336,
+    "place": 1890672391,
+    "thing": [
+      984254341
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Carol Murray",
+    "year": 1986,
+    "occupation": "Secretaries and administrative assistant",
+    "id": 1428390315,
+    "person": 14922755,
+    "place": 1673182757,
+    "thing": [
+      1255061340
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Walter Murray",
+    "year": 1982,
+    "occupation": "Cashier",
+    "id": 14922755,
+    "person": 1428390315,
+    "place": 1673182757,
+    "thing": [
+      1255061340
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Lucy",
+    "breed": "Labrador Retriever",
+    "year": 2014,
+    "id": 261182497,
+    "person": [
+      448540101,
+      1770460641
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Lorena Robinson",
+    "year": 1982,
+    "occupation": "Retail salesperson",
+    "id": 1179274655,
+    "person": 581662361,
+    "place": 1260580039,
+    "thing": [
+      1181721676
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Lexus ES",
+    "year": 2017,
+    "id": 234972981,
+    "person": [
+      391392093,
+      1255086056
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Ryan Boyd",
+    "year": 1953,
+    "occupation": "Team assembler",
+    "id": 2141678794,
+    "person": 1043954594,
+    "place": 172111528,
+    "thing": [
+      555888655
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Buick Verano",
+    "year": 2011,
+    "id": 1938594561,
+    "person": [
+      493108236,
+      1932228536
+    ]
+  },
+  {
+    "type": "place",
+    "name": "988 W Virginia Rte",
+    "id": 1236376552,
+    "person": [
+      933394665,
+      697234845
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Murphy",
+    "breed": "German Shorthaired Pointer",
+    "year": 2014,
+    "id": 624616680,
+    "person": [
+      2040087400,
+      224830488
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Lily",
+    "breed": "Labrador Retriever",
+    "year": 2015,
+    "id": 1185169939,
+    "person": [
+      1202480427,
+      1258613966
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Kia Optima",
+    "year": 2014,
+    "id": 1260220872,
+    "person": [
+      60450344,
+      764789359
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Chevrolet Suburban 2500",
+    "year": 2017,
+    "id": 1772905341,
+    "person": [
+      459637496,
+      314743289
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Jake",
+    "breed": "Boston Terrier",
+    "year": 2017,
+    "id": 1673148409,
+    "person": [
+      86043370,
+      458376884
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Lola",
+    "breed": "Bichon Frise",
+    "year": 2006,
+    "id": 768195658,
+    "person": [
+      1754290032,
+      483683625
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Chelsea Gill",
+    "year": 1976,
+    "occupation": "Retail salesperson",
+    "id": 776519002,
+    "person": 1152801559,
+    "place": 1927418659,
+    "thing": [
+      1065544468
+    ]
+  },
+  {
+    "type": "place",
+    "name": "91 W Vermont Rd",
+    "id": 1665851672,
+    "person": [
+      958168655,
+      62993023
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Alison Wilson",
+    "year": 1985,
+    "occupation": "Registered nurse",
+    "id": 2064123657,
+    "person": 1239334848,
+    "place": 1745758895,
+    "thing": [
+      599494751
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Joseph Beard",
+    "year": 1977,
+    "occupation": "Middle school teacher",
+    "id": 659030503,
+    "person": 1393638626,
+    "place": 1195828093,
+    "thing": [
+      2119795418
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Volvo XC70",
+    "year": 2018,
+    "id": 1907164963,
+    "person": [
+      17186328,
+      874645756
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Bette Morris",
+    "year": 1948,
+    "occupation": "Retail salesperson",
+    "id": 86043370,
+    "person": 458376884,
+    "place": 728305399,
+    "thing": [
+      1673148409
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Max",
+    "breed": "German Shorthaired Pointer",
+    "year": 2006,
+    "id": 1479347736,
+    "person": [
+      54698117,
+      824175981
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Max",
+    "breed": "Doberman Pinscher",
+    "year": 2007,
+    "id": 1359585659,
+    "person": [
+      911056398,
+      2134621108
+    ]
+  },
+  {
+    "type": "place",
+    "name": "52 W Spruce Blvd",
+    "id": 1248992650,
+    "person": [
+      320841014,
+      1932400624
+    ]
+  },
+  {
+    "type": "place",
+    "name": "2478 S Wisconsin Rd",
+    "id": 1584356293,
+    "person": [
+      404705991,
+      209153121
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Angel",
+    "breed": "French Bulldog",
+    "year": 2016,
+    "id": 744842183,
+    "person": [
+      404705991,
+      209153121
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1576 E 1st Blvd",
+    "id": 1037304670,
+    "person": [
+      170151514,
+      1180231908
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "MINI Cooper Clubman",
+    "year": 2011,
+    "id": 650183739,
+    "person": [
+      1222179273,
+      1128457737
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Maserati GranTurismo",
+    "year": 2015,
+    "id": 1845824655,
+    "person": [
+      1358018191,
+      2028854589
+    ]
+  },
+  {
+    "type": "place",
+    "name": "154 W Lee Ln",
+    "id": 443667505,
+    "person": [
+      60450344,
+      764789359
+    ]
+  },
+  {
+    "type": "person",
+    "name": "David Collins",
+    "year": 1987,
+    "occupation": "Bookkeeping, accounting, and auditing clerk",
+    "id": 838756419,
+    "person": 790825056,
+    "place": 11552427,
+    "thing": [
+      599494728
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Michelle Burgess",
+    "year": 1987,
+    "occupation": "Customer service representative",
+    "id": 1800895323,
+    "person": 314822045,
+    "place": 1323658706,
+    "thing": [
+      671894285
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Clarice Rose",
+    "year": 1975,
+    "occupation": "Stock clerks and order filler",
+    "id": 1657630308,
+    "person": 1196028425,
+    "place": 566053111,
+    "thing": [
+      87477319
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Felicia Wagner",
+    "year": 1984,
+    "occupation": "First-line supervisors of office and administrative support worker",
+    "id": 1225108477,
+    "person": 1394695752,
+    "place": 947149096,
+    "thing": [
+      1602661647
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Christine Ashley",
+    "year": 1963,
+    "occupation": "Social and human service assistant",
+    "id": 1982987340,
+    "person": 202008851,
+    "place": 812693531,
+    "thing": [
+      850960697
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Maserati GranTurismo",
+    "year": 2018,
+    "id": 1845824652,
+    "person": [
+      1043954594,
+      2141678794
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Louis Bryan",
+    "year": 1972,
+    "occupation": "Maids and housekeeping cleaner",
+    "id": 1516183733,
+    "person": 1034434523,
+    "place": 2101028684,
+    "thing": [
+      1622937600
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Irene Long",
+    "year": 1969,
+    "occupation": "Shipping, receiving, and traffic clerk",
+    "id": 329163284,
+    "person": 1046570462,
+    "place": 360288767,
+    "thing": [
+      1049139818
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Lucy",
+    "breed": "Soft Coated Wheaten Terrier",
+    "year": 2006,
+    "id": 1753979342,
+    "person": [
+      1089266629,
+      924684268
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Rusty",
+    "breed": "Siberian Husky",
+    "year": 2007,
+    "id": 891665995,
+    "person": [
+      170151514,
+      1180231908
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bella",
+    "breed": "Beagle",
+    "year": 2006,
+    "id": 1824987364,
+    "person": [
+      1386403796,
+      95499299
+    ]
+  },
+  {
+    "type": "place",
+    "name": "3484 W Bay Blvd",
+    "id": 1380108682,
+    "person": [
+      1049000107,
+      1508708074
+    ]
+  },
+  {
+    "type": "person",
+    "name": "James Robinson",
+    "year": 1976,
+    "occupation": "Dishwasher",
+    "id": 1405902773,
+    "person": 1126370745,
+    "place": 1756360434,
+    "thing": [
+      732823846
+    ]
+  },
+  {
+    "type": "place",
+    "name": "483 E Meadow Blvd",
+    "id": 993239031,
+    "person": [
+      833320523,
+      1123974473
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Charlie",
+    "breed": "Doberman Pinscher",
+    "year": 2014,
+    "id": 190342217,
+    "person": [
+      1077924366,
+      1825444050
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Mercury Milan",
+    "year": 2019,
+    "id": 656425942,
+    "person": [
+      1499845075,
+      653556267
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "BMW X5 M",
+    "year": 2017,
+    "id": 907740130,
+    "person": [
+      1517584908,
+      837826356
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Cadillac Escalade ESV",
+    "year": 2013,
+    "id": 1783198299,
+    "person": [
+      1920185607,
+      940964250
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Allison West",
+    "year": 1948,
+    "occupation": "Bookkeeping, accounting, and auditing clerk",
+    "id": 955325743,
+    "person": 1070298817,
+    "place": 1620997412,
+    "thing": [
+      851756389
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Brian Baker",
+    "year": 1978,
+    "occupation": "Application Software developer",
+    "id": 1706944616,
+    "person": 525596688,
+    "place": 2005096107,
+    "thing": [
+      1596952866
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Daisy Mercer",
+    "year": 1985,
+    "occupation": "First-line supervisors of office and administrative support worker",
+    "id": 1650465417,
+    "person": 1355729661,
+    "place": 1795867661,
+    "thing": [
+      1093690185
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1430 W Walnut St",
+    "id": 292079693,
+    "person": [
+      500995871,
+      584985163
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Buddy",
+    "breed": "German Shorthaired Pointer",
+    "year": 2010,
+    "id": 387215331,
+    "person": [
+      511772611,
+      1969752693
+    ]
+  },
+  {
+    "type": "place",
+    "name": "969 N New Jersey St",
+    "id": 1426067525,
+    "person": [
+      911056398,
+      2134621108
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Lexus IS-F",
+    "year": 2010,
+    "id": 729238435,
+    "person": [
+      1238420799,
+      1144198918
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Chevrolet Tahoe",
+    "year": 2012,
+    "id": 1518817624,
+    "person": [
+      1271452819,
+      1944091206
+    ]
+  },
+  {
+    "type": "place",
+    "name": "518 S Arizona Rd",
+    "id": 602041597,
+    "person": [
+      124940009,
+      2061639974
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Casey Owen",
+    "year": 1958,
+    "occupation": "Industrial truck and tractor operator",
+    "id": 117340691,
+    "person": 1138229285,
+    "place": 1535314690,
+    "thing": [
+      8405608
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bailey",
+    "breed": "Labrador Retriever",
+    "year": 2009,
+    "id": 1696294622,
+    "person": [
+      1994331129,
+      437600097
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Oliver",
+    "breed": "Boston Terrier",
+    "year": 2007,
+    "id": 71775118,
+    "person": [
+      1220108870,
+      1731593800
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Lotus Evora",
+    "year": 2012,
+    "id": 802098555,
+    "person": [
+      424224917,
+      680757683
+    ]
+  },
+  {
+    "type": "place",
+    "name": "387 S 10th Ave",
+    "id": 990447234,
+    "person": [
+      17186328,
+      874645756
+    ]
+  },
+  {
+    "type": "place",
+    "name": "396 E Dogwood St",
+    "id": 1779169923,
+    "person": [
+      1488251322,
+      778251887
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Francis Poole",
+    "year": 1964,
+    "occupation": "First-line supervisors of retail sales worker",
+    "id": 2031407363,
+    "person": 701353863,
+    "place": 210897362,
+    "thing": [
+      579866454
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bella",
+    "breed": "English Springer Spaniel",
+    "year": 2013,
+    "id": 1355175918,
+    "person": [
+      1835157098,
+      641942911
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bailey",
+    "breed": "Bernese Mountain Dog",
+    "year": 2005,
+    "id": 378283338,
+    "person": [
+      462412686,
+      1702415829
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Honda Insight",
+    "year": 2010,
+    "id": 1312619801,
+    "person": [
+      955325743,
+      1070298817
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Buster",
+    "breed": "Brittany",
+    "year": 2014,
+    "id": 1955291317,
+    "person": [
+      1319392443,
+      1457776520
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "GMC Savana 2500",
+    "year": 2016,
+    "id": 1348172425,
+    "person": [
+      107048568,
+      385040835
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Mercedes-Benz C-Class",
+    "year": 2019,
+    "id": 87053830,
+    "person": [
+      745432851,
+      2051861589
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Bailey",
+    "breed": "Bulldog",
+    "year": 2008,
+    "id": 87477319,
+    "person": [
+      1657630308,
+      1196028425
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Riley",
+    "breed": "Bernese Mountain Dog",
+    "year": 2013,
+    "id": 2119795418,
+    "person": [
+      1393638626,
+      659030503
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Dallas Anderson",
+    "year": 1965,
+    "occupation": "Team assembler",
+    "id": 1144198918,
+    "person": 1238420799,
+    "place": 1531637434,
+    "thing": [
+      322273664
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Rose Chambers",
+    "year": 1946,
+    "occupation": "Team assembler",
+    "id": 1938480144,
+    "person": 2046072645,
+    "place": 1693427582,
+    "thing": [
+      1157176606
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Volvo XC70",
+    "year": 2017,
+    "id": 1907164964,
+    "person": [
+      776519002,
+      1152801559
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Lynn Reid",
+    "year": 1972,
+    "occupation": "Executive secretaries and executive administrative assistant",
+    "id": 906408636,
+    "person": 1648966330,
+    "place": 1750798783,
+    "thing": [
+      1064872717
+    ]
+  },
+  {
+    "type": "place",
+    "name": "954 N Hampton Rd",
+    "id": 2005096107,
+    "person": [
+      525596688,
+      1706944616
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Maserati GranTurismo",
+    "year": 2016,
+    "id": 1845824654,
+    "person": [
+      1079330048,
+      546255197
+    ]
+  },
+  {
+    "type": "person",
+    "name": "John Torres",
+    "year": 1987,
+    "occupation": "Home health aide",
+    "id": 1374423867,
+    "person": 2003742689,
+    "place": 1908534498,
+    "thing": [
+      1125289775
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Coco",
+    "breed": "Golden Retriever",
+    "year": 2010,
+    "id": 582192972,
+    "person": [
+      1579557086,
+      950873002
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Princess",
+    "breed": "Rottweiler",
+    "year": 2013,
+    "id": 195657244,
+    "person": [
+      1358018191,
+      2028854589
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Lincoln MKT",
+    "year": 2013,
+    "id": 2067793387,
+    "person": [
+      1284768018,
+      1708977103
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Kia Soul",
+    "year": 2014,
+    "id": 692052399,
+    "person": [
+      1800895323,
+      314822045
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Lisa Beard",
+    "year": 1976,
+    "occupation": "Secretaries and administrative assistant",
+    "id": 1393638626,
+    "person": 659030503,
+    "place": 1195828093,
+    "thing": [
+      2119795418
+    ]
+  },
+  {
+    "type": "place",
+    "name": "85 E Ohio Blvd",
+    "id": 788611973,
+    "person": [
+      1920185607,
+      940964250
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Jim Hanson",
+    "year": 1989,
+    "occupation": "Heavy and tractor-trailer truck driver",
+    "id": 224830488,
+    "person": 2040087400,
+    "place": 895150258,
+    "thing": [
+      624616680
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Deloris Bass",
+    "year": 1986,
+    "occupation": "Maids and housekeeping cleaner",
+    "id": 1964534029,
+    "person": 1888508173,
+    "place": 1957866520,
+    "thing": [
+      262907202
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Orville Wright",
+    "year": 1951,
+    "occupation": "Janitors and cleaner",
+    "id": 1631139334,
+    "person": 1186157905,
+    "place": 751854142,
+    "thing": [
+      942440333
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Sophie",
+    "breed": "Boxer",
+    "year": 2017,
+    "id": 1065544468,
+    "person": [
+      776519002,
+      1152801559
+    ]
+  },
+  {
+    "type": "place",
+    "name": "2791 N Pinon Pl",
+    "id": 637728541,
+    "person": [
+      1279989924,
+      429281124
+    ]
+  },
+  {
+    "type": "place",
+    "name": "4076 E Nevada Rd",
+    "id": 1478057715,
+    "person": [
+      1428461772,
+      976926198
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Jeep Patriot",
+    "year": 2016,
+    "id": 313095400,
+    "person": [
+      511772611,
+      1969752693
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Lauren Beasley",
+    "year": 1966,
+    "occupation": "Waiters and waitresse",
+    "id": 911056398,
+    "person": 2134621108,
+    "place": 1426067525,
+    "thing": [
+      1359585659
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "GMC Savana 3500",
+    "year": 2013,
+    "id": 394637907,
+    "person": [
+      1089266629,
+      924684268
+    ]
+  },
+  {
+    "type": "place",
+    "name": "8947 W Main Pl",
+    "id": 1908534498,
+    "person": [
+      2003742689,
+      1374423867
+    ]
+  },
+  {
+    "type": "place",
+    "name": "957 E Meadow Ave",
+    "id": 1648045517,
+    "person": [
+      1412716320,
+      172806169
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Cooper",
+    "breed": "Siberian Husky",
+    "year": 2014,
+    "id": 303760140,
+    "person": [
+      1624396412,
+      776866765
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Helen Hughes",
+    "year": 1967,
+    "occupation": "Waiters and waitresse",
+    "id": 1499845075,
+    "person": 653556267,
+    "place": 1464259730,
+    "thing": [
+      1163653389
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Edna Griffin",
+    "year": 1989,
+    "occupation": "Janitors and cleaner",
+    "id": 1579557086,
+    "person": 950873002,
+    "place": 749596485,
+    "thing": [
+      582192972
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Carissa Peterson",
+    "year": 1955,
+    "occupation": "Stock clerks and order filler",
+    "id": 1649771746,
+    "person": 383614273,
+    "place": 800255459,
+    "thing": [
+      2081509016
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Ivan Harper",
+    "year": 1974,
+    "occupation": "Light truck or delivery service driver",
+    "id": 44692143,
+    "person": 323427336,
+    "place": 1239083977,
+    "thing": [
+      1206840741
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "vehicle",
+    "name": "Mercedes-Benz SLS-Class",
+    "year": 2019,
+    "id": 263647377,
+    "person": [
+      1794434842,
+      104144369
+    ]
+  },
+  {
+    "type": "place",
+    "name": "4125 S Cypress Cir",
+    "id": 977838964,
+    "person": [
+      1909449920,
+      649955794
+    ]
+  },
+  {
+    "type": "thing",
+    "subtype": "dog",
+    "name": "Winston",
+    "breed": "Chihuahua",
+    "year": 2018,
+    "id": 1169647533,
+    "person": [
+      22172642,
+      439863270
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Brad Glenn",
+    "year": 1981,
+    "occupation": "Preschool teacher",
+    "id": 1593579116,
+    "person": 725528975,
+    "place": 217772554,
+    "thing": [
+      1921717286
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Leroy Lawson",
+    "year": 1971,
+    "occupation": "Office clerk",
+    "id": 778251887,
+    "person": 1488251322,
+    "place": 1779169923,
+    "thing": [
+      1775812303
+    ]
+  },
+  {
+    "type": "place",
+    "name": "1613 W Navajo St",
+    "id": 1867039204,
+    "person": [
+      54698117,
+      824175981
+    ]
+  },
+  {
+    "type": "person",
+    "name": "David Becker",
+    "year": 1958,
+    "occupation": "Security guard",
+    "id": 104144369,
+    "person": 1794434842,
+    "place": 514528130,
+    "thing": [
+      2124609679
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Sandy Flynn",
+    "year": 1961,
+    "occupation": "General and operation manager",
+    "id": 1049000107,
+    "person": 1508708074,
+    "place": 1380108682,
+    "thing": [
+      2056405039
+    ]
+  },
+  {
+    "type": "person",
+    "name": "Lowell Peterson",
+    "year": 1957,
+    "occupation": "Bus and truck mechanics and diesel engine specialist",
+    "id": 383614273,
+    "person": 1649771746,
+    "place": 800255459,
+    "thing": [
+      2081509016
+    ]
+  }
+]
