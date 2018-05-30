@@ -1,10 +1,11 @@
-bits.searchExtension.searchProvider = function() {};
+bits.searchExtension.ISearchProvider = function() {};
 
-bits.searchExtension.searchProvider.prototype.query = function(document) {};
+//returns an array of SearchResult objects
+bits.searchExtension.ISearchProvider.prototype.query = function(document) {};
 
-bits.searchExtension.searchProvider.prototype.init = function() {};
+bits.searchExtension.ISearchProvider.prototype.init = function() {};
 
-bits.searchExtension.searchProvider.prototype.setActive = function(active) {};
+bits.searchExtension.ISearchProvider.prototype.setActive = function(active) {};
 
 //returns a boolean
-bits.searchExtension.searchProvider.prototype.getActive = function() {};
+bits.searchExtension.ISearchProvider.prototype.getActive = function() {};
