@@ -1,21 +1,24 @@
 // App Main
 
 var bits = function() {};
-bits.SearchExtension = function() {};
+bits.search = function() {};
 
 //Constructor
-bits.SearchExtension.searchExtensionApp = (function() {
+bits.search.searchExtensionApp = function() {
   alert('app');
-})();
+  this.initSearchProviders();
+  this.querySearchProviders();
+  this.applySearchResults(searchProviders);
+};
 
 //This array holds all of the search providers or data sources
-bits.SearchExtension.searchExtensionApp.searchProviders = [];
+bits.search.searchExtensionApp.searchProviders = [];
 
 //Finds all the search providers
-bits.SearchExtension.searchExtensionApp.registerSearchProvider = function(iSearchProvider) {};
+bits.search.searchExtensionApp.registerSearchProvider = function(iSearchProvider) {};
 
-bits.SearchExtension.searchExtensionApp.initSearchProviders = function() {};
+bits.search.searchExtensionApp.initSearchProviders = function() {};
 
-bits.SearchExtension.searchExtensionApp.querySearchProviders = function() {};
+bits.search.searchExtensionApp.querySearchProviders = function() {};
 
-bits.SearchExtension.searchExtensionApp.applySearchResults = function(searchResult) {};
+bits.search.searchExtensionApp.applySearchResults = function(searchResult) {};

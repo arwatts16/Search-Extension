@@ -3,32 +3,29 @@ var match;
 var isActive;
 
 //SearchProvider constructor which calls the ISearchProvider constructor
-bits.searchExtension.SearchProvider = function() {
+bits.search.SearchProvider = function() {
   ISearchProvider.call(this);
 
   //initialize SearchProvider specific properties
-  match = new bits.searchExtension.MatchManager();
+  match = new bits.search.MatchManager();
   isActive = false;
 };
 
 //a new SearchProvider object which inherits from ISearchProvider
-bits.searchExtension.SearchProvider.prototype = Object.create(
-  bits.searchExtension.ISearchProvider.prototype
-);
+bits.search.SearchProvider.prototype = Object.create(bits.search.ISearchProvider.prototype);
 
 //set the constructor to refer to SearchProvider
-bits.searchExtension.SearchProvider.prototype.constructor =
-  bits.searchExtension.SearchProvider;
+bits.search.SearchProvider.prototype.constructor = bits.search.SearchProvider;
 
 //replace the functions setup in ISearchProvider
-bits.searchExtension.searchProvider.prototype.query = function(document) {
+bits.search.searchProvider.prototype.query = function(document) {
   return; //Array<SearchResult>
 };
 
-bits.searchExtension.searchProvider.prototype.init = function() {};
+bits.search.searchProvider.prototype.init = function() {};
 
-bits.searchExtension.searchProvider.prototype.setActive = function(active) {};
+bits.search.searchProvider.prototype.setActive = function(active) {};
 
-bits.searchExtension.searchProvider.prototype.getActive = function() {
-    return; //boolean
+bits.search.searchProvider.prototype.getActive = function() {
+  return; //boolean
 };

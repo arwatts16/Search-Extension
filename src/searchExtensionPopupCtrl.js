@@ -1,10 +1,10 @@
 // This controls what the popup looks like
 
 //Constructor
-bits.SearchExtension.searchExtensionPopupCtrl = function() {};
+bits.search.searchExtensionPopupCtrl = function() {};
 
-bits.SearchExtension.searchExtensionPopupCtrl.init = function() {};
+bits.search.searchExtensionPopupCtrl.init = function() {};
 
-bits.SearchExtension.searchExtensionPopupCtrl.onActiveChange = function() {};
+bits.search.searchExtensionPopupCtrl.onActiveChange = function() {};
 
-bits.SearchExtension.searchExtensionPopupCtrl.onSearchProviderActiveChange = function() {};
+bits.search.searchExtensionPopupCtrl.onSearchProviderActiveChange = function() {};
