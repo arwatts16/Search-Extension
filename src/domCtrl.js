@@ -2,19 +2,19 @@
 var bits = function() {};
 bits.search = function() {};
 //Constructor
-bits.search.searchExtensionDomCtrl = function(searchRes) {
+bits.search.domCtrl = function(searchRes) {
   this.applyMatches(searchRes);
 };
 
-bits.search.searchExtensionDomCtrl.document = null;
+bits.search.domCtrl.document = null;
 
-bits.search.searchExtensionDomCtrl.browser = null;
+bits.search.domCtrl.browser = null;
 
-bits.search.searchExtensionDomCtrl.initMatchManager = function() {};
+bits.search.domCtrl.initMatchManager = function() {};
 
-bits.search.searchExtensionDomCtrl.initBrowser = function() {};
+bits.search.domCtrl.initBrowser = function() {};
 
-bits.search.searchExtensionDomCtrl.applyMatches = function(searchRes) {
+bits.search.domCtrl.applyMatches = function(searchRes) {
   reload();
   var nodeIterator = null;
   nodeIterator = document.createNodeIterator(document.body, NodeFilter.SHOW_TEXT);
