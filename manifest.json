@@ -9,7 +9,7 @@
     "128": "images/search1.png"
   },
   "background": {
-    "scripts": ["src/searchExtensionApp.js", "src/background.js"]
+    "scripts": ["src/appMain.js", "src/background.js"]
   },
   "options_ui": {
     "page": "views/options.html",
@@ -18,7 +18,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["src/find_highlight.js", "src/searchExtensionDomCtrl.js"]
+      "js": ["src/find_highlight.js", "src/domCtrl.js"]
     }
   ],
   "browser_action": {
