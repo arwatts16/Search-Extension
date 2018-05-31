@@ -1,6 +1,10 @@
 //Returns the color that a certain data is
 
 //Constructor
-bits.SearchExtension.colorManager = function() {};
+bits.search.colorManager = function() {};
 
-bits.SearchExtension.colorManager.getColor = function(searchRes) {};
+bits.search.colorManager.getColor = function(searchRes) {
+  if (searchRes.source === 'uomFile') {
+    return 'yellow';
+  }
+};
