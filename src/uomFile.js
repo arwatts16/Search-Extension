@@ -3,32 +3,50 @@ var match;
 var isActive;
 
 //SearchProvider constructor which calls the ISearchProvider constructor
-bits.searchExtension.SearchProvider = function() {
-  ISearchProvider.call(this);
+bits.search.uomFile = function() {
+  alert("uomFile");
+  // ISearchProvider.call(this);
 
-  //initialize SearchProvider specific properties
-  match = new bits.searchExtension.MatchManager();
-  isActive = false;
+  // //initialize SearchProvider specific properties
+  // match = new bits.search.MatchManager();
+  // isActive = false;
 };
 
 //a new SearchProvider object which inherits from ISearchProvider
-bits.searchExtension.SearchProvider.prototype = Object.create(
-  bits.searchExtension.ISearchProvider.prototype
+bits.search.uomFile.prototype = Object.create(
+  bits.search.ISearchProvider.prototype
 );
 
 //set the constructor to refer to SearchProvider
-bits.searchExtension.SearchProvider.prototype.constructor =
-  bits.searchExtension.SearchProvider;
+bits.search.uomFile.prototype.constructor = bits.search.uomFile;
 
 //replace the functions setup in ISearchProvider
-bits.searchExtension.searchProvider.prototype.query = function(document) {
-  return; //Array<SearchResult>
+bits.search.uomFile.prototype.query = function(doc) {
+  var result = [];
+
+  var uom = new XMLHttpRequest();
+  uom.open("GET", doc, false);
+
+  uom.send(null);
+  var data = JSON.parse(uom.responseText);
+
+  for(var i = 0; i < data.length; i++){
+    result[i] = new bits.search.Result;
+    result[i].id = data[i].id;
+    result[i].name = data[i].name;
+    result[i].type = data[i].type;
+    result[i].subtype = data[i].subtype;
+    result[i].source = "uomFile";
+    
+  }
+
+  return result;
 };
 
-bits.searchExtension.searchProvider.prototype.init = function() {};
+bits.search.uomFile.prototype.init = function() {};
 
-bits.searchExtension.searchProvider.prototype.setActive = function(active) {};
+bits.search.uomFile.prototype.setActive = function(active) {};
 
-bits.searchExtension.searchProvider.prototype.getActive = function() {
-    return; //boolean
+bits.search.uomFile.prototype.getActive = function() {
+  return; //boolean
 };

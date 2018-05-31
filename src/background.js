@@ -3,4 +3,4 @@ localStorage.setItem('active', false);
 localStorage.setItem('input1', '');
 localStorage.setItem('input2', '');
 
-var app = new bits.SearchExtension.searchExtensionApp();
+var app = new bits.search.searchExtensionApp;

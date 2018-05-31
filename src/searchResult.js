@@ -1,13 +1,15 @@
 // constructor
 
-bits.searchExtension.Result = function() {};
+bits.search.Result = function() {};
 
-bits.searchExtension.Result.prototype.id = null;
+bits.search.Result.prototype.id = null;
 
-bits.searchExtension.Result.prototype.name = null;
+bits.search.Result.prototype.name = null;
 
-bits.searchExtension.Result.prototype.type = null;
+bits.search.Result.prototype.type = null;
 
-bits.searchExtension.Result.prototype.source = null;
+bits.search.Result.prototype.subtype = null;
 
-bits.searchExtension.Result.prototype.element = null;
+bits.search.Result.prototype.source = null;
+
+bits.search.Result.prototype.element = null;
