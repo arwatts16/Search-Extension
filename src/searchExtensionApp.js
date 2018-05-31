@@ -1,7 +1,12 @@
 // App Main
 
+var bits = function() {};
+bits.SearchExtension = function() {};
+
 //Constructor
-bits.SearchExtension.searchExtensionApp = function() {};
+bits.SearchExtension.searchExtensionApp = (function() {
+  alert('app');
+})();
 
 //This array holds all of the search providers or data sources
 bits.SearchExtension.searchExtensionApp.searchProviders = [];
