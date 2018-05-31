@@ -8,6 +8,8 @@ bits.search.Result.prototype.name = null;
 
 bits.search.Result.prototype.type = null;
 
+bits.search.Result.prototype.subtype = null;
+
 bits.search.Result.prototype.source = null;
 
 bits.search.Result.prototype.element = null;

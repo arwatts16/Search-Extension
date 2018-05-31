@@ -9,7 +9,13 @@
     "128": "images/search1.png"
   },
   "background": {
-    "scripts": ["src/appMain.js", "src/background.js"]
+    "scripts": [
+      "src/appMain.js",
+      "src/ISearchProvider.js",
+      "src/uomfile.js",
+      "src/searchResult.js",
+      "src/background.js"
+    ]
   },
   "options_ui": {
     "page": "views/options.html",
