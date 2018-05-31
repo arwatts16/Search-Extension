@@ -10,7 +10,7 @@
   },
   "background": {
     "scripts": [
-      "src/searchExtensionApp.js",
+      "src/appMain.js",
       "src/ISearchProvider.js",
       "src/uomfile.js",
       "src/searchResult.js",
