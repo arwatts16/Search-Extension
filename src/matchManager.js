@@ -1,10 +1,10 @@
 // keeps track of the word matches
 
 //Constructor
-bits.SearchExtension.matchManager = function() {};
+bits.search.matchManager = function() {};
 
-bits.SearchExtension.matchManager.matchers = null;
+bits.search.matchManager.matchers = null;
 
-bits.SearchExtension.matchManager.registerMatcher = function(iMatcher) {};
+bits.search.matchManager.registerMatcher = function(iMatcher) {};
 
-bits.SearchExtension.matchManager.matchAny = function() {};
+bits.search.matchManager.matchAny = function() {};

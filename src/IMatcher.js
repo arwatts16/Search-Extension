@@ -1,6 +1,6 @@
 //Finds matches
 
 //Constructor
-bits.SearchExtension.iMatcher = function() {};
+bits.search.iMatcher = function() {};
 
-bits.SearchExtension.iMatcher.matches = function(s, searchRes) {};
+bits.search.iMatcher.matches = function(s, searchRes) {};

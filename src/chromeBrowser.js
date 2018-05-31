@@ -1,8 +1,8 @@
 //Chrome brower extends iBrowser class
 
 //Constructor
-bits.SearchExtension.chromeBrowser = function() {
+bits.search.chromeBrowser = function() {
   iBrowser.call(this);
 };
 
-bits.SearchExtension.iBrowser.name = 'Chrome';
+bits.search.iBrowser.name = 'Chrome';

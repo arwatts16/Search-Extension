@@ -8,4 +8,4 @@ bits.search.ISearchProvider.prototype.init = function() {};
 bits.search.ISearchProvider.prototype.setActive = function(active) {};
 
 //returns a boolean
-bits.search.ISearchProvider.prototype.getActive = function() {}; 
+bits.search.ISearchProvider.prototype.getActive = function() {};
