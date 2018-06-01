@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         {
           message: "update",
           active: localStorage.getItem("active"),
-          input1: localStorage.getItem("uomActive"),
-          input2: localStorage.getItem("cxActive")
+          uom: localStorage.getItem("uomActive"),
+          cx: localStorage.getItem("cxActive")
         },
         function(response) {
           window.close();
