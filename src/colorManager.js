@@ -6,5 +6,7 @@ bits.search.colorManager = function() {};
 bits.search.colorManager.prototype.getColor = function(searchRes) {
   if (searchRes.source === 'uomFile') {
     return 'yellow';
+  } else if (searchRes.source === 'cxFile') {
+    return '#66ffff';
   }
 };

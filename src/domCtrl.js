@@ -3,17 +3,19 @@ var bits = function() {};
 bits.search = function() {};
 //Constructor
 bits.search.domCtrl = function() {};
-alert('Dom Control Running');
+//alert('Dom Control Running');
 var dataArr = [];
 chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
   if (msg.message == 'update') {
-    alert('update message caught');
+    //alert('update message caught');
     chrome.runtime.sendMessage({ message: 'send array' }, function() {});
   }
   if (msg.message == 'sent data') {
     console.log('got data from background');
     dataArr = msg.data;
-    bits.search.domCtrl.prototype.applyMatches(dataArr);
+    for (var i = 0; i < dataArr.length; i++) {
+      bits.search.domCtrl.prototype.applyMatches(dataArr[i]);
+    }
   }
 });
 
@@ -26,13 +28,13 @@ bits.search.domCtrl.prototype.initMatchManager = function() {};
 bits.search.domCtrl.prototype.initBrowser = function() {};
 
 bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
-  reload();
+  //reload();
   var nodeIterator = null;
   nodeIterator = document.createNodeIterator(document.body, NodeFilter.SHOW_TEXT);
   var textNode = null;
   var namesArr = [];
-  for (var i = 0; i < searchRes.length; i++) {
-    namesArr[i] = searchRes[i].name;
+  for (var i = 0; i < searchRes.data.length; i++) {
+    namesArr[i] = searchRes.data[i].name;
   }
   while ((textNode = nodeIterator.nextNode()) !== null) {
     var parent = textNode.parentNode;
@@ -47,7 +49,7 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
         var span = document.createElement('span');
         span.appendChild(document.createTextNode(sepWords[i]));
         var colMan = new bits.search.colorManager();
-        span.style.backgroundColor = colMan.getColor(searchRes[0]);
+        span.style.backgroundColor = colMan.getColor(searchRes.data[0]);
         span.className = 'highlighted';
         parent.insertBefore(span, newNode);
         textNode = nodeIterator.nextNode();

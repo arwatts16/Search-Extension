@@ -5,13 +5,13 @@ bits.search = function() {};
 
 //Constructor
 bits.search.appMain = function() {
-  alert('app');
+  //alert('app');
   bits.search.appMain.registerSearchProvider();
   chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
     if (msg.message == 'send array') {
       console.log('recieved sent message from dom');
       chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-        chrome.tabs.sendMessage(tabs[0].id, { message: 'sent data', data: searchProviders[0] }, function(response) {});
+        chrome.tabs.sendMessage(tabs[0].id, { message: 'sent data', data: searchProviders }, function(response) {});
       });
     }
   });
@@ -27,11 +27,11 @@ bits.search.appMain.registerSearchProvider = function() {
   var cx = new bits.search.cxFile();
 
   searchProviders[0] = {
-    provider: uom,
+    provider: cx,
     data: null
   };
   searchProviders[1] = {
-    provider: cx,
+    provider: uom,
     data: null
   };
 
@@ -41,8 +41,8 @@ bits.search.appMain.registerSearchProvider = function() {
 //bits.search.appMain.initSearchProviders = function() {};
 
 bits.search.appMain.querySearchProviders = function(uomFile, cxFile) {
-  searchProviders[0].data = searchProviders[0].provider.query(uomFile);
-  searchProviders[1].data = searchProviders[1].provider.query(cxFile);
+  searchProviders[1].data = searchProviders[1].provider.query(uomFile);
+  searchProviders[0].data = searchProviders[0].provider.query(cxFile);
 };
 
 bits.search.appMain.applySearchResults = function(searchResult) {
