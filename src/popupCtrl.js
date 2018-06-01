@@ -1,10 +1,36 @@
-// This controls what the popup looks like
+// Waits for popup to be loaded before it begins executing code
+document.addEventListener("DOMContentLoaded", function(event) {
+  var checked = localStorage.getItem("active");
+  if (checked === "true") {
+    document.getElementById("Active").checked = true;
+  } else {
+    document.getElementById("Active").checked = false;
+  }
 
-//Constructor
-bits.search.popupCtrl = function() {};
+  document.getElementById("userinput1").value = localStorage.getItem("input1");
+  document.getElementById("userinput2").value = localStorage.getItem("input2");
 
-bits.search.popupCtrl.init = function() {};
+  // if saved, then update the settings in memory
+  document.getElementById("Save").onclick = function(e) {
+    // save options into local storage
+    localStorage.setItem("active", document.getElementById("Active").checked);
+    localStorage.setItem("input1", document.getElementById("userinput1").value);
+    localStorage.setItem("input2", document.getElementById("userinput2").value);
 
-bits.search.popupCtrl.onActiveChange = function() {};
-
-bits.search.popupCtrl.onSearchProviderActiveChange = function() {};
+    // alert the content script that a change has been made
+    chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+      chrome.tabs.sendMessage(
+        tabs[0].id,
+        {
+          message: "update",
+          active: localStorage.getItem("active"),
+          input1: localStorage.getItem("input1"),
+          input2: localStorage.getItem("input2")
+        },
+        function(response) {
+          window.close();
+        }
+      );
+    });
+  };
+});
