@@ -12,6 +12,7 @@
     "scripts": [
       "src/appMain.js",
       "src/ISearchProvider.js",
+      "src/cxFile.js",
       "src/uomfile.js",
       "src/searchResult.js",
       "src/background.js"

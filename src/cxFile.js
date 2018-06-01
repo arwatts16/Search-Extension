@@ -3,20 +3,20 @@ var match;
 var isActive = "true";
 
 //SearchProvider constructor which calls the ISearchProvider constructor
-bits.search.uomFile = function() {
+bits.search.cxFile = function() {
   //isActive = 'false';
 };
 
 //a new SearchProvider object which inherits from ISearchProvider
-bits.search.uomFile.prototype = Object.create(
+bits.search.cxFile.prototype = Object.create(
   bits.search.ISearchProvider.prototype
 );
 
 //set the constructor to refer to SearchProvider
-bits.search.uomFile.prototype.constructor = bits.search.uomFile;
+bits.search.cxFile.prototype.constructor = bits.search.cxFile;
 
 //replace the functions setup in ISearchProvider
-bits.search.uomFile.prototype.query = function(doc) {
+bits.search.cxFile.prototype.query = function(doc) {
   var result = [];
   var uom = new XMLHttpRequest();
   if (isActive === "true") {
@@ -37,14 +37,14 @@ bits.search.uomFile.prototype.query = function(doc) {
   return result;
 };
 
-// bits.search.uomFile.prototype.init = function(doc) {
-//   bits.search.uomFile.prototype.query(doc);
+// bits.search.cxFile.prototype.init = function(doc) {
+//   bits.search.cxFile.prototype.query(doc);
 // };
 
-bits.search.uomFile.prototype.setActive = function(active) {
+bits.search.cxFile.prototype.setActive = function(active) {
   isActive = active;
 };
 
-bits.search.uomFile.prototype.getActive = function() {
+bits.search.cxFile.prototype.getActive = function() {
   return isActive;
 };
