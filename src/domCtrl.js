@@ -40,10 +40,10 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
     var sepWords = data.split(/(\W)/);
     for (var i = 0; i < sepWords.length; i++) {
       if (namesArr.includes(sepWords[i])) {
-        var re = RegExp('\\W+' + sepWords[i] + '+\\W');
+        var re = RegExp('\\b' + sepWords[i] + '\\b');
         var ind = textNode.data.search(re);
-        textNode.data = textNode.data.slice(0, ind + 1) + textNode.data.slice(ind + 1 + sepWords[i].length);
-        var newNode = textNode.splitText(ind + 1);
+        textNode.data = textNode.data.slice(0, ind) + textNode.data.slice(ind + sepWords[i].length);
+        var newNode = textNode.splitText(ind);
         var span = document.createElement('span');
         span.appendChild(document.createTextNode(sepWords[i]));
         var colMan = new bits.search.colorManager();
