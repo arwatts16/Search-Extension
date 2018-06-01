@@ -31,7 +31,7 @@ bits.search.cxFile.prototype.query = function(doc) {
       result[i].name = data[i].name;
       result[i].type = data[i].type;
       result[i].subtype = data[i].subtype;
-      result[i].source = "uomFile";
+      result[i].source = "cxFile";
     }
   }
   return result;

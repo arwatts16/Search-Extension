@@ -5,7 +5,6 @@ bits.search = function() {};
 
 //Constructor
 bits.search.appMain = function() {
-  alert('app');
   bits.search.appMain.registerSearchProvider();
   chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
     if (msg.message == 'send array') {

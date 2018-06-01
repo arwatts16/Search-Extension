@@ -3,7 +3,6 @@ var bits = function() {};
 bits.search = function() {};
 //Constructor
 bits.search.domCtrl = function() {};
-alert('Dom Control Running');
 var dataArr = [];
 chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
   if (msg.message == 'update') {
