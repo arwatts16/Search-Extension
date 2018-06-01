@@ -11,6 +11,7 @@ bits.search.appMain = function() {
       // updates isActive
       searchProviders[0].provider.setActive(msg.cx);
       searchProviders[1].provider.setActive(msg.uom);
+      bits.search.appMain.querySearchProviders('/data/uomData.json', '/data/cxData.json');
 
       // sends data over to the content script
       console.log('recieved sent message from dom');
@@ -30,12 +31,12 @@ bits.search.appMain.registerSearchProvider = function() {
 
   var cx = new bits.search.cxFile();
 
-  searchProviders[1] = {
-    provider: uom,
-    data: null
-  };
   searchProviders[0] = {
     provider: cx,
+    data: null
+  };
+  searchProviders[1] = {
+    provider: uom,
     data: null
   };
 
