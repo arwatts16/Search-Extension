@@ -3,7 +3,7 @@
 //Constructor
 bits.search.colorManager = function() {};
 
-bits.search.colorManager.getColor = function(searchRes) {
+bits.search.colorManager.prototype.getColor = function(searchRes) {
   if (searchRes.source === 'uomFile') {
     return 'yellow';
   }
