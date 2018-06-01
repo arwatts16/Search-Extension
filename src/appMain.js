@@ -5,7 +5,6 @@ bits.search = function() {};
 
 //Constructor
 bits.search.appMain = function() {
-  alert("app");
   bits.search.appMain.registerSearchProvider();
 };
 
@@ -14,7 +13,7 @@ searchProviders = [];
 
 //Finds all the search providers
 bits.search.appMain.registerSearchProvider = function() {
- var uomSearch = new bits.search.uomFile("/data/uomData.json");
+ var uomSearch = new bits.search.uomFile();
  var uomData = uomSearch.query("/data/uomData.json");
 };
 

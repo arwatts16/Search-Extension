@@ -3,7 +3,7 @@ var match;
 var isActive = 'true';
 
 //SearchProvider constructor which calls the ISearchProvider constructor
-bits.search.uomFile = function(doc) {
+bits.search.uomFile = function() {
  isActive = 'false';
 };
 
@@ -17,7 +17,6 @@ bits.search.uomFile.prototype.constructor = bits.search.uomFile;
 
 //replace the functions setup in ISearchProvider
 bits.search.uomFile.prototype.query = function(doc) {
-  alert("query");
   var result = [];
   var uom = new XMLHttpRequest();
   if (isActive === 'true') {
