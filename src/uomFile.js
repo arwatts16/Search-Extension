@@ -1,10 +1,10 @@
 //global variables for SearchProvider
 var match;
-var isActive = 'true';
+var isActive;
 
 //SearchProvider constructor which calls the ISearchProvider constructor
 bits.search.uomFile = function() {
-  //isActive = 'false';
+  isActive = 'false';
 };
 
 //a new SearchProvider object which inherits from ISearchProvider

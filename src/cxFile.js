@@ -1,10 +1,10 @@
 //global variables for SearchProvider
 var match;
-var isActive = 'true';
+var isActive;
 
 //SearchProvider constructor which calls the ISearchProvider constructor
 bits.search.cxFile = function() {
-  //isActive = 'false';
+  isActive = 'false';
 };
 
 //a new SearchProvider object which inherits from ISearchProvider
@@ -29,7 +29,7 @@ bits.search.cxFile.prototype.query = function(doc) {
       result[i].name = data[i].name;
       result[i].type = data[i].type;
       result[i].subtype = data[i].subtype;
-      result[i].source = 'cxFile';
+      result[i].source = "cxFile";
     }
   }
   return result;

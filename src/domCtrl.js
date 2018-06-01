@@ -3,12 +3,10 @@ var bits = function() {};
 bits.search = function() {};
 //Constructor
 bits.search.domCtrl = function() {};
-//alert('Dom Control Running');
 var dataArr = [];
 chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
   if (msg.message == 'update') {
-    //alert('update message caught');
-    chrome.runtime.sendMessage({ message: 'send array' }, function() {});
+    chrome.runtime.sendMessage({ message: 'send array', uom: msg.uom, cx: msg.cx }, function() {});
   }
   if (msg.message == 'sent data') {
     console.log('got data from background');

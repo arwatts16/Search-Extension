@@ -5,10 +5,14 @@ bits.search = function() {};
 
 //Constructor
 bits.search.appMain = function() {
-  //alert('app');
   bits.search.appMain.registerSearchProvider();
   chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
     if (msg.message == 'send array') {
+      // updates isActive
+      searchProviders[0].provider.setActive(msg.cx);
+      searchProviders[1].provider.setActive(msg.uom);
+
+      // sends data over to the content script
       console.log('recieved sent message from dom');
       chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
         chrome.tabs.sendMessage(tabs[0].id, { message: 'sent data', data: searchProviders }, function(response) {});
@@ -26,12 +30,12 @@ bits.search.appMain.registerSearchProvider = function() {
 
   var cx = new bits.search.cxFile();
 
-  searchProviders[0] = {
-    provider: cx,
-    data: null
-  };
   searchProviders[1] = {
     provider: uom,
+    data: null
+  };
+  searchProviders[0] = {
+    provider: cx,
     data: null
   };
 
