@@ -19,7 +19,8 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
   if (msg.message == "sent data") {
     console.log("got data from background");
     dataArr = msg.data;
-    for (var i = 0; i < dataArr.length && msg.allActive ==='true'; i++) {
+    bits.search.domCtrl.prototype.reload();
+    for (var i = 0; i < dataArr.length && msg.allActive === "true"; i++) {
       bits.search.domCtrl.prototype.applyMatches(dataArr[i]);
     }
   }
@@ -34,7 +35,6 @@ bits.search.domCtrl.prototype.initMatchManager = function() {};
 bits.search.domCtrl.prototype.initBrowser = function() {};
 
 bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
-  //reload();
   var nodeIterator = null;
   nodeIterator = document.createNodeIterator(
     document.body,
@@ -68,22 +68,25 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
       }
     }
   }
-  function reload() {
-    var matches = document.getElementsByClassName("highlighted");
-    var parent;
-
-    if (document.getElementsByClassName("highlighted").length !== 0) {
-      for (var i = 0; i < matches.length; i++) {
-        parent = matches[i].parentNode;
-        matches[i].parentNode.innerHTML = parent.innerHTML.replace(
-          matches[0].outerHTML,
-          matches[0].innerText
-        );
-      }
-    }
-
-    if (document.getElementsByClassName("highlighted").length !== 0) {
-      reload();
-    }
-  }
 };
+
+bits.search.domCtrl.prototype.reload = function() {
+  var matches = document.getElementsByClassName("highlighted");
+  var parent;
+
+  for (
+    var i = 0;
+    document.getElementsByClassName("highlighted").length !== 0;
+
+  ) {
+    parent = matches[i].parentNode;
+    matches[i].parentNode.innerHTML = parent.innerHTML.replace(
+      matches[0].outerHTML,
+      matches[0].innerText
+    );
+  }
+
+  if (document.getElementsByClassName("highlighted").length !== 0) {
+    reload();
+  }
+}
