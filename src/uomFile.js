@@ -1,10 +1,10 @@
 //global variables for SearchProvider
 var match;
-var isActive;
+var uomIsActive;
 
 //SearchProvider constructor which calls the ISearchProvider constructor
 bits.search.uomFile = function() {
-  isActive = 'false';
+  uomIsActive = 'false';
 };
 
 //a new SearchProvider object which inherits from ISearchProvider
@@ -17,7 +17,7 @@ bits.search.uomFile.prototype.constructor = bits.search.uomFile;
 bits.search.uomFile.prototype.query = function(doc) {
   var result = [];
   var uom = new XMLHttpRequest();
-  if (isActive === 'true') {
+  if (uomIsActive === 'true') {
     uom.open('GET', doc, false);
 
     uom.send(null);
@@ -40,9 +40,9 @@ bits.search.uomFile.prototype.query = function(doc) {
 // };
 
 bits.search.uomFile.prototype.setActive = function(active) {
-  isActive = active;
+  uomIsActive = active;
 };
 
 bits.search.uomFile.prototype.getActive = function() {
-  return isActive;
+  return uomIsActive;
 };
