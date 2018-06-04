@@ -33,17 +33,10 @@ document.addEventListener('DOMContentLoaded', function(event) {
       chrome.tabs.sendMessage(
         tabs[0].id,
         {
-<<<<<<< HEAD
-          message: "update",
-          allActive: localStorage.getItem("active"),
-          uom: localStorage.getItem("uomActive"),
-          cx: localStorage.getItem("cxActive")
-=======
           message: 'update',
-          active: localStorage.getItem('active'),
+          allActive: localStorage.getItem('active'),
           uom: localStorage.getItem('uomActive'),
           cx: localStorage.getItem('cxActive')
->>>>>>> Issue77
         },
         function(response) {
           window.close();
