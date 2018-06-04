@@ -11,7 +11,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
         message: 'send array',
         allActive: msg.allActive,
         uom: msg.uom,
-        cx: msg.cx
+        nx: msg.nx
       },
       function() {}
     );

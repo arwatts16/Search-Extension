@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', function(event) {
     document.getElementById('uomActive').checked = false;
   }
 
-  var cxChecked = localStorage.getItem('cxActive');
-  if (cxChecked === 'true') {
-    document.getElementById('cxActive').checked = true;
+  var nxChecked = localStorage.getItem('nxActive');
+  if (nxChecked === 'true') {
+    document.getElementById('nxActive').checked = true;
   } else {
-    document.getElementById('cxActive').checked = false;
+    document.getElementById('nxActive').checked = false;
   }
 
   // if saved, then update the settings in memory
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     // save options into local storage
     localStorage.setItem('active', document.getElementById('Active').checked);
     localStorage.setItem('uomActive', document.getElementById('uomActive').checked);
-    localStorage.setItem('cxActive', document.getElementById('cxActive').checked);
+    localStorage.setItem('nxActive', document.getElementById('nxActive').checked);
 
     // alert the content script that a change has been made
     chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
           message: 'update',
           allActive: localStorage.getItem('active'),
           uom: localStorage.getItem('uomActive'),
-          cx: localStorage.getItem('cxActive')
+          nx: localStorage.getItem('nxActive')
         },
         function(response) {
           window.close();
