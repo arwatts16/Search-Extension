@@ -20,10 +20,12 @@ bits.search.appMain.registerSearchProvider = function() {
 
   searchProviders[0] = {
     provider: cx,
+    active: 'false',
     data: null
   };
   searchProviders[1] = {
     provider: uom,
+    active: 'false',
     data: null
   };
 
@@ -45,7 +47,11 @@ bits.search.appMain.applySearchResults = function() {
     if (msg.message == "send array") {
       // updates isActive
       searchProviders[0].provider.setActive(msg.cx);
+      searchProviders[0].active = msg.cx;
+      
       searchProviders[1].provider.setActive(msg.uom);
+      searchProviders[1].active = msg.uom;
+      
       bits.search.appMain.querySearchProviders(
         "/data/uomData.json",
         "/data/cxData.json"

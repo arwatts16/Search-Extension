@@ -20,7 +20,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
     console.log("got data from background");
     dataArr = msg.data;
     for (var i = 0; i < dataArr.length && msg.allActive ==='true'; i++) {
-      bits.search.domCtrl.prototype.applyMatches(dataArr[i]);
+      bits.search.domCtrl.prototype.applyMatches(dataArr[i], msg.data[i].source);
     }
   }
 });
@@ -33,8 +33,7 @@ bits.search.domCtrl.prototype.initMatchManager = function() {};
 
 bits.search.domCtrl.prototype.initBrowser = function() {};
 
-bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
-  //reload();
+bits.search.domCtrl.prototype.applyMatches = function(searchRes, className) {
   var nodeIterator = null;
   nodeIterator = document.createNodeIterator(
     document.body,
@@ -61,18 +60,18 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
         span.appendChild(document.createTextNode(sepWords[i]));
         var colMan = new bits.search.colorManager();
         span.style.backgroundColor = colMan.getColor(searchRes.data[0]);
-        span.className = "highlighted";
+        span.className = className;
         parent.insertBefore(span, newNode);
         textNode = nodeIterator.nextNode();
         textNode = nodeIterator.nextNode();
       }
     }
   }
-  function reload() {
-    var matches = document.getElementsByClassName("highlighted");
+  function reload(className) {
+    var matches = document.getElementsByClassName(className);
     var parent;
 
-    if (document.getElementsByClassName("highlighted").length !== 0) {
+    if (document.getElementsByClassName(className).length !== 0) {
       for (var i = 0; i < matches.length; i++) {
         parent = matches[i].parentNode;
         matches[i].parentNode.innerHTML = parent.innerHTML.replace(
@@ -82,8 +81,8 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
       }
     }
 
-    if (document.getElementsByClassName("highlighted").length !== 0) {
-      reload();
+    if (document.getElementsByClassName(className).length !== 0) {
+      reload(className);
     }
   }
 };
