@@ -19,8 +19,9 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
   if (msg.message == "sent data") {
     console.log("got data from background");
     dataArr = msg.data;
-    for (var i = 0; i < dataArr.length && msg.allActive ==='true'; i++) {
-      bits.search.domCtrl.prototype.applyMatches(dataArr[i], msg.data[i].source);
+    bits.search.domCtrl.prototype.reload();
+    for (var i = 0; i < dataArr.length && msg.allActive === "true"; i++) {
+      bits.search.domCtrl.prototype.applyMatches(dataArr[i]);
     }
   }
 });
@@ -33,7 +34,7 @@ bits.search.domCtrl.prototype.initMatchManager = function() {};
 
 bits.search.domCtrl.prototype.initBrowser = function() {};
 
-bits.search.domCtrl.prototype.applyMatches = function(searchRes, className) {
+bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
   var nodeIterator = null;
   nodeIterator = document.createNodeIterator(
     document.body,
@@ -60,29 +61,32 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes, className) {
         span.appendChild(document.createTextNode(sepWords[i]));
         var colMan = new bits.search.colorManager();
         span.style.backgroundColor = colMan.getColor(searchRes.data[0]);
-        span.className = className;
+        span.className = "highlighted";
         parent.insertBefore(span, newNode);
         textNode = nodeIterator.nextNode();
         textNode = nodeIterator.nextNode();
       }
     }
   }
-  function reload(className) {
-    var matches = document.getElementsByClassName(className);
-    var parent;
-
-    if (document.getElementsByClassName(className).length !== 0) {
-      for (var i = 0; i < matches.length; i++) {
-        parent = matches[i].parentNode;
-        matches[i].parentNode.innerHTML = parent.innerHTML.replace(
-          matches[0].outerHTML,
-          matches[0].innerText
-        );
-      }
-    }
-
-    if (document.getElementsByClassName(className).length !== 0) {
-      reload(className);
-    }
-  }
 };
+
+bits.search.domCtrl.prototype.reload = function() {
+  var matches = document.getElementsByClassName("highlighted");
+  var parent;
+
+  for (
+    var i = 0;
+    document.getElementsByClassName("highlighted").length !== 0;
+
+  ) {
+    parent = matches[i].parentNode;
+    matches[i].parentNode.innerHTML = parent.innerHTML.replace(
+      matches[0].outerHTML,
+      matches[0].innerText
+    );
+  }
+
+  if (document.getElementsByClassName("highlighted").length !== 0) {
+    reload();
+  }
+}
