@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         tabs[0].id,
         {
           message: "update",
-          active: localStorage.getItem("active"),
+          allActive: localStorage.getItem("active"),
           uom: localStorage.getItem("uomActive"),
           cx: localStorage.getItem("cxActive")
         },

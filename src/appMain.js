@@ -27,7 +27,10 @@ bits.search.appMain.registerSearchProvider = function() {
     data: null
   };
 
-  bits.search.appMain.querySearchProviders('/data/uomData.json', '/data/cxData.json');
+  bits.search.appMain.querySearchProviders(
+    "/data/uomData.json",
+    "/data/cxData.json"
+  );
 };
 
 //bits.search.appMain.initSearchProviders = function() {};
@@ -39,16 +42,27 @@ bits.search.appMain.querySearchProviders = function(uomFile, cxFile) {
 
 bits.search.appMain.applySearchResults = function() {
   chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
-    if (msg.message == 'send array') {
+    if (msg.message == "send array") {
       // updates isActive
       searchProviders[0].provider.setActive(msg.cx);
       searchProviders[1].provider.setActive(msg.uom);
-      bits.search.appMain.querySearchProviders('/data/uomData.json', '/data/cxData.json');
+      bits.search.appMain.querySearchProviders(
+        "/data/uomData.json",
+        "/data/cxData.json"
+      );
 
       // sends data over to the content script
-      console.log('recieved sent message from dom');
+      console.log("recieved sent message from dom");
       chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-        chrome.tabs.sendMessage(tabs[0].id, { message: 'sent data', data: searchProviders }, function(response) {});
+        chrome.tabs.sendMessage(
+          tabs[0].id,
+          {
+            message: "sent data",
+            data: searchProviders,
+            allActive: msg.allActive
+          },
+          function(response) {}
+        );
       });
     }
   });
