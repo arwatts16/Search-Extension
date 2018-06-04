@@ -3,8 +3,12 @@
 //Constructor
 bits.search.matchManager = function() {};
 
-bits.search.matchManager.matchers = null;
+bits.search.matchManager.prototype.matches = [];
 
-bits.search.matchManager.registerMatcher = function(iMatcher) {};
-
-bits.search.matchManager.matchAny = function() {};
+bits.search.matchManager.prototype.matchAny = function(str, seRes) {
+  var re = RegExp('\\b' + seRes.name + '\\b');
+  if (re.test(str)) {
+    bits.search.matchManager.prototype.matches.push(seRes);
+    return true;
+  }
+};
