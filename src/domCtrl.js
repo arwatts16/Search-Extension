@@ -87,6 +87,6 @@ bits.search.domCtrl.prototype.reload = function() {
   }
 
   if (document.getElementsByClassName("highlighted").length !== 0) {
-    reload();
+    bits.search.domCtrl.prototype.reload();
   }
 }
