@@ -45,9 +45,19 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
   for (var i = 0; i < searchRes.data.length; i++) {
     namesArr[i] = searchRes.data[i].name;
   }
+  var body = document.body.innerText;
+  var foundData = [];
+  for (var i = 0; i < namesArr.length; i++) {
+    var re = RegExp('\\b' + namesArr[i] + '\\b');
+    if (re.test(body)) {
+      foundData.push(namesArr[i]);
+    }
+  }
+
   while ((textNode = nodeIterator.nextNode()) !== null) {
     var parent = textNode.parentNode;
     var data = textNode.data;
+<<<<<<< HEAD
     var sepWords = data.split(/(\W)/);
     for (var i = 0; i < sepWords.length; i++) {
       if (namesArr.includes(sepWords[i])) {
@@ -59,6 +69,16 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
         var newNode = textNode.splitText(ind);
         var span = document.createElement("span");
         span.appendChild(document.createTextNode(sepWords[i]));
+=======
+    for (var i = 0; i < foundData.length; i++) {
+      var re = RegExp('\\b' + foundData[i] + '\\b');
+      if (re.test(textNode.data)) {
+        var ind = textNode.data.search(re);
+        textNode.data = textNode.data.slice(0, ind) + textNode.data.slice(ind + foundData[i].length);
+        var newNode = textNode.splitText(ind);
+        var span = document.createElement('span');
+        span.appendChild(document.createTextNode(foundData[i]));
+>>>>>>> Issue77
         var colMan = new bits.search.colorManager();
         span.style.backgroundColor = colMan.getColor(searchRes.data[0]);
         span.className = "highlighted";
@@ -68,7 +88,14 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
       }
     }
   }
+<<<<<<< HEAD
 };
+=======
+
+  function reload() {
+    var matches = document.getElementsByClassName('highlighted');
+    var parent;
+>>>>>>> Issue77
 
 bits.search.domCtrl.prototype.reload = function() {
   var matches = document.getElementsByClassName("highlighted");
