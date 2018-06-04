@@ -33,7 +33,8 @@
       ],
       "js": [
         "src/domCtrl.js",
-        "src/colorManager.js"
+        "src/colorManager.js",
+        "src/matchManager.js"
       ]
     }
   ],
