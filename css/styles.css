@@ -1,8 +1,4 @@
-#options{
+#options, #popup{
     width: 80px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
-#popup{
-    width: 80px;
-    font-family: Georgia, 'Times New Roman', Times, serif;    
 }
