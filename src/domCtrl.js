@@ -46,6 +46,7 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
   var foundData = [];
   var matcher = new bits.search.matchManager();
   for (var i = 0; i < searchRes.data.length; i++) {
+    searchRes.data[i].name = searchRes.data[i].name.replace(/[^A-Za-z0-9_ ]/g,"");
     if (matcher.matchAny(body, searchRes.data[i])) {
       foundData.push(searchRes.data[i]);
     }
@@ -56,7 +57,7 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
     var parent = textNode.parentNode;
     var data = textNode.data;
     for (var i = 0; i < foundData.length; i++) {
-      var re = RegExp('\\b' + foundData[i].name + '\\b', 'i');
+      var re = RegExp('\\b' + foundData[i].name + '\\b');
       if (re.test(textNode.data)) {
         var ind = textNode.data.search(re);
         textNode.data = textNode.data.slice(0, ind) + textNode.data.slice(ind + foundData[i].name.length);

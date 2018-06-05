@@ -62,6 +62,5 @@ bits.search.cxSearch.prototype.getActive = function() {
 chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
   if (msg.message == "DOM loaded") {
     body = msg.page;
-    bits.search.cxSearch.prototype.query();
   }
 });
