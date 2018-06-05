@@ -56,7 +56,7 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
     var parent = textNode.parentNode;
     var data = textNode.data;
     for (var i = 0; i < foundData.length; i++) {
-      var re = RegExp('\\b' + foundData[i].name + '\\b', 'i');
+      var re = RegExp('\\b' + foundData[i].name + '\\b');
       if (re.test(textNode.data)) {
         var ind = textNode.data.search(re);
         textNode.data = textNode.data.slice(0, ind) + textNode.data.slice(ind + foundData[i].name.length);
@@ -66,14 +66,18 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
         var colMan = new bits.search.colorManager();
         span.style.backgroundColor = colMan.getColor(foundData[i]);
         span.className = 'highlighted';
-
-        span.onclick = function() {
+        span.id = i;
+        span.addEventListener('click', function() {
           var popup = open('', 'Popup', 'width=300,height=200');
+          var name = popup.document.createElement('h3');
+          var nameText = popup.document.createTextNode('Name: ' + foundData[parseInt(span.id)].name);
+          name.appendChild(nameText);
           var type = popup.document.createElement('h3');
-          var typeText = popup.document.createTextNode('Type: ');
+          var typeText = popup.document.createTextNode('Type: ' + foundData[parseInt(span.id)].type);
           type.appendChild(typeText);
+          popup.document.body.appendChild(name);
           popup.document.body.appendChild(type);
-        };
+        });
         parent.insertBefore(span, newNode);
         textNode = nodeIterator.nextNode();
         textNode = nodeIterator.nextNode();
