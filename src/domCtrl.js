@@ -46,7 +46,7 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
   var foundData = [];
   var matcher = new bits.search.matchManager();
   for (var i = 0; i < searchRes.data.length; i++) {
-    searchRes.data[i].name = searchRes.data[i].name.replace(/[^A-Za-z0-9_ ]/g,"");
+    searchRes.data[i].name = searchRes.data[i].name.replace(/[^A-Za-z0-9_ ]/g, '');
     if (matcher.matchAny(body, searchRes.data[i])) {
       foundData.push(searchRes.data[i]);
     }
@@ -62,7 +62,7 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
         var ind = textNode.data.search(re);
         textNode.data = textNode.data.slice(0, ind) + textNode.data.slice(ind + foundData[i].name.length);
         var newNode = textNode.splitText(ind);
-        var span = document.createElement('span');
+        var span = new document.createElement('span');
         span.appendChild(document.createTextNode(foundData[i].name));
         var colMan = new bits.search.colorManager();
         span.style.backgroundColor = colMan.getColor(foundData[i]);
@@ -85,6 +85,9 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
       }
     }
   }
+  // for (var i = 0; i < foundData.length(); i++) {
+  //   var popupHigh = document.getElementById(i);
+  // }
 };
 
 bits.search.domCtrl.prototype.reload = function() {
