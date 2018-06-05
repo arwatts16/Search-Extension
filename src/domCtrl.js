@@ -46,6 +46,7 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
   var foundData = [];
   var matcher = new bits.search.matchManager();
   for (var i = 0; i < searchRes.data.length; i++) {
+    searchRes.data[i].name = searchRes.data[i].name.replace(/[^A-Za-z0-9_ ]/g,"");
     if (matcher.matchAny(body, searchRes.data[i])) {
       foundData.push(searchRes.data[i]);
     }
