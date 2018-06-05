@@ -1,6 +1,7 @@
 // This class controls the Dom and manipulates the content of the browser
 var bits = function() {};
 bits.search = function() {};
+chrome.runtime.sendMessage({ message: 'DOM loaded', page: document.body.innerText }, function() {});
 //Constructor
 bits.search.domCtrl = function() {};
 var dataArr = [];
@@ -11,7 +12,8 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
         message: 'send array',
         allActive: msg.allActive,
         uom: msg.uom,
-        nx: msg.nx
+        nx: msg.nx,
+        cx: msg.cx
       },
       function() {}
     );
@@ -21,7 +23,9 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
     dataArr = msg.data;
     bits.search.domCtrl.prototype.reload();
     for (var i = 0; i < dataArr.length && msg.allActive === 'true'; i++) {
-      bits.search.domCtrl.prototype.applyMatches(dataArr[i]);
+      if (dataArr[i].active === 'true') {
+        bits.search.domCtrl.prototype.applyMatches(dataArr[i]);
+      }
     }
   }
 });
@@ -52,7 +56,7 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
     var parent = textNode.parentNode;
     var data = textNode.data;
     for (var i = 0; i < foundData.length; i++) {
-      var re = RegExp('\\b' + foundData[i].name + '\\b');
+      var re = RegExp('\\b' + foundData[i].name + '\\b', 'i');
       if (re.test(textNode.data)) {
         var ind = textNode.data.search(re);
         textNode.data = textNode.data.slice(0, ind) + textNode.data.slice(ind + foundData[i].name.length);
@@ -66,7 +70,7 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
         span.onclick = function() {
           var popup = open('', 'Popup', 'width=300,height=200');
           var type = popup.document.createElement('h3');
-          var typeText = popup.document.createTextNode('Type: ' + foundData[i].type);
+          var typeText = popup.document.createTextNode('Type: ');
           type.appendChild(typeText);
           popup.document.body.appendChild(type);
         };
