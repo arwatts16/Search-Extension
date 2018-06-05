@@ -22,27 +22,27 @@ bits.search.cxSearch.prototype.query = function() {
   var i = 0;
 
   if (cxIsActive === "true") {
-    var people = doc.people().out("topk");
-    var places = doc.places().out("topk");
-    var orgs = doc.organizations().out("topk");
+    var people = doc.people().data();
+    var places = doc.places().data();
+    var orgs = doc.organizations().data();
 
     for (; i < people.length; i++) {
       result[i] = new bits.search.Result();
-      result[i].name = people[i].normal;
+      result[i].name = people[i].text;
       result[i].id = i;
       result[i].type = "person";
       result[i].source = "cxSearch";
     }
     for (var j = 0; j < places.length; i++ && j++) {
       result[i] = new bits.search.Result();
-      result[i].name = places[j].normal;
+      result[i].name = places[j].text;
       result[i].id = i;
       result[i].type = "place";
       result[i].source = "cxSearch";
     }
     for (var j = 0; j < orgs.length; i++ && j++) {
       result[i] = new bits.search.Result();
-      result[i].name = orgs[j].normal;
+      result[i].name = orgs[j].text;
       result[i].id = i;
       result[i].type = "organization";
       result[i].source = "cxSearch";
