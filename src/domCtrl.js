@@ -47,7 +47,6 @@ bits.search.domCtrl.prototype.initMatchManager = function() {};
 bits.search.domCtrl.prototype.initBrowser = function() {};
 
 bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
-<<<<<<< HEAD
   var nodeIterator = null;
   nodeIterator = document.createNodeIterator(document.body, NodeFilter.SHOW_TEXT);
   var textNode = null;
@@ -57,29 +56,8 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
   for (var i = 0; i < searchRes.data.length; i++) {
     if (matcher.matchAny(body, searchRes.data[i])) {
       foundData.push(searchRes.data[i]);
-=======
-  if (searchRes.active === "true") {
-    var nodeIterator = null;
-    nodeIterator = document.createNodeIterator(
-      document.body,
-      NodeFilter.SHOW_TEXT
-    );
-    var textNode = null;
-    var namesArr = [];
-    for (var i = 0; i < searchRes.data.length; i++) {
-      namesArr[i] = searchRes.data[i].name;
-    }
-    var body = document.body.innerText;
-    var foundData = [];
-    for (var i = 0; i < namesArr.length; i++) {
-      var re = RegExp("\\b" + namesArr[i] + "\\b");
-      if (re.test(body)) {
-        foundData.push(namesArr[i]);
-      }
->>>>>>> issue-79
     }
 
-<<<<<<< HEAD
   while ((textNode = nodeIterator.nextNode()) !== null) {
     var parent = textNode.parentNode;
     var data = textNode.data;
@@ -97,28 +75,6 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
         parent.insertBefore(span, newNode);
         textNode = nodeIterator.nextNode();
         textNode = nodeIterator.nextNode();
-=======
-    while ((textNode = nodeIterator.nextNode()) !== null) {
-      var parent = textNode.parentNode;
-      var data = textNode.data;
-      for (var i = 0; i < foundData.length; i++) {
-        var re = RegExp("\\b" + foundData[i] + "\\b");
-        if (re.test(textNode.data)) {
-          var ind = textNode.data.search(re);
-          textNode.data =
-            textNode.data.slice(0, ind) +
-            textNode.data.slice(ind + foundData[i].length);
-          var newNode = textNode.splitText(ind);
-          var span = document.createElement("span");
-          span.appendChild(document.createTextNode(foundData[i]));
-          var colMan = new bits.search.colorManager();
-          span.style.backgroundColor = colMan.getColor(searchRes.data[0]);
-          span.className = "highlighted";
-          parent.insertBefore(span, newNode);
-          textNode = nodeIterator.nextNode();
-          textNode = nodeIterator.nextNode();
-        }
->>>>>>> issue-79
       }
     }
   }
