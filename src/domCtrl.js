@@ -1,17 +1,6 @@
 // This class controls the Dom and manipulates the content of the browser
 var bits = function() {};
 bits.search = function() {};
-
-// when the page is loaded, send the document's inner text to cxSearch
-
-chrome.runtime.sendMessage(
-  {
-    message: 'DOM loaded',
-    page: document.body.innerText
-  },
-  function() {}
-);
-
 //Constructor
 bits.search.domCtrl = function() {};
 var dataArr = [];
@@ -22,8 +11,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
         message: 'send array',
         allActive: msg.allActive,
         uom: msg.uom,
-        nx: msg.nx,
-        cx: msg.cx
+        nx: msg.nx
       },
       function() {}
     );
@@ -58,6 +46,7 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
       foundData.push(searchRes.data[i]);
     }
   }
+  var foundDataHTML = [];
 
   while ((textNode = nodeIterator.nextNode()) !== null) {
     var parent = textNode.parentNode;
@@ -73,6 +62,14 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
         var colMan = new bits.search.colorManager();
         span.style.backgroundColor = colMan.getColor(foundData[i]);
         span.className = 'highlighted';
+
+        span.onclick = function() {
+          var popup = open('', 'Popup', 'width=300,height=200');
+          var type = popup.document.createElement('h3');
+          var typeText = popup.document.createTextNode('Type: ' + foundData[i].type);
+          type.appendChild(typeText);
+          popup.document.body.appendChild(type);
+        };
         parent.insertBefore(span, newNode);
         textNode = nodeIterator.nextNode();
         textNode = nodeIterator.nextNode();
