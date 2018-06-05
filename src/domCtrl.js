@@ -66,7 +66,7 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
         span.onclick = function() {
           var popup = open('', 'Popup', 'width=300,height=200');
           var type = popup.document.createElement('h3');
-          var typeText = popup.document.createTextNode('Type: ' + foundData[i].type);
+          var typeText = popup.document.createTextNode('Type: ');
           type.appendChild(typeText);
           popup.document.body.appendChild(type);
         };
