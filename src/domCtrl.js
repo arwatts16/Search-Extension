@@ -6,7 +6,7 @@ bits.search = function() {};
 
 chrome.runtime.sendMessage(
   {
-    message: "DOM loaded",
+    message: 'DOM loaded',
     page: document.body.innerText
   },
   function() {}
@@ -16,10 +16,10 @@ chrome.runtime.sendMessage(
 bits.search.domCtrl = function() {};
 var dataArr = [];
 chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
-  if (msg.message == "update") {
+  if (msg.message == 'update') {
     chrome.runtime.sendMessage(
       {
-        message: "send array",
+        message: 'send array',
         allActive: msg.allActive,
         uom: msg.uom,
         nx: msg.nx,
@@ -28,11 +28,11 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
       function() {}
     );
   }
-  if (msg.message == "sent data") {
-    console.log("got data from background");
+  if (msg.message == 'sent data') {
+    console.log('got data from background');
     dataArr = msg.data;
     bits.search.domCtrl.prototype.reload();
-    for (var i = 0; i < dataArr.length && msg.allActive === "true"; i++) {
+    for (var i = 0; i < dataArr.length && msg.allActive === 'true'; i++) {
       bits.search.domCtrl.prototype.applyMatches(dataArr[i]);
     }
   }
@@ -57,6 +57,7 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
     if (matcher.matchAny(body, searchRes.data[i])) {
       foundData.push(searchRes.data[i]);
     }
+  }
 
   while ((textNode = nodeIterator.nextNode()) !== null) {
     var parent = textNode.parentNode;
@@ -81,22 +82,15 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
 };
 
 bits.search.domCtrl.prototype.reload = function() {
-  var matches = document.getElementsByClassName("highlighted");
+  var matches = document.getElementsByClassName('highlighted');
   var parent;
 
-  for (
-    var i = 0;
-    document.getElementsByClassName("highlighted").length !== 0;
-
-  ) {
+  for (var i = 0; document.getElementsByClassName('highlighted').length !== 0; ) {
     parent = matches[i].parentNode;
-    matches[i].parentNode.innerHTML = parent.innerHTML.replace(
-      matches[0].outerHTML,
-      matches[0].innerText
-    );
+    matches[i].parentNode.innerHTML = parent.innerHTML.replace(matches[0].outerHTML, matches[0].innerText);
   }
 
-  if (document.getElementsByClassName("highlighted").length !== 0) {
+  if (document.getElementsByClassName('highlighted').length !== 0) {
     bits.search.domCtrl.prototype.reload();
   }
 };
