@@ -9,4 +9,7 @@ bits.search.colorManager.prototype.getColor = function(searchRes) {
   } else if (searchRes.source === 'nxFile') {
     return '#66ffff';
   }
+  else if (searchRes.source === 'cxSearch'){
+    return '#ffb733'
+  }
 };

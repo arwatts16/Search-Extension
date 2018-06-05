@@ -16,6 +16,7 @@
       "lib/compromise.min.js",
       "src/appMain.js",
       "src/ISearchProvider.js",
+      "src/cxSearch.js",
       "src/nxFile.js",
       "src/uomfile.js",
       "src/searchResult.js",

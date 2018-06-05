@@ -1,5 +1,4 @@
-//global variables for SearchProvider
-var match;
+//global variable(s) for SearchProvider
 var uomIsActive;
 
 //SearchProvider constructor which calls the ISearchProvider constructor
