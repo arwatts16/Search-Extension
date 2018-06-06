@@ -68,17 +68,6 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
         span.style.backgroundColor = colMan.getColor(foundData[i]);
         span.className = 'highlighted';
         span.id = i;
-<<<<<<< HEAD
-=======
-
-        span.onclick = function() {
-          var popup = open('', 'Popup', 'width=300,height=200');
-          var type = popup.document.createElement('h3');
-          var typeText = popup.document.createTextNode('Type: ');
-          type.appendChild(typeText);
-          popup.document.body.appendChild(type);
-        };
->>>>>>> 0c669ef3acae0625fc070d0202730a78fcf04e21
         parent.insertBefore(span, newNode);
         textNode = nodeIterator.nextNode();
         textNode = nodeIterator.nextNode();
