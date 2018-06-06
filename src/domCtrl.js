@@ -62,32 +62,40 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
         var ind = textNode.data.search(re);
         textNode.data = textNode.data.slice(0, ind) + textNode.data.slice(ind + foundData[i].name.length);
         var newNode = textNode.splitText(ind);
-        var span = new document.createElement('span');
+        var span = document.createElement('span');
         span.appendChild(document.createTextNode(foundData[i].name));
         var colMan = new bits.search.colorManager();
         span.style.backgroundColor = colMan.getColor(foundData[i]);
         span.className = 'highlighted';
         span.id = i;
-        span.addEventListener('click', function() {
-          var popup = open('', 'Popup', 'width=300,height=200');
-          var name = popup.document.createElement('h3');
-          var nameText = popup.document.createTextNode('Name: ' + foundData[parseInt(span.id)].name);
-          name.appendChild(nameText);
-          var type = popup.document.createElement('h3');
-          var typeText = popup.document.createTextNode('Type: ' + foundData[parseInt(span.id)].type);
-          type.appendChild(typeText);
-          popup.document.body.appendChild(name);
-          popup.document.body.appendChild(type);
-        });
         parent.insertBefore(span, newNode);
         textNode = nodeIterator.nextNode();
         textNode = nodeIterator.nextNode();
       }
     }
   }
-  // for (var i = 0; i < foundData.length(); i++) {
-  //   var popupHigh = document.getElementById(i);
-  // }
+  var matches = document.getElementsByClassName('highlighted');
+  for (var i = 0; i < matches.length; i++) {
+    matches[i].onclick = function(e) {
+      var popup = open('', 'Popup', 'width=300,height=200');
+      var name = popup.document.createElement('h3');
+      var nameText = popup.document.createTextNode('Name: ' + foundData[e.srcElement.id].name);
+      name.appendChild(nameText);
+      popup.document.body.appendChild(name);
+      var type = popup.document.createElement('h3');
+      var typeText = popup.document.createTextNode('Type: ' + foundData[e.srcElement.id].type);
+      type.appendChild(typeText);
+      popup.document.body.appendChild(type);
+      var subtype = popup.document.createElement('h3');
+      var subtypeText = popup.document.createTextNode('Subtype: ' + foundData[e.srcElement.id].subtype);
+      subtype.appendChild(subtypeText);
+      popup.document.body.appendChild(subtype);
+      var source = popup.document.createElement('h3');
+      var sourceText = popup.document.createTextNode('Source: ' + foundData[e.srcElement.id].source);
+      source.appendChild(sourceText);
+      popup.document.body.appendChild(source);
+    };
+  }
 };
 
 bits.search.domCtrl.prototype.reload = function() {
