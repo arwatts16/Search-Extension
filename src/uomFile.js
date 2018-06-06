@@ -1,13 +1,13 @@
-//global variable(s) for SearchProvider
-var uomIsActive;
-
 //SearchProvider constructor which calls the ISearchProvider constructor
-bits.search.uomFile = function() {
-  uomIsActive = 'false';
-};
+bits.search.uomFile = function() {};
+
+//global variable(s) for SearchProvider
+bits.search.uomFile.IsActive = "false";
 
 //a new SearchProvider object which inherits from ISearchProvider
-bits.search.uomFile.prototype = Object.create(bits.search.ISearchProvider.prototype);
+bits.search.uomFile.prototype = Object.create(
+  bits.search.ISearchProvider.prototype
+);
 
 //set the constructor to refer to SearchProvider
 bits.search.uomFile.prototype.constructor = bits.search.uomFile;
@@ -16,8 +16,8 @@ bits.search.uomFile.prototype.constructor = bits.search.uomFile;
 bits.search.uomFile.prototype.query = function(doc) {
   var result = [];
   var uom = new XMLHttpRequest();
-  if (uomIsActive === 'true') {
-    uom.open('GET', doc, false);
+  if (bits.search.uomFile.IsActive === "true") {
+    uom.open("GET", doc, false);
 
     uom.send(null);
     var data = JSON.parse(uom.responseText);
@@ -28,7 +28,7 @@ bits.search.uomFile.prototype.query = function(doc) {
       result[i].name = data[i].name;
       result[i].type = data[i].type;
       result[i].subtype = data[i].subtype;
-      result[i].source = 'uomFile';
+      result[i].source = "uomFile";
     }
   }
   return result;
@@ -39,9 +39,9 @@ bits.search.uomFile.prototype.query = function(doc) {
 // };
 
 bits.search.uomFile.prototype.setActive = function(active) {
-  uomIsActive = active;
+  bits.search.uomFile.IsActive = active;
 };
 
 bits.search.uomFile.prototype.getActive = function() {
-  return uomIsActive;
+  return bits.search.uomFile.IsActive;
 };

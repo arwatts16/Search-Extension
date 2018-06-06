@@ -1,10 +1,8 @@
-//global variable(s) for SearchProvider
-var nxIsActive;
-
 //SearchProvider constructor which calls the ISearchProvider constructor
-bits.search.nxFile = function() {
-  nxIsActive = "false";
-};
+bits.search.nxFile = function() {};
+
+//global variable(s) for SearchProvider
+bits.search.nxFile.IsActive = "false";
 
 //a new SearchProvider object which inherits from ISearchProvider
 bits.search.nxFile.prototype = Object.create(
@@ -18,7 +16,7 @@ bits.search.nxFile.prototype.constructor = bits.search.nxFile;
 bits.search.nxFile.prototype.query = function(doc) {
   var result = [];
   var uom = new XMLHttpRequest();
-  if (nxIsActive === "true") {
+  if (bits.search.nxFile.IsActive === "true") {
     uom.open("GET", doc, false);
 
     uom.send(null);
@@ -41,9 +39,9 @@ bits.search.nxFile.prototype.query = function(doc) {
 // };
 
 bits.search.nxFile.prototype.setActive = function(active) {
-  nxIsActive = active;
+  bits.search.nxFile.IsActive = active;
 };
 
 bits.search.nxFile.prototype.getActive = function() {
-  return nxIsActive;
+  return bits.search.nxFile.IsActive;
 };
