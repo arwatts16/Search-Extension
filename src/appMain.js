@@ -48,18 +48,22 @@ bits.search.appMain.querySearchProviders = function(uomFile, nxFile, body) {
   searchProviders[0].data = searchProviders[0].provider.query(nxFile);
 };
 
+bits.search.appMain.setActiveProviders = function(nx, cx, uom) {
+  searchProviders[0].provider.setActive(nx);
+  searchProviders[0].active = nx;
+
+  searchProviders[1].provider.setActive(cx);
+  searchProviders[1].active = cx;
+
+  searchProviders[2].provider.setActive(uom);
+  searchProviders[2].active = uom;
+};
+
 bits.search.appMain.applySearchResults = function() {
   chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
     if (msg.message == "send array") {
-      // updates isActive
-      searchProviders[0].provider.setActive(msg.nx);
-      searchProviders[0].active = msg.nx;
-
-      searchProviders[1].provider.setActive(msg.cx);
-      searchProviders[1].active = msg.cx;
-
-      searchProviders[2].provider.setActive(msg.uom);
-      searchProviders[2].active = msg.uom;
+      
+      bits.search.appMain.setActiveProviders(msg.nx, msg.cx, msg.uom);
 
       bits.search.appMain.querySearchProviders(
         "/data/uomData.json",
