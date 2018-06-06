@@ -1,7 +1,7 @@
 // This class controls the Dom and manipulates the content of the browser
 var bits = function() {};
 bits.search = function() {};
-chrome.runtime.sendMessage({ message: 'DOM loaded', page: document.body.innerText }, function() {});
+
 //Constructor
 bits.search.domCtrl = function() {};
 var dataArr = [];
@@ -13,7 +13,8 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
         allActive: msg.allActive,
         uom: msg.uom,
         nx: msg.nx,
-        cx: msg.cx
+        cx: msg.cx,
+        pageBody: document.body.innerText
       },
       function() {}
     );
