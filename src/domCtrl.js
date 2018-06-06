@@ -50,13 +50,12 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
       foundData.push(searchRes.data[i]);
     }
   }
-  var foundDataHTML = [];
 
   while ((textNode = nodeIterator.nextNode()) !== null) {
     var parent = textNode.parentNode;
     var data = textNode.data;
     for (var i = 0; i < foundData.length; i++) {
-      var re = RegExp('\\b' + foundData[i].name + '\\b', 'i');
+      var re = RegExp('\\b' + foundData[i].name + '\\b');
       if (re.test(textNode.data)) {
         var ind = textNode.data.search(re);
         textNode.data = textNode.data.slice(0, ind) + textNode.data.slice(ind + foundData[i].name.length);
@@ -66,6 +65,7 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
         var colMan = new bits.search.colorManager();
         span.style.backgroundColor = colMan.getColor(foundData[i]);
         span.className = 'highlighted';
+        span.id = i;
 
         span.onclick = function() {
           var popup = open('', 'Popup', 'width=300,height=200');
