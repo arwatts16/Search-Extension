@@ -77,7 +77,8 @@ bits.search.appMain.applySearchResults = function() {
           {
             message: "sent data",
             data: bits.search.appMain.searchProviders,
-            allActive: msg.allActive
+            allActive: msg.allActive,
+            match: msg.match
           },
           function(response) {}
         );
