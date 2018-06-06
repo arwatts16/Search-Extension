@@ -42,9 +42,9 @@ bits.search.appMain.registerSearchProvider = function() {
 
 //bits.search.appMain.initSearchProviders = function() {};
 
-bits.search.appMain.querySearchProviders = function(uomFile, nxFile) {
+bits.search.appMain.querySearchProviders = function(uomFile, nxFile, body) {
   searchProviders[2].data = searchProviders[2].provider.query(uomFile);
-  searchProviders[1].data = searchProviders[1].provider.query();
+  searchProviders[1].data = searchProviders[1].provider.query(body);
   searchProviders[0].data = searchProviders[0].provider.query(nxFile);
 };
 
@@ -63,7 +63,8 @@ bits.search.appMain.applySearchResults = function() {
 
       bits.search.appMain.querySearchProviders(
         "/data/uomData.json",
-        "/data/nxData.json"
+        "/data/nxData.json",
+        msg.pageBody
       );
 
       // sends data over to the content script
