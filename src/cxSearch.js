@@ -1,11 +1,8 @@
-//global variable(s) for SearchProvider
-var cxIsActive;
-var body = "";
-
 //SearchProvider constructor which calls the ISearchProvider constructor
-bits.search.cxSearch = function() {
-  cxIsActive = "false";
-};
+bits.search.cxSearch = function() {};
+
+//global variable(s) for SearchProvider
+bits.search.cxSearch.IsActive;
 
 //a new SearchProvider object which inherits from ISearchProvider
 bits.search.cxSearch.prototype = Object.create(
@@ -17,12 +14,11 @@ bits.search.cxSearch.prototype.constructor = bits.search.cxSearch;
 
 //replace the functions setup in ISearchProvider
 bits.search.cxSearch.prototype.query = function(currBody) {
-  body = currBody
-  doc = nlp(body);
+  doc = nlp(currBody);
   var result = [];
   var i = 0;
 
-  if (cxIsActive === "true") {
+  if (bits.search.cxSearch.IsActive === "true") {
     var people = doc.people().data();
     var places = doc.places().data();
     var orgs = doc.organizations().data();
@@ -53,9 +49,9 @@ bits.search.cxSearch.prototype.query = function(currBody) {
 };
 
 bits.search.cxSearch.prototype.setActive = function(active) {
-  cxIsActive = active;
+  bits.search.cxSearch.IsActive = active;
 };
 
 bits.search.cxSearch.prototype.getActive = function() {
-  return cxIsActive;
+  return bits.search.cxSearch.IsActive;
 };
