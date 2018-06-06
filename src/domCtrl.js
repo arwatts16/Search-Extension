@@ -1,7 +1,7 @@
 // This class controls the Dom and manipulates the content of the browser
 var bits = function() {};
 bits.search = function() {};
-chrome.runtime.sendMessage({ message: 'DOM loaded', page: document.body.innerText }, function() {});
+
 //Constructor
 bits.search.domCtrl = function() {};
 var dataArr = [];
@@ -13,7 +13,8 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
         allActive: msg.allActive,
         uom: msg.uom,
         nx: msg.nx,
-        cx: msg.cx
+        cx: msg.cx,
+        pageBody: document.body.innerText
       },
       function() {}
     );
@@ -51,7 +52,6 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
       foundData.push(searchRes.data[i]);
     }
   }
-  var foundDataHTML = [];
 
   while ((textNode = nodeIterator.nextNode()) !== null) {
     var parent = textNode.parentNode;
@@ -68,6 +68,17 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
         span.style.backgroundColor = colMan.getColor(foundData[i]);
         span.className = 'highlighted';
         span.id = i;
+<<<<<<< HEAD
+=======
+
+        span.onclick = function() {
+          var popup = open('', 'Popup', 'width=300,height=200');
+          var type = popup.document.createElement('h3');
+          var typeText = popup.document.createTextNode('Type: ');
+          type.appendChild(typeText);
+          popup.document.body.appendChild(type);
+        };
+>>>>>>> 0c669ef3acae0625fc070d0202730a78fcf04e21
         parent.insertBefore(span, newNode);
         textNode = nodeIterator.nextNode();
         textNode = nodeIterator.nextNode();

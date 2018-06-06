@@ -16,7 +16,8 @@ bits.search.cxSearch.prototype = Object.create(
 bits.search.cxSearch.prototype.constructor = bits.search.cxSearch;
 
 //replace the functions setup in ISearchProvider
-bits.search.cxSearch.prototype.query = function() {
+bits.search.cxSearch.prototype.query = function(currBody) {
+  body = currBody
   doc = nlp(body);
   var result = [];
   var i = 0;
@@ -58,9 +59,3 @@ bits.search.cxSearch.prototype.setActive = function(active) {
 bits.search.cxSearch.prototype.getActive = function() {
   return cxIsActive;
 };
-
-chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
-  if (msg.message == "DOM loaded") {
-    body = msg.page;
-  }
-});
