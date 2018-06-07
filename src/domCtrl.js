@@ -1,14 +1,24 @@
-// This class controls the Dom and manipulates the content of the browser
+/*
+* This class controls the Dom and manipulates the content of the browser
+*/
+
 var bits = function() {};
 bits.search = function() {};
 
-//Constructor
+/*
+* Constructor
+*/
 bits.search.domCtrl = function() {};
+
+// Variables needed
 var dataArr = [];
 var uomFound = [];
 var nxFound = [];
 var cxFound = [];
 
+/*
+* This method uses the match manager to find all the matches in the DOM
+*/
 bits.search.domCtrl.prototype.findMatches = function(found, wholeData) {
   var body = document.body.innerText;
   var matcher = new bits.search.matchManager();
@@ -20,6 +30,9 @@ bits.search.domCtrl.prototype.findMatches = function(found, wholeData) {
   }
 };
 
+/*
+* This method loops through the registered search providers and starts the match process
+*/
 bits.search.domCtrl.prototype.initMatchManager = function(message) {
   bits.search.domCtrl.prototype.reload();
   for (var i = 0; i < dataArr.length && message.allActive === 'true'; i++) {
@@ -40,6 +53,9 @@ bits.search.domCtrl.prototype.initMatchManager = function(message) {
 
 bits.search.domCtrl.prototype.initBrowser = function() {};
 
+/*
+* Apply matches takes the list of found words and finds and highlights them on the page.
+*/
 bits.search.domCtrl.prototype.applyMatches = function(found) {
   var nodeIterator = null;
   nodeIterator = document.createNodeIterator(document.body, NodeFilter.SHOW_TEXT);
@@ -72,32 +88,21 @@ bits.search.domCtrl.prototype.applyMatches = function(found) {
       }
     }
   }
-  var matches = document.getElementsByClassName(found[0].source + ' highlighted');
-  for (var i = 0; i < matches.length; i++) {
-    matches[i].onclick = function(e) {
-      var popup = open('', 'Popup', 'width=300,height=200');
-      popup.document.title = 'Data';
-      popup.document.getElementsByTagName('body')[0].innerHTML = '';
-      var name = popup.document.createElement('h3');
-      var nameText = popup.document.createTextNode('Name: ' + found[e.srcElement.id].name);
-      name.appendChild(nameText);
-      popup.document.body.appendChild(name);
-      var type = popup.document.createElement('h3');
-      var typeText = popup.document.createTextNode('Type: ' + found[e.srcElement.id].type);
-      type.appendChild(typeText);
-      popup.document.body.appendChild(type);
-      var subtype = popup.document.createElement('h3');
-      var subtypeText = popup.document.createTextNode('Subtype: ' + found[e.srcElement.id].subtype);
-      subtype.appendChild(subtypeText);
-      popup.document.body.appendChild(subtype);
-      var source = popup.document.createElement('h3');
-      var sourceText = popup.document.createTextNode('Source: ' + found[e.srcElement.id].source);
-      source.appendChild(sourceText);
-      popup.document.body.appendChild(source);
-    };
-  }
+  // makes a popup
+  bits.search.domCtrl.prototype.createPopup(found);
 };
 
+/*
+* Makes all the highlighted words a button that creates a unique popup when clicked
+*/
+bits.search.domCtrl.prototype.createPopup = function(found) {
+  var matches = document.getElementsByClassName(found[0].source + ' highlighted');
+  bits.search.dataPopupManager(matches, found);
+};
+
+/*
+* This function removes highlights from non-active search providers
+*/
 bits.search.domCtrl.prototype.reload = function() {
   var matches = document.getElementsByClassName('highlighted');
   var parent;
