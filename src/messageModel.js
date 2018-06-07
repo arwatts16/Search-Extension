@@ -1,4 +1,3 @@
-// constructor
 message = function() {};
 
 message.prototype.message = null;

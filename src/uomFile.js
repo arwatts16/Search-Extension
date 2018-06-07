@@ -1,18 +1,25 @@
-//SearchProvider constructor which calls the ISearchProvider constructor
 bits.search.uomFile = function() {};
 
-//global variable(s) for SearchProvider
+/*
+ * Holds the value for whether or not cxSearch is active
+ */
 bits.search.uomFile.IsActive = "false";
 
-//a new SearchProvider object which inherits from ISearchProvider
+/*
+ * A new SearchProvider object which inherits from ISearchProvider
+ */ 
 bits.search.uomFile.prototype = Object.create(
   bits.search.ISearchProvider.prototype
 );
 
-//set the constructor to refer to SearchProvider
+/*
+ * Set the constructor to refer to SearchProvider
+ */ 
 bits.search.uomFile.prototype.constructor = bits.search.uomFile;
 
-//replace the functions setup in ISearchProvider
+/*
+ * Reads from uom data file
+ */
 bits.search.uomFile.prototype.query = function(doc) {
   var result = [];
   var uom = new XMLHttpRequest();
@@ -33,6 +40,10 @@ bits.search.uomFile.prototype.query = function(doc) {
   }
   return result;
 };
+
+/*
+ * Get and set the value of isActive
+ */
 
 bits.search.uomFile.prototype.setActive = function(active) {
   bits.search.uomFile.IsActive = active;
