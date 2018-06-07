@@ -34,10 +34,6 @@ bits.search.nxFile.prototype.query = function(doc) {
   return result;
 };
 
-// bits.search.nxFile.prototype.init = function(doc) {
-//   bits.search.nxFile.prototype.query(doc);
-// };
-
 bits.search.nxFile.prototype.setActive = function(active) {
   bits.search.nxFile.IsActive = active;
 };

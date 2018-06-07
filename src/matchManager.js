@@ -6,7 +6,7 @@ bits.search.matchManager = function() {};
 bits.search.matchManager.prototype.matches = [];
 
 bits.search.matchManager.prototype.findMatches = function(type, str, seRes) {
-  if (type === "exact") {
+  if (type === "true") {
     return bits.search.matchManager.prototype.matchCase(str, seRes);
   } else {
     return bits.search.matchManager.prototype.matchAny(str, seRes);
