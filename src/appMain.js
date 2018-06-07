@@ -69,19 +69,14 @@ bits.search.appMain.applySearchResults = function() {
         msg.pageBody
       );
 
-      // sends data over to the content script
+      // update message values
+      msg.message = "sent data";
+      msg.data = bits.search.appMain.searchProviders;
+
+      // sends data over to domCtrl
       console.log("recieved sent message from dom");
       chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-        chrome.tabs.sendMessage(
-          tabs[0].id,
-          {
-            message: "sent data",
-            data: bits.search.appMain.searchProviders,
-            allActive: msg.allActive,
-            match: msg.match
-          },
-          function(response) {}
-        );
+        chrome.tabs.sendMessage(tabs[0].id, msg, function(response) {});
       });
     }
   });

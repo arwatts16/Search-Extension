@@ -7,18 +7,12 @@ bits.search.domCtrl = function() {};
 var dataArr = [];
 chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
   if (msg.message == "update") {
-    chrome.runtime.sendMessage(
-      {
-        message: "send array",
-        allActive: msg.allActive,
-        uom: msg.uom,
-        nx: msg.nx,
-        cx: msg.cx,
-        pageBody: document.body.innerText,
-        match: msg.match
-      },
-      function() {}
-    );
+    //adjust values of msg
+    msg.message = "send array";
+    msg.pageBody = document.body.innerText;
+
+    // send message to appMain requesting data
+    chrome.runtime.sendMessage(msg, function() {});
   }
   if (msg.message == "sent data") {
     console.log("got data from background");

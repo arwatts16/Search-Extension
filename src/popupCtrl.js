@@ -54,20 +54,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     );
     localStorage.setItem("match", document.getElementById("match").checked);
 
+    //builds message to be sent to domCtrl
+    var msg = new message();
+    msg.message = "update";
+    msg.allActive = localStorage.getItem("active");
+    msg.uom = localStorage.getItem("uomActive");
+    msg.nx = localStorage.getItem("nxActive");
+    msg.cx = localStorage.getItem("cxActive");
+    msg.match = match;
+
     // alert the content script that a change has been made
     chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-      chrome.tabs.sendMessage(
-        tabs[0].id,
-        {
-          message: "update",
-          allActive: localStorage.getItem("active"),
-          uom: localStorage.getItem("uomActive"),
-          nx: localStorage.getItem("nxActive"),
-          cx: localStorage.getItem("cxActive"),
-          match: match
-        },
-        function(response) {}
-      );
+      chrome.tabs.sendMessage(tabs[0].id, msg, function(response) {});
       window.close();
     });
   };
