@@ -20,46 +20,38 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
   if (msg.message == 'sent data') {
     console.log('got data from background');
     dataArr = msg.data;
-    bits.search.domCtrl.prototype.reload();
-    for (var i = 0; i < dataArr.length && msg.allActive === 'true'; i++) {
-      if (dataArr[i].active === 'true') {
-        var body = document.body.innerText;
-        var matcher = new bits.search.matchManager();
-        if (dataArr[i].data[0].source === 'uomFile') {
-          for (var j = 0; j < dataArr[i].data.length; j++) {
-            dataArr[i].data[j].name = dataArr[i].data[j].name.replace(/[^A-Za-z0-9_ ]/g, '');
-            if (matcher.matchAny(body, dataArr[i].data[j])) {
-              uomFound.push(dataArr[i].data[j]);
-            }
-          }
-          bits.search.domCtrl.prototype.applyMatches(uomFound);
-        } else if (dataArr[i].data[0].source === 'nxFile') {
-          for (var j = 0; j < dataArr[i].data.length; j++) {
-            dataArr[i].data[j].name = dataArr[i].data[j].name.replace(/[^A-Za-z0-9_ ]/g, '');
-            if (matcher.matchAny(body, dataArr[i].data[j])) {
-              nxFound.push(dataArr[i].data[j]);
-            }
-          }
-          bits.search.domCtrl.prototype.applyMatches(nxFound);
-        } else if (dataArr[i].data[0].source === 'cxSearch') {
-          for (var j = 0; j < dataArr[i].data.length; j++) {
-            dataArr[i].data[j].name = dataArr[i].data[j].name.replace(/[^A-Za-z0-9_ ]/g, '');
-            if (matcher.matchAny(body, dataArr[i].data[j])) {
-              cxFound.push(dataArr[i].data[j]);
-            }
-          }
-          bits.search.domCtrl.prototype.applyMatches(cxFound);
-        }
-      }
-    }
+    bits.search.domCtrl.prototype.initMatchManager(msg);
   }
 });
 
-//bits.search.domCtrl.document = null;
+bits.search.domCtrl.prototype.findMatches = function(found, wholeData) {
+  var body = document.body.innerText;
+  var matcher = new bits.search.matchManager();
+  for (var i = 0; i < wholeData.data.length; i++) {
+    wholeData.data[i].name = wholeData.data[i].name.replace(/[^A-Za-z0-9_ ]/g, '');
+    if (matcher.matchAny(body, wholeData.data[i])) {
+      found.push(wholeData.data[i]);
+    }
+  }
+};
 
-//bits.search.domCtrl.browser = null;
-
-bits.search.domCtrl.prototype.initMatchManager = function() {};
+bits.search.domCtrl.prototype.initMatchManager = function(message) {
+  bits.search.domCtrl.prototype.reload();
+  for (var i = 0; i < dataArr.length && message.allActive === 'true'; i++) {
+    if (dataArr[i].active === 'true') {
+      if (dataArr[i].data[0].source === 'uomFile') {
+        bits.search.domCtrl.prototype.findMatches(uomFound, dataArr[i]);
+        bits.search.domCtrl.prototype.applyMatches(uomFound);
+      } else if (dataArr[i].data[0].source === 'nxFile') {
+        bits.search.domCtrl.prototype.findMatches(nxFound, dataArr[i]);
+        bits.search.domCtrl.prototype.applyMatches(nxFound);
+      } else if (dataArr[i].data[0].source === 'cxSearch') {
+        bits.search.domCtrl.prototype.findMatches(cxFound, dataArr[i]);
+        bits.search.domCtrl.prototype.applyMatches(cxFound);
+      }
+    }
+  }
+};
 
 bits.search.domCtrl.prototype.initBrowser = function() {};
 
@@ -70,7 +62,6 @@ bits.search.domCtrl.prototype.applyMatches = function(found) {
 
   while ((textNode = nodeIterator.nextNode()) !== null) {
     var parent = textNode.parentNode;
-    var data = textNode.data;
     for (var i = 0; i < found.length; i++) {
       var re = RegExp('\\b' + found[i].name + '\\b');
       if (re.test(textNode.data)) {
