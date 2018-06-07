@@ -2,10 +2,7 @@
   "name": "Search",
   "version": "0.5",
   "description": "highlights inserted key words",
-  "permissions": [
-    "webRequest",
-    "tabs"
-  ],
+  "permissions": ["webRequest", "tabs"],
   "icons": {
     "16": "images/search2.png",
     "48": "images/search1.png",
@@ -15,6 +12,7 @@
     "scripts": [
       "lib/compromise.min.js",
       "src/appMain.js",
+      "src/messageModel.js",
       "src/ISearchProvider.js",
       "src/cxSearch.js",
       "src/nxFile.js",
@@ -29,14 +27,8 @@
   },
   "content_scripts": [
     {
-      "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "src/domCtrl.js",
-        "src/colorManager.js",
-        "src/matchManager.js"
-      ]
+      "matches": ["<all_urls>"],
+      "js": ["src/domCtrl.js", "src/colorManager.js", "src/matchManager.js"]
     }
   ],
   "browser_action": {
