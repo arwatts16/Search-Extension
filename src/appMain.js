@@ -12,25 +12,14 @@ bits.search.appMain.searchProviders = [];
 
 //Finds all the search providers
 bits.search.appMain.registerSearchProvider = function() {
-  var nx = new bits.search.nxFile();
-  var cx = new bits.search.cxSearch();
-  var uom = new bits.search.uomFile();
+  bits.search.appMain.searchProviders[0] = new bits.search.sProvider();
+  bits.search.appMain.searchProviders[0].provider = new bits.search.nxFile();
 
-  bits.search.appMain.searchProviders[0] = {
-    provider: nx,
-    active: "false",
-    data: null
-  };
-  bits.search.appMain.searchProviders[1] = {
-    provider: cx,
-    active: "false",
-    data: null
-  };
-  bits.search.appMain.searchProviders[2] = {
-    provider: uom,
-    active: "false",
-    data: null
-  };
+  bits.search.appMain.searchProviders[1] = new bits.search.sProvider();
+  bits.search.appMain.searchProviders[1].provider = new bits.search.cxSearch();
+
+  bits.search.appMain.searchProviders[2] = new bits.search.sProvider();
+  bits.search.appMain.searchProviders[2].provider = new bits.search.uomFile();
 };
 
 //bits.search.appMain.initSearchProviders = function() {};
