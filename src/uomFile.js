@@ -34,10 +34,6 @@ bits.search.uomFile.prototype.query = function(doc) {
   return result;
 };
 
-// bits.search.uomFile.prototype.init = function(doc) {
-//   bits.search.uomFile.prototype.query(doc);
-// };
-
 bits.search.uomFile.prototype.setActive = function(active) {
   bits.search.uomFile.IsActive = active;
 };
