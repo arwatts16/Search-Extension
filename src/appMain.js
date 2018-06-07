@@ -49,24 +49,8 @@ bits.search.appMain.setActiveProviders = function(nx, cx, uom) {
 
 bits.search.appMain.applySearchResults = function() {
   chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
-    if (msg.message == "send array") {
-      bits.search.appMain.setActiveProviders(msg.nx, msg.cx, msg.uom);
+    msg = bits.search.recieveContent(msg);
 
-      bits.search.appMain.querySearchProviders(
-        "/data/uomData.json",
-        "/data/nxData.json",
-        msg.pageBody
-      );
-
-      // update message values
-      msg.message = "sent data";
-      msg.data = bits.search.appMain.searchProviders;
-
-      // sends data over to domCtrl
-      console.log("recieved sent message from dom");
-      chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-        chrome.tabs.sendMessage(tabs[0].id, msg, function(response) {});
-      });
-    }
+    bits.search.sendContent(msg);
   });
 };
