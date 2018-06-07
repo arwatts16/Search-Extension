@@ -1,3 +1,5 @@
+bits.search.bMsgCenter = function(){};
+
 /* 
  * Listens for messages sent from content scripts
  */

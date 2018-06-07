@@ -49,4 +49,3 @@ bits.search.appMain.setActiveProviders = function(uom, nx, cx) {
   bits.search.appMain.searchProviders[2].provider.setActive(uom);
   bits.search.appMain.searchProviders[2].active = uom;
 };
-
