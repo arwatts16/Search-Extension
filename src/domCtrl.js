@@ -83,11 +83,8 @@ bits.search.domCtrl.prototype.applyMatches = function(found) {
   for (var i = 0; i < matches.length; i++) {
     matches[i].onclick = function(e) {
       var popup = open("", "Popup", "width=300,height=200");
-<<<<<<< HEAD
       popup.document.title = "Data";
       popup.document.getElementsByTagName("body")[0].innerHTML = "";
-=======
->>>>>>> 489eb22634eefa18bbf0823d53e83153bf48891d
       var name = popup.document.createElement("h3");
       var nameText = popup.document.createTextNode(
         "Name: " + found[e.srcElement.id].name
