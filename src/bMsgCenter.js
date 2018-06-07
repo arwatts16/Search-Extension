@@ -7,7 +7,13 @@ bits.search.recieveContent = function(msg) {
       "/data/nxData.json",
       msg.pageBody
     );
+
+    // update message values
+    msg.message = "sent data";
+    msg.data = bits.search.appMain.searchProviders;
   }
+
+  return msg;
 };
 
 bits.search.sendContent = function(msg) {

@@ -49,11 +49,7 @@ bits.search.appMain.setActiveProviders = function(nx, cx, uom) {
 
 bits.search.appMain.applySearchResults = function() {
   chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
-    bits.search.recieveContent(msg);
-
-    // update message values
-    msg.message = "sent data";
-    msg.data = bits.search.appMain.searchProviders;
+    msg = bits.search.recieveContent(msg);
 
     bits.search.sendContent(msg);
   });
