@@ -82,19 +82,13 @@ bits.search.domCtrl.prototype.applyMatches = function(found) {
   );
   for (var i = 0; i < matches.length; i++) {
     matches[i].onclick = function(e) {
-<<<<<<< HEAD
-      var popup = open('', 'Popup', 'width=300,height=200');
-      popup.document.title = 'Data';
-      popup.document.getElementsByTagName('body')[0].innerHTML = '';
-      var name = popup.document.createElement('h3');
-      var nameText = popup.document.createTextNode('Name: ' + found[e.srcElement.id].name);
-=======
       var popup = open("", "Popup", "width=300,height=200");
+      popup.document.title = "Data";
+      popup.document.getElementsByTagName("body")[0].innerHTML = "";
       var name = popup.document.createElement("h3");
       var nameText = popup.document.createTextNode(
         "Name: " + found[e.srcElement.id].name
       );
->>>>>>> implement content message center
       name.appendChild(nameText);
       popup.document.body.appendChild(name);
       var type = popup.document.createElement("h3");
