@@ -1,4 +1,3 @@
-// constructor
 bits.search.Result = function() {};
 
 bits.search.Result.prototype.id = null;

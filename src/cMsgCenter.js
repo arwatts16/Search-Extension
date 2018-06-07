@@ -1,13 +1,23 @@
+bits.search.cMsgCenter = function(){};
+
+/* 
+ * Listens for messages sent from bMsgCenter
+ */
 chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
-  bits.search.recieve(msg);
+  bits.search.cMsgCenter.recieve(msg);
 });
-bits.search.recieve = function(msg) {
+
+/* 
+ * Checks message contents and executes appropriate logic
+ */
+bits.search.cMsgCenter.recieve = function(msg) {
   if (msg.message == 'update') {
     //adjust values of msg
     msg.message = 'send array';
     msg.pageBody = document.body.innerText;
 
-    bits.search.sendBackground(msg);
+    bits.search.cMsgCenter.sendBackground(msg);
+
   } else if (msg.message == 'sent data') {
     //adjust values of msg
     dataArr = msg.data;
@@ -16,7 +26,9 @@ bits.search.recieve = function(msg) {
   return msg;
 };
 
-bits.search.sendBackground = function(msg) {
-  // send message to appMain requesting data
+/* 
+ * Sends messages to bMsgCenter
+ */
+bits.search.cMsgCenter.sendBackground = function(msg) {
   chrome.runtime.sendMessage(msg, function() {});
 };

@@ -1,12 +1,16 @@
 var bits = function() {};
 bits.search = function() {};
 
-//Constructor
+/*
+ * Constructor
+ */
 bits.search.appMain = function() {
   bits.search.appMain.registerSearchProvider();
 };
 
-//Holds all of the search providers or data sources
+/*
+ * Holds all of the search providers or data sources
+ */
 bits.search.appMain.searchProviders = [];
 
 /* 
