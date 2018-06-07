@@ -1,7 +1,7 @@
 bits.search.bMsgCenter = function(){};
 
 /* 
- * Listens for messages sent from content scripts
+ * Listens for messages sent from cMsgCenter
  */
 chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
   msg = bits.search.bMsgCenter.recieveContent(msg);
@@ -27,7 +27,7 @@ bits.search.bMsgCenter.recieveContent = function(msg) {
 };
 
 /* 
- * Sends messages to content script
+ * Sends messages to cMsgCenter
  */
 bits.search.bMsgCenter.sendContent = function(msg) {
   chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {

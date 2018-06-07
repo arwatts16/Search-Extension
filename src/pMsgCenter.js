@@ -1,6 +1,8 @@
 bits.search.pMsgCenter = function(){};
 
-// alert the content script that a change has been made
+/*
+ * Sends a message to cMsgCenter everytime values in popup change
+ */
 bits.search.pMsgCenter.send = function(msg){
     chrome.tabs.query({ 
         active: true, 

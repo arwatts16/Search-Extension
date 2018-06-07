@@ -33,6 +33,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 bits.search.assignTrueFalse = function(name) {
   var match = localStorage.getItem(name);
- if (match === "true") return true; 
+  if (match === "true") return true; 
   else return false;
 };
