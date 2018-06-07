@@ -27,19 +27,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     msg.cx = localStorage.getItem("cxActive");
     msg.match = match;
 
-    // alert the content script that a change has been made
-    chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-      chrome.tabs.sendMessage(tabs[0].id, msg, function(response) {});
-      window.close();
-    });
-  };
+    bits.search.pMsgCenter.send(msg);
+    };
 });
 
 bits.search.assignTrueFalse = function(name) {
   var match = localStorage.getItem(name);
-  if (match === "true") {
-    return true;
-  } else {
-    return false;
-  }
+ if (match === "true") return true; 
+  else return false;
 };
