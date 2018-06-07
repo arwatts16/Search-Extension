@@ -5,6 +5,9 @@ bits.search = function() {};
 //Constructor
 bits.search.domCtrl = function() {};
 var dataArr = [];
+var uomFound = [];
+var nxFound = [];
+var cxFound = [];
 chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
   if (msg.message == 'update') {
     chrome.runtime.sendMessage(
@@ -25,7 +28,33 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
     bits.search.domCtrl.prototype.reload();
     for (var i = 0; i < dataArr.length && msg.allActive === 'true'; i++) {
       if (dataArr[i].active === 'true') {
-        bits.search.domCtrl.prototype.applyMatches(dataArr[i]);
+        var body = document.body.innerText;
+        var matcher = new bits.search.matchManager();
+        if (dataArr[i].data[0].source === 'uomFile') {
+          for (var j = 0; j < dataArr[i].data.length; j++) {
+            dataArr[i].data[j].name = dataArr[i].data[j].name.replace(/[^A-Za-z0-9_ ]/g, '');
+            if (matcher.matchAny(body, dataArr[i].data[j])) {
+              uomFound.push(dataArr[i].data[j]);
+            }
+          }
+          bits.search.domCtrl.prototype.applyMatches(uomFound);
+        } else if (dataArr[i].data[0].source === 'nxFile') {
+          for (var j = 0; j < dataArr[i].data.length; j++) {
+            dataArr[i].data[j].name = dataArr[i].data[j].name.replace(/[^A-Za-z0-9_ ]/g, '');
+            if (matcher.matchAny(body, dataArr[i].data[j])) {
+              nxFound.push(dataArr[i].data[j]);
+            }
+          }
+          bits.search.domCtrl.prototype.applyMatches(nxFound);
+        } else if (dataArr[i].data[0].source === 'cxSearch') {
+          for (var j = 0; j < dataArr[i].data.length; j++) {
+            dataArr[i].data[j].name = dataArr[i].data[j].name.replace(/[^A-Za-z0-9_ ]/g, '');
+            if (matcher.matchAny(body, dataArr[i].data[j])) {
+              cxFound.push(dataArr[i].data[j]);
+            }
+          }
+          bits.search.domCtrl.prototype.applyMatches(cxFound);
+        }
       }
     }
   }
@@ -39,34 +68,25 @@ bits.search.domCtrl.prototype.initMatchManager = function() {};
 
 bits.search.domCtrl.prototype.initBrowser = function() {};
 
-bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
+bits.search.domCtrl.prototype.applyMatches = function(found) {
   var nodeIterator = null;
   nodeIterator = document.createNodeIterator(document.body, NodeFilter.SHOW_TEXT);
   var textNode = null;
-  var body = document.body.innerText;
-  var foundData = [];
-  var matcher = new bits.search.matchManager();
-  for (var i = 0; i < searchRes.data.length; i++) {
-    searchRes.data[i].name = searchRes.data[i].name.replace(/[^A-Za-z0-9_ ]/g, '');
-    if (matcher.matchAny(body, searchRes.data[i])) {
-      foundData.push(searchRes.data[i]);
-    }
-  }
 
   while ((textNode = nodeIterator.nextNode()) !== null) {
     var parent = textNode.parentNode;
     var data = textNode.data;
-    for (var i = 0; i < foundData.length; i++) {
-      var re = RegExp('\\b' + foundData[i].name + '\\b');
+    for (var i = 0; i < found.length; i++) {
+      var re = RegExp('\\b' + found[i].name + '\\b');
       if (re.test(textNode.data)) {
         var ind = textNode.data.search(re);
-        textNode.data = textNode.data.slice(0, ind) + textNode.data.slice(ind + foundData[i].name.length);
+        textNode.data = textNode.data.slice(0, ind) + textNode.data.slice(ind + found[i].name.length);
         var newNode = textNode.splitText(ind);
         var span = document.createElement('span');
-        span.appendChild(document.createTextNode(foundData[i].name));
+        span.appendChild(document.createTextNode(found[i].name));
         var colMan = new bits.search.colorManager();
-        span.style.backgroundColor = colMan.getColor(foundData[i]);
-        span.className = 'highlighted';
+        span.style.backgroundColor = colMan.getColor(found[i]);
+        span.className = found[i].source + ' highlighted';
         span.id = i;
         parent.insertBefore(span, newNode);
         textNode = nodeIterator.nextNode();
@@ -74,24 +94,24 @@ bits.search.domCtrl.prototype.applyMatches = function(searchRes) {
       }
     }
   }
-  var matches = document.getElementsByClassName('highlighted');
+  var matches = document.getElementsByClassName(found[0].source + ' highlighted');
   for (var i = 0; i < matches.length; i++) {
     matches[i].onclick = function(e) {
       var popup = open('', 'Popup', 'width=300,height=200');
       var name = popup.document.createElement('h3');
-      var nameText = popup.document.createTextNode('Name: ' + foundData[e.srcElement.id].name);
+      var nameText = popup.document.createTextNode('Name: ' + found[e.srcElement.id].name);
       name.appendChild(nameText);
       popup.document.body.appendChild(name);
       var type = popup.document.createElement('h3');
-      var typeText = popup.document.createTextNode('Type: ' + foundData[e.srcElement.id].type);
+      var typeText = popup.document.createTextNode('Type: ' + found[e.srcElement.id].type);
       type.appendChild(typeText);
       popup.document.body.appendChild(type);
       var subtype = popup.document.createElement('h3');
-      var subtypeText = popup.document.createTextNode('Subtype: ' + foundData[e.srcElement.id].subtype);
+      var subtypeText = popup.document.createTextNode('Subtype: ' + found[e.srcElement.id].subtype);
       subtype.appendChild(subtypeText);
       popup.document.body.appendChild(subtype);
       var source = popup.document.createElement('h3');
-      var sourceText = popup.document.createTextNode('Source: ' + foundData[e.srcElement.id].source);
+      var sourceText = popup.document.createTextNode('Source: ' + found[e.srcElement.id].source);
       source.appendChild(sourceText);
       popup.document.body.appendChild(source);
     };
