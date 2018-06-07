@@ -4,7 +4,6 @@ bits.search = function() {};
 //Constructor
 bits.search.appMain = function() {
   bits.search.appMain.registerSearchProvider();
-  bits.search.appMain.applySearchResults();
 };
 
 //This array holds all of the search providers or data sources
@@ -47,10 +46,8 @@ bits.search.appMain.setActiveProviders = function(nx, cx, uom) {
   bits.search.appMain.searchProviders[2].active = uom;
 };
 
-bits.search.appMain.applySearchResults = function() {
-  chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
-    msg = bits.search.recieveContent(msg);
+chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
+  msg = bits.search.recieveContent(msg);
 
-    bits.search.sendContent(msg);
-  });
-};
+  bits.search.sendContent(msg);
+});
