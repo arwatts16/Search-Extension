@@ -13,6 +13,7 @@
       "lib/compromise.min.js",
       "src/appMain.js",
       "src/messageModel.js",
+      "src/searchProviderModel.js",
       "src/ISearchProvider.js",
       "src/cxSearch.js",
       "src/nxFile.js",
