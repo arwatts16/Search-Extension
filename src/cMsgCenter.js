@@ -1,11 +1,14 @@
+chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
+  bits.search.recieve(msg);
+});
 bits.search.recieve = function(msg) {
-  if (msg.message == "update") {
+  if (msg.message == 'update') {
     //adjust values of msg
-    msg.message = "send array";
+    msg.message = 'send array';
     msg.pageBody = document.body.innerText;
 
     bits.search.sendBackground(msg);
-  } else if (msg.message == "sent data") {
+  } else if (msg.message == 'sent data') {
     //adjust values of msg
     dataArr = msg.data;
     bits.search.domCtrl.prototype.initMatchManager(msg);

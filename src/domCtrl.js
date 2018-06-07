@@ -9,10 +9,6 @@ var uomFound = [];
 var nxFound = [];
 var cxFound = [];
 
-chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
-  bits.search.recieve(msg);
-});
-
 bits.search.domCtrl.prototype.findMatches = function(found, wholeData) {
   var body = document.body.innerText;
   var matcher = new bits.search.matchManager();
