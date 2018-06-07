@@ -2,11 +2,14 @@
   "name": "Search",
   "version": "0.5",
   "description": "highlights inserted key words",
-  "permissions": ["webRequest", "tabs"],
+  "permissions": [
+    "webRequest",
+    "tabs"
+  ],
   "icons": {
-    "16": "images/search2.png",
-    "48": "images/search1.png",
-    "128": "images/search1.png"
+    "16": "images/search4.png",
+    "48": "images/search4.png",
+    "128": "images/search4.png"
   },
   "background": {
     "scripts": [
@@ -29,19 +32,22 @@
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": [
+        "<all_urls>"
+      ],
       "js": [
         "src/domCtrl.js",
         "src/cMsgCenter.js",
         "src/colorManager.js",
-        "src/matchManager.js"
+        "src/matchManager.js",
+        "src/dataPopupManager.js"
       ]
     }
   ],
   "browser_action": {
     "default_popup": "views/popup.html",
     "default_title": "Search-Extension",
-    "default_icon": "images/search2.png"
+    "default_icon": "images/search4.png"
   },
   "manifest_version": 2
 }
