@@ -1,5 +1,33 @@
 #options,
 #popup {
-  width: 100px;
+  width: 120px;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.title {
+  width: 100px;
+  padding: 10px;
+  text-align: left;
+  font-size: 15;
+}
+
+.search_providers {
+  width: 75px;
+  padding: 1px;
+  text-align: left;
+}
+
+.save_button {
+  text-align: center;
+  border-top-style: solid;
+  padding: 10px;
+  border-bottom-style: solid;
+}
+
+.active_check {
+  text-align: center;
+  font-size: 13;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  padding: 10px
 }
