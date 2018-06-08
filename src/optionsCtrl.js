@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.getElementById("uomActive").checked = bits.search.assignTrueFalse("uomActive");
   document.getElementById("nxActive").checked = bits.search.assignTrueFalse("nxActive");
   document.getElementById("cxActive").checked = bits.search.assignTrueFalse("cxActive");
+  document.getElementById("match").checked = bits.search.assignTrueFalse("match");
 
  /*
   *  If saved, then update the settings in memory
@@ -19,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     localStorage.setItem("uomActive", document.getElementById("uomActive").checked);
     localStorage.setItem("nxActive", document.getElementById("nxActive").checked);
     localStorage.setItem("cxActive", document.getElementById("cxActive").checked);
+    localStorage.setItem("match", document.getElementById("match").checked);
 
     // builds message to send to content scripts
     var msg = new message();
@@ -27,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     msg.uom = localStorage.getItem("uomActive");
     msg.nx = localStorage.getItem("nxActive");
     msg.cx = localStorage.getItem("cxActive");
+    msg.match = match;
 
     // gives message to pMsgCenter to be sent to cMsgCenter
     bits.search.pMsgCenter.send(msg);
