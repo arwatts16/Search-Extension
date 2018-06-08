@@ -14,7 +14,8 @@
  *     - popupCtrl:     Add a line for the new provider to each block of text within the 
  *                      document.addEventListener (reloading check value, updating the value
  *                      in local storage once the value is updated, add the current active value
- *                      to the message -> mgs.*name of new provider* = *item in local storage*)
+ *                      to the message -> msg.*name of new provider* = *item in local storage*, 
+ *                      and inside document.getElementById("applyAll").onclick method)
  *     - popup/options: Add a new checkbox for the new provider and give it an id that will 
  *                      be used in popupCtrl to set and get its current checked value
  */

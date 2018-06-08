@@ -34,6 +34,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // gives message to pMsgCenter to be sent to cMsgCenter
     bits.search.pMsgCenter.send(msg);
     };
+
+  document.getElementById("applyAll").onclick = function(e) {
+    // check all searchProvider boxes
+    document.getElementById("uomActive").checked = true;
+    document.getElementById("nxActive").checked = true;
+    document.getElementById("cxActive").checked = true;
+  };
 });
 
 /*
