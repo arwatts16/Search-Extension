@@ -5,7 +5,13 @@
 <link rel="stylesheet" href="../css/styles.css">
 
 <body id="popup">
-  <div>
+  <div class = "title"> 
+    <img src="../images/globe.png"> Fade Lens
+  </div>
+
+  <p></p>
+
+  <div class = "active_check">
     <!-- Checkbox for active -->
     <input type="checkbox" name="Active" id="Active">
     <label for="setActive">Active</label>
@@ -13,47 +19,36 @@
 
   <p></p>
 
-  <div>
+  <div class = "search_providers"> Providers: 
+    
+    <p></p>
+    
     <!-- Checkbox for UOM -->
     <input type="checkbox" name="uomActive" id="uomActive">
     <label for="setUomActive">UOM</label>
-  </div>
 
   <p></p>
 
-  <div>
     <!-- Checkbox for nx -->
     <input type="checkbox" name="nxActive" id="nxActive">
     <label for="setNxActive">Nx</label>
-  </div>
 
   <p></p>
 
-  <div>
     <!-- Checkbox for cx -->
     <input type="checkbox" name="nxActive" id="cxActive">
     <label for="setCxActive">Cx</label>
-  </div>
 
   <p></p>
 
-  <div>
     <!-- Button for applyAll -->
     <label>
-      <button type="submit" id="applyAll">All providers</label>
+      <button type="submit" id="applyAll">All</label>
   </div>
 
   <p></p>
 
-  <div>
-    <!-- Checkbox for exactMatch -->
-    <input type="checkbox" name="match" id="match">
-    <label for="matchPref">Exact Match</label>
-  </div>
-
-  <p></p>
-
-  <div>
+  <div class=save_button>
     <!-- Creates save button -->
     <label>
       <button type="submit" id="Save">Apply</label>
