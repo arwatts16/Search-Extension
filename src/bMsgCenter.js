@@ -21,6 +21,11 @@ bits.search.bMsgCenter.recieveContent = function(msg) {
     // update message values
     msg.message = "sent data";
     msg.data = bits.search.appMain.searchProviders;
+
+  } else if (msg.message == 'color update'){
+    msg.uomColor = localStorage.getItem('uomColor');
+    msg.nxColor  = localStorage.getItem('nxColor');
+    msg.cxColor  = localStorage.getItem('cxColor');
   }
 
   return msg;

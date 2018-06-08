@@ -1,14 +1,20 @@
 bits.search.colorManager = function() {};
 
+bits.search.colorManager.uomColor = '#000000';
+bits.search.colorManager.nxColor = '#000000';
+bits.search.colorManager.cxColor = '#000000';
+
+bits.search.cMsgCenter.sendBackground({message: 'color update'});
+
 /*
  * Returns the highlight color associated with each search provider
  */
 bits.search.colorManager.prototype.getColor = function(searchRes) {
   if (searchRes.source === 'uomFile') {
-    return 'yellow'; 
+    return bits.search.colorManager.uomColor; 
   } else if (searchRes.source === 'nxFile') {
-    return '#66ffff'; //blue
+    return bits.search.colorManager.nxColor;
   } else if (searchRes.source === 'cxSearch'){
-    return '#ffb733'  //orange
+    return bits.search.colorManager.cxColor;
   }
 };
