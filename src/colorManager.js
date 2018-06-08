@@ -7,7 +7,7 @@ bits.search.colorManager.prototype.getColor = function(searchRes) {
   if (searchRes.source === 'uomFile') {
     return 'yellow'; 
   } else if (searchRes.source === 'nxFile') {
-    return '#66ffff'; //light blue
+    return '#66ffff'; //blue
   } else if (searchRes.source === 'cxSearch'){
     return '#ffb733'  //orange
   }

@@ -11,6 +11,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
  * Checks message contents and executes appropriate logic
  */
 bits.search.cMsgCenter.recieve = function(msg) {
+  // update message sent by pMsgCenter
   if (msg.message == 'update') {
     //adjust values of msg
     msg.message = 'send array';
