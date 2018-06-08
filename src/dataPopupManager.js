@@ -3,12 +3,14 @@
 */
 
 bits.search.dataPopupManager = function(matches, found) {
+  var popup = null;
   for (var i = 0; i < matches.length; i++) {
     matches[i].onclick = function(e) {
+      if (popup && !popup.closed) {
+        popup.close();
+      }
       var strWindowFeatures = 'width=300,height=200,left=' + e.screenX + ',top=' + e.screenY;
-      var popup = open('', 'Popup', strWindowFeatures);
-      popup.window.screenX = e.screenX;
-      popup.window.screenY = e.screenY;
+      popup = open('', 'Popup', strWindowFeatures);
       popup.document.title = 'Data';
       popup.document.getElementsByTagName('body')[0].innerHTML = '';
       var name = popup.document.createElement('h3');
