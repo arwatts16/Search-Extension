@@ -27,10 +27,10 @@ bits.search.File.prototype.constructor = bits.search.uomFile;
 /*
  * Reads from uom data file
  */
-bits.search.File.prototype.query = function(doc) {
+bits.search.File.prototype.query = function(doc, active) {
   var result = [];
   var uom = new XMLHttpRequest();
-  if (bits.search.File.IsActive === 'true') {
+  if (active === 'true') {
     uom.open('GET', doc, false);
 
     uom.send(null);

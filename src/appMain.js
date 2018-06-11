@@ -36,7 +36,10 @@ bits.search.appMain.registerSearchProvider = function(name, type) {
  */
 bits.search.appMain.querySearchProviders = function(dataSources) {
   for (var i = 0; i < this.searchProviders.length; i++) {
-    this.searchProviders[i].data = bits.search.appMain.searchProviders[i].provider.query(dataSources[i]);
+    this.searchProviders[i].data = bits.search.appMain.searchProviders[i].provider.query(
+      dataSources[i],
+      this.searchProviders[i].active
+    );
   }
 };
 
