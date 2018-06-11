@@ -1,7 +1,7 @@
 var bits = function() {};
 bits.search = function() {};
 
-var knownChecked = ['active', 'uomActive', 'nxActive', 'nxActive', 'cxActive'];
+var knownChecked = ['active', 'uomActive', 'nxActive', 'cxActive'];
 
 /*
  * Waits for popup to be loaded before it begins executing code
