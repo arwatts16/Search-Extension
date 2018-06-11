@@ -1,24 +1,24 @@
 var bits = function() {};
 bits.search = function() {};
 
+var knownChecked = ['active', 'uomActive', 'nxActive', 'nxActive', 'cxActive'];
+
 /*
  * Waits for popup to be loaded before it begins executing code
  */ 
 document.addEventListener("DOMContentLoaded", function(event) {
-  document.getElementById("Active").checked = bits.search.assignTrueFalse("active");
-  document.getElementById("uomActive").checked = bits.search.assignTrueFalse("uomActive");
-  document.getElementById("nxActive").checked = bits.search.assignTrueFalse("nxActive");
-  document.getElementById("cxActive").checked = bits.search.assignTrueFalse("cxActive");
+  for(var i = 0; i < knownChecked.length; i++){
+    document.getElementById(knownChecked[i]).checked = bits.search.assignTrueFalse(knownChecked[i]);
+  }
 
  /*
   *  If saved, then update the settings in memory
   */
   document.getElementById("Save").onclick = function(e) {
     // save options into local storage
-    localStorage.setItem("active", document.getElementById("Active").checked);
-    localStorage.setItem("uomActive", document.getElementById("uomActive").checked);
-    localStorage.setItem("nxActive", document.getElementById("nxActive").checked);
-    localStorage.setItem("cxActive", document.getElementById("cxActive").checked);
+    for(var i = 0; i < knownChecked.length; i++){
+      localStorage.setItem(knownChecked[i], document.getElementById(knownChecked[i]).checked);
+    }
 
     // builds message to send to content scripts
     var msg = new message();
