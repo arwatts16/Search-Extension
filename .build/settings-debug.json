@@ -1,0 +1,6 @@
+{
+  "overrides": [
+    "../opensphere/config/settings.json",
+    "../bits-internal/config/settings.json"
+  ]
+}
