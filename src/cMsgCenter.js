@@ -23,6 +23,11 @@ bits.search.cMsgCenter.recieve = function(msg) {
     //adjust values of msg
     dataArr = msg.data;
     bits.search.domCtrl.prototype.initMatchManager(msg);
+    
+  } else if(msg.message == 'color update'){
+    bits.search.colorManager.uomColor = msg.uomColor;
+    bits.search.colorManager.nxColor  = msg.nxColor;
+    bits.search.colorManager.cxColor  = msg.cxColor;
   }
   return msg;
 };

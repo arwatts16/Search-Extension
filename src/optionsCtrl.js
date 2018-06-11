@@ -11,6 +11,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.getElementById("cxActive").checked = bits.search.assignTrueFalse("cxActive");
   document.getElementById("match").checked = bits.search.assignTrueFalse("match");
 
+  document.getElementById("uomColor").value = localStorage.getItem('uomColor');
+  document.getElementById("nxColor").value = localStorage.getItem('nxColor');
+  document.getElementById("cxColor").value = localStorage.getItem('cxColor');
+
  /*
   *  If saved, then update the settings in memory
   */
@@ -21,6 +25,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     localStorage.setItem("nxActive", document.getElementById("nxActive").checked);
     localStorage.setItem("cxActive", document.getElementById("cxActive").checked);
     localStorage.setItem("match", document.getElementById("match").checked);
+
+    localStorage.setItem("uomColor", document.getElementById('uomColor').value);
+    localStorage.setItem("nxColor",  document.getElementById('nxColor').value);
+    localStorage.setItem("cxColor",  document.getElementById('cxColor').value);
 
     // builds message to send to content scripts
     var msg = new message();
