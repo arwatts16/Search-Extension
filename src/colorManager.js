@@ -1,4 +1,6 @@
-bits.search.colorManager = function() {};
+bits.search.colorManager = function() {
+  bits.search.cMsgCenter.sendBackground({message: 'color update'});
+};
 
 bits.search.colorManager.uomColor = '#000000';
 bits.search.colorManager.nxColor = '#000000';
