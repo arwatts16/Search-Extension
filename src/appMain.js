@@ -5,7 +5,9 @@ bits.search = function() {};
  * Constructor
  */
 bits.search.appMain = function() {
-  bits.search.appMain.registerSearchProvider();
+  bits.search.appMain.registerSearchProvider('nxFile', 'file');
+  bits.search.appMain.registerSearchProvider('cxSearch', 'search');
+  bits.search.appMain.registerSearchProvider('uomFile', 'file');
 };
 
 /*
@@ -18,38 +20,33 @@ bits.search.appMain.searchProviders = [];
  * Called by the constructor 
  * Whichever provider is added the the array last will take precedence
  */
-bits.search.appMain.registerSearchProvider = function() {
-  bits.search.appMain.searchProviders[0] = new bits.search.sProvider();
-  bits.search.appMain.searchProviders[0].provider = new bits.search.nxFile();
-
-  bits.search.appMain.searchProviders[1] = new bits.search.sProvider();
-  bits.search.appMain.searchProviders[1].provider = new bits.search.cxSearch();
-
-  bits.search.appMain.searchProviders[2] = new bits.search.sProvider();
-  bits.search.appMain.searchProviders[2].provider = new bits.search.uomFile();
+bits.search.appMain.registerSearchProvider = function(name, type) {
+  var sProvider = new bits.search.sProvider();
+  if (type === 'file') {
+    sProvider.provider = new bits.search.File(name);
+  } else if (type === 'search') {
+    sProvider.provider = new bits.search.cxSearch();
+  }
+  bits.search.appMain.searchProviders.push(sProvider);
 };
 
 /* 
  * Called by "send array" message from bMsgCenter.js
  * Sets data in searchProviders array
  */
-bits.search.appMain.querySearchProviders = function(uomFile, nxFile, body) {
-  bits.search.appMain.searchProviders[0].data = bits.search.appMain.searchProviders[0].provider.query(nxFile);
-  bits.search.appMain.searchProviders[1].data = bits.search.appMain.searchProviders[1].provider.query(body);
-  bits.search.appMain.searchProviders[2].data = bits.search.appMain.searchProviders[2].provider.query(uomFile);
+bits.search.appMain.querySearchProviders = function(dataSources) {
+  for (var i = 0; i < this.searchProviders.length; i++) {
+    this.searchProviders[i].data = bits.search.appMain.searchProviders[i].provider.query(dataSources[i]);
+  }
 };
 
 /* 
  * Called by "send array" message from bMsgCenter.js
  * Sets isActive for each provider and sets active inside searchProviders array
  */
-bits.search.appMain.setActiveProviders = function(uom, nx, cx) {
-  bits.search.appMain.searchProviders[0].provider.setActive(nx);
-  bits.search.appMain.searchProviders[0].active = nx;
-
-  bits.search.appMain.searchProviders[1].provider.setActive(cx);
-  bits.search.appMain.searchProviders[1].active = cx;
-
-  bits.search.appMain.searchProviders[2].provider.setActive(uom);
-  bits.search.appMain.searchProviders[2].active = uom;
+bits.search.appMain.setActiveProviders = function(activeSources) {
+  for (var i = 0; i < this.searchProviders.length; i++) {
+    this.searchProviders[i].provider.setActive(activeSources[i]);
+    this.searchProviders[i].active = activeSources[i];
+  }
 };
