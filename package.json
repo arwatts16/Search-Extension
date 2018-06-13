@@ -1,0 +1,151 @@
+{
+  "name": "Search-Extension",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "src": "src",
+    "css": "css",
+    "views": "views"
+  },
+  "build": {
+    "type": "app",
+    "pluggable": true,
+    "config": "",
+    "index": "index.js",
+    "css": "css/styles.css",
+    "defineRoots": {
+      "os.ROOT": "../opensphere/"
+    },
+    "gcc": {
+      "entry_point": [
+        "goog:SearchExtensionMain"
+      ],
+      "define": [
+        "os.config.appNs='Search-Extension'",
+        "Search-Extension.SETTINGS=config/settings.json"
+      ],
+      "hide_warnings_for": [
+        "/opensphere/"
+      ]
+    },
+    "moduleDefines": {
+      "os.file.ZIP_PATH": "zip-js/WebContent"
+    }
+  },
+  "scripts": {
+    "apidoc": "npm run compile:resolve && npm run compile:gcc && npm run compile:dossier",
+    "modernizr": "modernizr -c modernizr.config.json -u -d .build/modernizr.js",
+    "test:gcc": "os-compile $(cat .build/gcc-test-args)",
+    "test:init": "npm run modernizr && npm run compile:resolve && npm run test:gcc",
+    "test:run": "karma start --single-run --browsers Chrome",
+    "test": "npm run test:init && npm run test:run",
+    "init:apidoc": "rimraf .build/*.conf.json dist/apidoc && mkdirp .build dist/apidoc",
+    "init:base": "rimraf .build dist && mkdirp .build dist/Search-Extension",
+    "init:debug": "rimraf index.html tools.html",
+    "init:versionnumber": "echo v$(date +%s) > .build/versionnumber",
+    "init:version": "echo dist/Search-Extension/$(< .build/versionnumber) > .build/version",
+    "init:vfolder": "mkdirp $(< .build/version)",
+    "init": "npm run init:base && npm run init:debug && npm run init:versionnumber && npm run init:version && npm run init:vfolder",
+    "lint:css": "sass-lint -v -s scss -i 'scss/nolint/**/*.scss' 'scss/**/*.scss'",
+    "lint:js": "eslint --cache 'src/**/*.js'",
+    "lint": "npm run lint:js && npm run lint:css",
+    "compile:dossier": "npm run init:apidoc && os-docs-gen-config dossier.conf.json .build/dossier.conf.json && os-docs -c .build/dossier.conf.json",
+    "compile:resolve": "os-resolve .build --defineRoots $(< .build/version)",
+    "compile:css": "node-sass --output-style compressed $(< .build/node-sass-args) > .build/Search-Extension.min.css",
+    "compile:debugcss": "node-sass --source-map true -o .build --output-style expanded $(< .build/node-sass-args)",
+    "compile:gcc": "os-compile $(cat .build/gcc-java-args)",
+    "postcompile:gcc": "echo \"//# sourceMappingURL=`pwd`/.build/Search-Extension.min.map\" >> .build/Search-Extension.min.js",
+    "compile": "npm run compile:resolve && npm run compile:gcc && npm run compile:css && npm run compile:debugcss",
+    "precopy:files": "mkdirp $(< .build/version)/styles",
+    "precopy:views": "mkdirp $(< .build/version)/views",
+    "precopy:config": "mkdirp dist/Search-Extension/config",
+    "precopy:resources": "xargs -n 1 mkdir -p < .build/resources-copy-dirs",
+    "copy:files": "cp .build/Search-Extension.min.js $(< .build/version) && cp .build/Search-Extension.min.css $(< .build/version)/styles && cp -r env $(< .build/version) && cp -r browser $(< .build/version)",
+    "copy:images": "cp -r images $(< .build/version)/images",
+    "copy:views": "xargs -n 1 -I @ sh -c 'cp -rf @ $(< .build/version)/views/.' < .build/copy-views-args",
+    "copy:config": "cp .build/settings.json dist/Search-Extension/config",
+    "copy:resources": "xargs -n 2 cp -r < .build/resources-copy-files",
+    "copy:scripts": "cp -r scripts dist/Search-Extension/scripts",
+    "copy": "npm run copy:files && npm run copy:images && npm run copy:views && npm run copy:config && npm run copy:resources && npm run copy:scripts",
+    "build": "npm run init && npm run lint && npm run modernizr && npm run compile && npm run copy && npm run build:index && npm run linkenv && npm run linkbrowser",
+    "build:debug": "npm run init && npm run modernizr && npm run compile:resolve && npm run compile:debugcss && npm run build:debugindex",
+    "build:index": "os-index ./index.js",
+    "build:debugindex": "os-index --debug ./index.js",
+    "package:update": "if git diff --name-only ORIG_HEAD HEAD | grep --quiet package.json; then npm update && npm install; fi",
+    "perms": "chmod -R u+rwX,go+rX,go-w .",
+    "linkbrowser": "ln -s $(< .build/versionnumber)/browser dist/Search-Extension/browser",
+    "linkenv": "ln -s $(< .build/versionnumber)/env dist/Search-Extension/env"
+  },
+  "keywords": [
+    "bits",
+    "Search-Extension"
+  ],
+  "author": "BIT Systems",
+  "license": "ISC",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "git diff --cached --name-only --diff-filter=ACMRTUB | grep -E 'src(/|\\\\).*\\.js$' | xargs -r eslint --",
+      "commit-msg": "validate-commit-msg",
+      "post-merge": "npm run package:update",
+      "post-rewrite": "npm run package:update"
+    },
+    "validate-commit-msg": {
+      "helpMessage": "\nPlease fix your commit message (consider using 'npm i -g commitizen'). Well-formatted commit messages allow us to automate our changelog.\n\nExamples:\n\"fix(states): Fixed bug when parsing opacity from state files\"\n\"feat(timeline): Added support for an arbitrary number of ranges\"\n\nIf you have installed commitizen, try running 'git cz'."
+    }
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.5.x",
+    "bits-protractor": "^0.1.0",
+    "conventional-changelog-cli": "^1.2.0",
+    "conventional-recommended-bump": "^0.3.0",
+    "cz-conventional-changelog": "^1.2.0",
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.7.0",
+    "eslint-config-opensphere": "^1.0.0",
+    "eslint-plugin-google-camelcase": "^0.0.2",
+    "eslint-plugin-opensphere": "^2.0.0",
+    "ghooks": "^1.3.2",
+    "google-closure-compiler": "^20171203.0.0",
+    "jasmine-core": "^2.5.2",
+    "js-dossier": "^0.12.0",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^0.1.0",
+    "karma-junit-reporter": "^1.1.0",
+    "mkdirp": "^0.5.1",
+    "node-sass": "=4.7.2",
+    "opensphere-build-closure-helper": "^1.0.0",
+    "opensphere-build-docs": "^1.0.0",
+    "opensphere-build-index": "^1.0.0",
+    "opensphere-build-resolver": "^2.3.0",
+    "opensphere-state-schema": "^2.0.8",
+    "replace": "^0.3.0",
+    "rimraf": "^2.5.4",
+    "sass-lint": "^1.9.1",
+    "validate-commit-msg": "^2.8.2"
+  },
+  "dependencies": {
+    "angular": "~1.5.x",
+    "angular-animate": "~1.5.x",
+    "angular-route": "~1.5.x",
+    "angular-sanitize": "~1.5.x",
+    "bits-internal": "^0.0.1",
+    "croppie": "^2.4.1",
+    "font-awesome": "^4.6.3",
+    "google-closure-library": "^20171203.0.0",
+    "jquery": "^2.2.0",
+    "linq": "^3.0.6",
+    "modernizr": "~3.3.x",
+    "moment": "~2.20.1",
+    "platform": "~1.3.4",
+    "opensphere": "^1.0.0",
+    "simplemde": "^1.11.2",
+    "strophe": "^1.2.4",
+    "zip-js": "^0.0.2"
+  }
+}
