@@ -1,18 +1,11 @@
-/* 
- * Initializes local storage
- */
-localStorage.setItem("active", false);
-localStorage.setItem("uomActive", false);
-localStorage.setItem("nxActive", false);
-localStorage.setItem("cxActive", false);
-localStorage.setItem("match", false);
+var name =  ['active', 'uomActive', 'nxActive', 'cxActive', 'match', 'uomColor', 'nxColor', 'cxColor'];
+var value = ['false' , 'false'    , 'false'   , 'false'   , 'false', '#ffff00' , '#66ffff', '#ffb733'];
 
-//default colors for highlight methods
-localStorage.setItem("uomColor", '#ffff00');
-localStorage.setItem("nxColor",  '#66ffff');
-localStorage.setItem("cxColor",  '#ffb733');
+for(var i = 0; i < name.length; i++){
+    localStorage.setItem(name[i], value[i]);
+}
 
-/* 
- * Calls the appMain constructor
+/**
+ * @constructor
  */
 var app = new bits.search.appMain();
