@@ -1,10 +1,3 @@
-goog.provide('SearchExtensionMain');
-
-goog.require('goog.array');
-goog.require('goog.events.EventTarget');
-goog.require('goog.events.EventType');
-goog.require('goog.functions');
-goog.require('goog.object');
 var bits = function () { };
 bits.search = function () { };
 
